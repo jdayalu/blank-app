@@ -1,11 +1,12 @@
 [project]
-name = "blank-app-template"
+name = "koptions"
 version = "0.1.0"
-description = "A simple Streamlit app template."
+description = "Plotly option-premium charts for koptions.streamlit.app"
 readme = "README.md"
-requires-python = ">=3.14"
+requires-python = ">=3.12"
 dependencies = [
-    "streamlit>=1.61.1",
+    "streamlit>=1.40",
+    "plotly>=5.0",
 ]
 
 [tool.uv]
