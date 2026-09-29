@@ -21,7 +21,7 @@ import streamlit as st
 import streamlit.components.v1 as components
 
 CHART_DIR_HOME = Path.home() / "spx_daily_outlook"
-DEFAULT_ALLOWED = ("dayalujoseph@gmail.com", "anilgrao@gmail.com")
+DEFAULT_ALLOWED = ("josephdayalu@gmail.com", "anilgrao@gmail.com")
 CHART_NAME_RE = re.compile(
     r"^(?P<symbol>[a-z0-9]+)_"
     r"(?P<strike>[\d.]+)_"
