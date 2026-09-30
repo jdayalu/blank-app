@@ -31,7 +31,8 @@ CHART_NAME_RE = re.compile(
     r"(?P<side>call|put)"
     r"(?:_exp(?P<expiration>\d{4}-\d{2}-\d{2}))?"
     r"_(?P<session>\d{4}-\d{2}-\d{2})_"
-    r"(?P<interval>\d+m)_first(?P<minutes>\d+)\.(?:png|html)$",
+    r"(?:(?P<interval>\d+m)_first(?P<minutes>\d+)|intraday)"
+    r"\.(?:png|html)$",
     re.IGNORECASE,
 )
 MONTHS = (
@@ -172,10 +173,14 @@ def _parse_chart(path: Path, folder: Path) -> ChartCard | None:
         strike = float(match.group("strike"))
         expiration = match.group("expiration") or ""
         session_day = match.group("session")
-        interval = match.group("interval")
-        minutes = match.group("minutes")
+        interval = match.group("interval") or "intraday"
+        minutes = match.group("minutes") or ""
         title = f"{symbol} {strike:g} {side}"
-        bits = [f"{interval} · first {minutes} min", _fmt_day(session_day)]
+        bits = (
+            [f"{interval} · first {minutes} min", _fmt_day(session_day)]
+            if minutes
+            else ["intraday", _fmt_day(session_day)]
+        )
         if expiration:
             bits.insert(0, f"exp {_fmt_day(expiration)}")
         return ChartCard(
@@ -436,13 +441,6 @@ def _show_contract_chart(row: dict) -> None:
     if len(times) != len(marks) or not marks:
         st.warning("No prints for this contract.")
         return
-    title = f"{row['symbol']} {float(row['strike']):g} {row['side']}"
-    exp = str(row.get("expiration") or "")
-    subtitle = f"{_fmt_day(row['session'])}"
-    if exp:
-        subtitle = f"{subtitle} · exp {_fmt_day(exp)}"
-    st.title(title)
-    st.caption(subtitle)
     first, last = marks[0], marks[-1]
     delta = last - first
     cols = st.columns(4)
@@ -451,38 +449,51 @@ def _show_contract_chart(row: dict) -> None:
     cols[2].metric("High", _money(max(marks)))
     cols[3].metric("Prints", str(len(marks)))
     try:
-        import plotly.graph_objects as go
-    except ImportError:
-        st.line_chart({"mark": marks})
-        return
-    color = "#1b7f4e" if row["side"] == "CALL" else "#c62828"
-    fig = go.Figure(
-        data=[
-            go.Scatter(
-                x=times,
-                y=marks,
-                mode="lines+markers",
-                name=title,
-                line={"color": color, "width": 2},
-                marker={"size": 8, "color": color},
-            )
-        ]
-    )
-    fig.update_layout(
-        title=f"{title} mark history",
-        height=460,
-        margin={"l": 40, "r": 20, "t": 50, "b": 40},
-        paper_bgcolor="#f6f3ec",
-        plot_bgcolor="#fff",
-        font={"color": "#121212"},
-        yaxis_title="Mark $",
-        xaxis_title="Scan time",
-        hovermode="x unified",
-    )
-    st.plotly_chart(fig, use_container_width=True)
+        from ft_option_premium_chart import frame_from_points, ft_premium_figure
+
+        session = date.fromisoformat(str(row.get("session") or datetime.now(PACIFIC).date()))
+        frame = frame_from_points(list(zip(times, marks)), session_day=session)
+        fig = ft_premium_figure(
+            frame,
+            symbol=str(row["symbol"]),
+            strike=float(row["strike"]),
+            side=str(row["side"]),
+            source="Source: Live trading terminal log",
+        )
+        st.plotly_chart(fig, use_container_width=True)
+    except Exception:
+        try:
+            import plotly.graph_objects as go
+        except ImportError:
+            st.line_chart({"mark": marks})
+            return
+        title = f"{row['symbol']} {float(row['strike']):g} {row['side']}"
+        fig = go.Figure(
+            data=[
+                go.Scatter(
+                    x=times,
+                    y=marks,
+                    mode="lines",
+                    name=title,
+                    line={"color": "#0d7680", "width": 2.4},
+                    fill="tozeroy",
+                    fillcolor="rgba(13,118,128,0.08)",
+                )
+            ]
+        )
+        fig.update_layout(
+            title=title,
+            height=520,
+            paper_bgcolor="#fff1e5",
+            plot_bgcolor="#fff1e5",
+            font={"color": "#111111"},
+            yaxis_title="Option premium ($)",
+            hovermode="x unified",
+        )
+        st.plotly_chart(fig, use_container_width=True)
     st.caption(
         f"{len(marks)} prints · first ${first:.2f} · last ${last:.2f} · Δ {delta:+.2f} · "
-        f"Source: option mark history"
+        f"Source: Live trading terminal log"
     )
 
 
