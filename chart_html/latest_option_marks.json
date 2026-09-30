@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-09-29T18:37:15-07:00",
-  "generated_display": "Sep-29 18-37-15",
+  "generated_at": "2026-09-29T19:01:00-07:00",
+  "generated_display": "Sep-29 19-01-00",
   "spx": [],
   "options": [],
   "history": [],
@@ -9,30 +9,30 @@
       "label": "/CL",
       "yahoo": "CL=F",
       "name": "Crude oil",
-      "last": 89.77999877929688,
+      "last": 89.51000213623047,
       "prev_close": 94.12000274658203,
-      "change": -4.340003967285156,
-      "change_pct": -4.611138802206169,
+      "change": -4.6100006103515625,
+      "change_pct": -4.898003055486496,
       "up": false
     },
     {
       "label": "/ES",
       "yahoo": "ES=F",
       "name": "E-mini S&P",
-      "last": 7742.25,
+      "last": 7745.25,
       "prev_close": 7726.25,
-      "change": 16.0,
-      "change_pct": 0.20708623200129428,
+      "change": 19.0,
+      "change_pct": 0.24591490050153694,
       "up": true
     },
     {
       "label": "/GC",
       "yahoo": "GC=F",
       "name": "Gold",
-      "last": 4200.60009765625,
+      "last": 4202.39990234375,
       "prev_close": 4164.10009765625,
-      "change": 36.5,
-      "change_pct": 0.8765399280517753,
+      "change": 38.2998046875,
+      "change_pct": 0.9197618642514602,
       "up": true
     },
     {
