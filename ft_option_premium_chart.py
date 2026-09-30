@@ -250,6 +250,9 @@ def render_ft_premium_png(
     company: str | None = None,
     trigger: str | None = None,
     source: str = "Source: Live trading terminal log",
+    title: str | None = None,
+    ylabel: str = "Option premium ($)",
+    kicker: str = "INTRADAY OPTIONS EXECUTION",
 ) -> Path:
     import matplotlib
 
@@ -270,7 +273,7 @@ def render_ft_premium_png(
     fig.text(
         0.09,
         0.955,
-        "INTRADAY OPTIONS EXECUTION",
+        kicker,
         fontfamily=sans,
         fontsize=8.5,
         fontweight="bold",
@@ -280,7 +283,7 @@ def render_ft_premium_png(
     fig.text(
         0.09,
         0.905,
-        headline(symbol, strike, side, company=company),
+        title or headline(symbol, strike, side, company=company),
         fontfamily=serif,
         fontsize=15,
         fontweight="bold",
@@ -380,7 +383,7 @@ def render_ft_premium_png(
     ax.set_axisbelow(True)
     ax.tick_params(axis="y", length=0, colors=FT_SUB, labelsize=8.5)
     ax.tick_params(axis="x", length=4, colors=FT_SUB, labelsize=8, pad=6)
-    ax.set_ylabel("Option premium ($)", fontfamily=serif, fontsize=10, color=FT_INK, labelpad=8)
+    ax.set_ylabel(ylabel, fontfamily=serif, fontsize=10, color=FT_INK, labelpad=8)
     ax.yaxis.label.set_fontfamily(serif)
     for label in ax.get_xticklabels() + ax.get_yticklabels():
         label.set_fontfamily(sans)
@@ -657,6 +660,10 @@ def ft_premium_figure(
     company: str | None = None,
     trigger: str | None = None,
     source: str = "Source: Live trading terminal log",
+    title: str | None = None,
+    ylabel: str = "Option premium ($)",
+    kicker: str = "INTRADAY OPTIONS EXECUTION",
+    tickprefix: str = "$",
 ):
     import plotly.graph_objects as go
 
@@ -668,10 +675,10 @@ def ft_premium_figure(
     title = (
         f"<span style='font-family:Arial,DejaVu Sans,sans-serif;font-size:11px;"
         f"font-weight:700;color:{FT_TEAL};letter-spacing:0.04em'>"
-        f"INTRADAY OPTIONS EXECUTION</span><br>"
+        f"{kicker}</span><br>"
         f"<span style='font-family:Georgia,DejaVu Serif,serif;font-size:22px;"
         f"font-weight:700;color:{FT_INK}'>"
-        f"{headline(symbol, strike, side, company=company)}</span><br>"
+        f"{title or headline(symbol, strike, side, company=company)}</span><br>"
         f"<span style='font-family:Georgia,DejaVu Serif,serif;font-size:13px;"
         f"font-style:italic;color:{FT_SUB}'>"
         f"{subtitle_text(prices, trigger=trigger)}</span>"
@@ -777,7 +784,7 @@ def ft_premium_figure(
         },
         yaxis={
             "title": {
-                "text": "Option premium ($)",
+                "text": ylabel,
                 "font": {"family": "Georgia, DejaVu Serif, serif", "size": 13, "color": FT_INK},
             },
             "showgrid": True,
@@ -785,7 +792,7 @@ def ft_premium_figure(
             "griddash": "solid",
             "showline": False,
             "ticks": "",
-            "tickprefix": "$",
+            "tickprefix": tickprefix,
             "tickfont": {"family": "Arial, DejaVu Sans, sans-serif", "size": 11, "color": FT_SUB},
             "range": [y_min, y_max],
             "zeroline": False,

@@ -35,6 +35,10 @@ CHART_NAME_RE = re.compile(
     r"\.(?:png|html)$",
     re.IGNORECASE,
 )
+SPX_1M_RE = re.compile(
+    r"^spx_1m_(?P<session>\d{4}-\d{2}-\d{2})\.(?:png|html)$",
+    re.IGNORECASE,
+)
 MONTHS = (
     "",
     "Jan",
@@ -106,6 +110,8 @@ class ChartCard:
     def plotly_name(self) -> str:
         if self.filename.lower() in {"spx_index_chart.png", "spx_intraday_plotly.html"}:
             return "spx_intraday_plotly.html"
+        if SPX_1M_RE.match(self.filename):
+            return f"{self.stem}.html"
         return f"{self.stem}.html"
 
 
@@ -163,10 +169,24 @@ def _require_email() -> str | None:
 
 def _parse_chart(path: Path, folder: Path) -> ChartCard | None:
     match = CHART_NAME_RE.match(path.name)
+    one_min = SPX_1M_RE.match(path.name)
     html_name = f"{path.stem}.html"
     if path.name.lower() == "spx_intraday_plotly.html":
         html_name = "spx_intraday_plotly.html"
     has_plotly = (folder / html_name).is_file()
+    if one_min:
+        session_day = one_min.group("session")
+        return ChartCard(
+            filename=path.name,
+            symbol="SPX",
+            title="S&P 500 1-minute",
+            subtitle=f"cash session · {_fmt_day(session_day)}",
+            session=_fmt_day(session_day),
+            kind="index-1m",
+            mtime=path.stat().st_mtime,
+            has_plotly=(folder / f"{path.stem}.html").is_file(),
+            session_iso=session_day,
+        )
     if match:
         symbol = match.group("symbol").upper()
         side = match.group("side").upper()
@@ -544,10 +564,19 @@ def main() -> None:
         _file_mtime(folder / SERIES_NAME),
         _file_mtime(folder / "latest_option_marks.json"),
     )
+    _show_futures(folder)
+    index_cards = [card for card in cards if card.kind == "index-1m"]
+    index_cards.sort(key=lambda item: item.session_iso, reverse=True)
+    if index_cards:
+        _show_saved_chart(folder, index_cards[0])
+        st.divider()
+
     if not series:
         st.sidebar.markdown("**Kuttanad Monitoring**")
         st.sidebar.caption(email)
-        st.warning(f"No option mark history in {folder}")
+        st.sidebar.caption("https://koptions.streamlit.app")
+        if not index_cards:
+            st.warning(f"No option mark history in {folder}")
         return
 
     symbols = sorted({row["symbol"] for row in series})
@@ -563,7 +592,6 @@ def main() -> None:
     st.sidebar.caption(email)
     st.sidebar.caption("https://koptions.streamlit.app")
 
-    _show_futures(folder)
     stock_col, date_col, strike_col = st.columns(3)
     stock = stock_col.selectbox(
         "Stock",
