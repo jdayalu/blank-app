@@ -39,6 +39,14 @@ SPX_1M_RE = re.compile(
     r"^spx_1m_(?P<session>\d{4}-\d{2}-\d{2})\.(?:png|html)$",
     re.IGNORECASE,
 )
+MONTHLY_RE = re.compile(
+    r"^(?P<symbol>tnx|cl|gc)_1mo_(?P<session>\d{4}-\d{2}-\d{2})\.(?:png|html)$",
+    re.IGNORECASE,
+)
+EXCEL_RE = re.compile(
+    r"^watchlist_excel_(?P<session>\d{4}-\d{2}-\d{2})\.png$",
+    re.IGNORECASE,
+)
 MONTHS = (
     "",
     "Jan",
@@ -112,6 +120,8 @@ class ChartCard:
             return "spx_intraday_plotly.html"
         if SPX_1M_RE.match(self.filename):
             return f"{self.stem}.html"
+        if MONTHLY_RE.match(self.filename):
+            return f"{self.stem}.html"
         return f"{self.stem}.html"
 
 
@@ -170,10 +180,44 @@ def _require_email() -> str | None:
 def _parse_chart(path: Path, folder: Path) -> ChartCard | None:
     match = CHART_NAME_RE.match(path.name)
     one_min = SPX_1M_RE.match(path.name)
+    monthly = MONTHLY_RE.match(path.name)
+    excel = EXCEL_RE.match(path.name)
     html_name = f"{path.stem}.html"
     if path.name.lower() == "spx_intraday_plotly.html":
         html_name = "spx_intraday_plotly.html"
     has_plotly = (folder / html_name).is_file()
+    if excel:
+        session_day = excel.group("session")
+        return ChartCard(
+            filename=path.name,
+            symbol="WATCHLIST",
+            title="Elite Watchlist · recommended options",
+            subtitle=f"today's marks · {_fmt_day(session_day)}",
+            session=_fmt_day(session_day),
+            kind="watchlist-excel",
+            mtime=path.stat().st_mtime,
+            has_plotly=False,
+            session_iso=session_day,
+        )
+    if monthly:
+        session_day = monthly.group("session")
+        symbol = monthly.group("symbol").upper()
+        titles = {
+            "TNX": "US 10-year Treasury yield",
+            "CL": "Crude oil /CL",
+            "GC": "Gold /GC",
+        }
+        return ChartCard(
+            filename=path.name,
+            symbol=symbol,
+            title=f"{titles.get(symbol, symbol)} · 1-month",
+            subtitle=f"daily · {_fmt_day(session_day)}",
+            session=_fmt_day(session_day),
+            kind="monthly",
+            mtime=path.stat().st_mtime,
+            has_plotly=(folder / f"{path.stem}.html").is_file(),
+            session_iso=session_day,
+        )
     if one_min:
         session_day = one_min.group("session")
         return ChartCard(
@@ -565,6 +609,25 @@ def main() -> None:
         _file_mtime(folder / "latest_option_marks.json"),
     )
     _show_futures(folder)
+    monthly_order = {"TNX": 0, "CL": 1, "GC": 2}
+    monthly_cards = [card for card in cards if card.kind == "monthly"]
+    monthly_cards.sort(
+        key=lambda item: (
+            monthly_order.get(item.symbol, 9),
+            item.session_iso,
+        ),
+        reverse=False,
+    )
+    latest_session = max((card.session_iso for card in monthly_cards), default="")
+    monthly_cards = [card for card in monthly_cards if card.session_iso == latest_session]
+    for card in monthly_cards:
+        _show_saved_chart(folder, card)
+    excel_cards = [card for card in cards if card.kind == "watchlist-excel"]
+    excel_cards.sort(key=lambda item: item.session_iso, reverse=True)
+    if excel_cards:
+        _show_saved_chart(folder, excel_cards[0])
+    if monthly_cards or excel_cards:
+        st.divider()
     index_cards = [card for card in cards if card.kind == "index-1m"]
     index_cards.sort(key=lambda item: item.session_iso, reverse=True)
     if index_cards:

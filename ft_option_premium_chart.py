@@ -253,6 +253,11 @@ def render_ft_premium_png(
     title: str | None = None,
     ylabel: str = "Option premium ($)",
     kicker: str = "INTRADAY OPTIONS EXECUTION",
+    subtitle: str | None = None,
+    x_tickformat: str = "%H:%M",
+    label_fn=None,
+    value_prefix: str = "$",
+    value_suffix: str = "",
 ) -> Path:
     import matplotlib
 
@@ -263,6 +268,7 @@ def render_ft_premium_png(
     dest.parent.mkdir(parents=True, exist_ok=True)
     prices = [float(value) for value in frame["price"]]
     first, hod, last = _extrema(frame)
+    clock = label_fn or _clock
     serif = _mpl_font(("Georgia", "DejaVu Serif", "Times New Roman"), "DejaVu Serif")
     sans = _mpl_font(("Arial", "Helvetica", "DejaVu Sans"), "DejaVu Sans")
 
@@ -293,7 +299,7 @@ def render_ft_premium_png(
     fig.text(
         0.09,
         0.855,
-        subtitle_text(prices, trigger=trigger),
+        subtitle or subtitle_text(prices, trigger=trigger),
         fontfamily=serif,
         fontsize=9.5,
         fontstyle="italic",
@@ -332,7 +338,7 @@ def render_ft_premium_png(
     ax.scatter([hod_x], [hod["price"]], s=90, color=FT_CLARET, zorder=5, edgecolors=FT_BG, linewidths=1.2)
 
     ax.annotate(
-        f"${first['price']:.2f} ({_clock(first['time'])})",
+        f"{value_prefix}{first['price']:.2f}{value_suffix} ({clock(first['time'])})",
         xy=(first_x, first["price"]),
         xytext=(12, 14),
         textcoords="offset points",
@@ -343,7 +349,7 @@ def render_ft_premium_png(
     )
     hod_up = hod["price"] >= last["price"]
     ax.annotate(
-        f"{_clock(hod['time'])} (${hod['price']:.2f})",
+        f"{clock(hod['time'])} ({value_prefix}{hod['price']:.2f}{value_suffix})",
         xy=(hod_x, hod["price"]),
         xytext=(0, 22 if hod_up else -28),
         textcoords="offset points",
@@ -363,7 +369,7 @@ def render_ft_premium_png(
     )
     if hod["time"] != last["time"] or abs(float(hod["price"]) - float(last["price"])) > 1e-9:
         ax.annotate(
-            f"${last['price']:.2f}",
+            f"{value_prefix}{last['price']:.2f}{value_suffix}",
             xy=(last_x, last["price"]),
             xytext=(-8, 14),
             textcoords="offset points",
@@ -389,7 +395,7 @@ def render_ft_premium_png(
         label.set_fontfamily(sans)
     from matplotlib.dates import AutoDateLocator, DateFormatter
 
-    ax.xaxis.set_major_formatter(DateFormatter("%H:%M"))
+    ax.xaxis.set_major_formatter(DateFormatter(x_tickformat))
     if len(frame) > 12:
         ax.xaxis.set_major_locator(AutoDateLocator(maxticks=10))
     fig.savefig(
@@ -664,14 +670,23 @@ def ft_premium_figure(
     ylabel: str = "Option premium ($)",
     kicker: str = "INTRADAY OPTIONS EXECUTION",
     tickprefix: str = "$",
+    ticksuffix: str = "",
+    subtitle: str | None = None,
+    x_tickformat: str = "%-I:%M",
+    hover_xformat: str = "%-I:%M %p",
+    label_fn=None,
 ):
     import plotly.graph_objects as go
 
     prices = [float(value) for value in frame["price"]]
     times = list(frame["time"])
     first, hod, last = _extrema(frame)
+    clock = label_fn or _clock
     y_min = min(prices) - max((max(prices) - min(prices)) * 0.18, 0.35)
     y_max = max(prices) + max((max(prices) - min(prices)) * 0.22, 0.45)
+    hover = (
+        f"%{{x|{hover_xformat}}}<br>{tickprefix}%{{y:.2f}}{ticksuffix}<extra></extra>"
+    )
     title = (
         f"<span style='font-family:Arial,DejaVu Sans,sans-serif;font-size:11px;"
         f"font-weight:700;color:{FT_TEAL};letter-spacing:0.04em'>"
@@ -681,7 +696,7 @@ def ft_premium_figure(
         f"{title or headline(symbol, strike, side, company=company)}</span><br>"
         f"<span style='font-family:Georgia,DejaVu Serif,serif;font-size:13px;"
         f"font-style:italic;color:{FT_SUB}'>"
-        f"{subtitle_text(prices, trigger=trigger)}</span>"
+        f"{subtitle or subtitle_text(prices, trigger=trigger)}</span>"
     )
     fig = go.Figure()
     fig.add_trace(
@@ -703,7 +718,7 @@ def ft_premium_figure(
             line={"color": FT_TEAL, "width": FT_LINEWIDTH, "shape": "linear"},
             fill="tonexty",
             fillcolor=FT_TEAL_FILL,
-            hovertemplate="%{x|%-I:%M %p}<br>$%{y:.2f}<extra></extra>",
+            hovertemplate=hover,
         )
     )
     fig.add_trace(
@@ -713,7 +728,7 @@ def ft_premium_figure(
             mode="markers",
             marker={"size": 14, "color": FT_CLARET, "line": {"color": FT_BG, "width": 1}},
             name="HOD",
-            hovertemplate="HOD %{x|%-I:%M %p}<br>$%{y:.2f}<extra></extra>",
+            hovertemplate="HOD " + hover,
             showlegend=False,
         )
     )
@@ -721,7 +736,7 @@ def ft_premium_figure(
         {
             "x": first["time"],
             "y": first["price"],
-            "text": f"${first['price']:.2f} ({_clock(first['time'])})",
+            "text": f"{tickprefix}{first['price']:.2f}{ticksuffix} ({clock(first['time'])})",
             "showarrow": False,
             "yshift": 16,
             "xshift": 8,
@@ -730,7 +745,7 @@ def ft_premium_figure(
         {
             "x": hod["time"],
             "y": hod["price"],
-            "text": f"<b>{_clock(hod['time'])} (${hod['price']:.2f})</b>",
+            "text": f"<b>{clock(hod['time'])} ({tickprefix}{hod['price']:.2f}{ticksuffix})</b>",
             "showarrow": True,
             "arrowhead": 3,
             "arrowcolor": FT_CLARET,
@@ -753,7 +768,7 @@ def ft_premium_figure(
             {
                 "x": last["time"],
                 "y": last["price"],
-                "text": f"${last['price']:.2f}",
+                "text": f"{tickprefix}{last['price']:.2f}{ticksuffix}",
                 "showarrow": False,
                 "yshift": 16,
                 "xshift": -6,
@@ -780,7 +795,7 @@ def ft_premium_figure(
             "linewidth": 1.2,
             "ticks": "outside",
             "tickfont": {"family": "Arial, DejaVu Sans, sans-serif", "size": 11, "color": FT_SUB},
-            "tickformat": "%-I:%M",
+            "tickformat": x_tickformat,
         },
         yaxis={
             "title": {
@@ -793,6 +808,7 @@ def ft_premium_figure(
             "showline": False,
             "ticks": "",
             "tickprefix": tickprefix,
+            "ticksuffix": ticksuffix,
             "tickfont": {"family": "Arial, DejaVu Sans, sans-serif", "size": 11, "color": FT_SUB},
             "range": [y_min, y_max],
             "zeroline": False,
