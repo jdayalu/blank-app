@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-10-05T13:03:44-07:00",
-  "generated_display": "Oct-05 13-03-44",
+  "generated_at": "2026-10-05T14:04:02-07:00",
+  "generated_display": "Oct-05 14-04-02",
   "spx": [
     {
       "occ": ".SPXW261005C7735",
@@ -50646,40 +50646,40 @@
       "label": "/CL",
       "yahoo": "CL=F",
       "name": "Crude oil",
-      "last": 89.20999908447266,
+      "last": 89.29000091552734,
       "prev_close": 89.91999816894531,
-      "change": -0.7099990844726562,
-      "change_pct": -0.7895897452518641,
+      "change": -0.6299972534179688,
+      "change_pct": -0.7006197355946389,
       "up": false
     },
     {
       "label": "/ES",
       "yahoo": "ES=F",
       "name": "E-mini S&P",
-      "last": 7824.5,
+      "last": 7829.0,
       "prev_close": 7770.5,
-      "change": 54.0,
-      "change_pct": 0.6949359758059327,
+      "change": 58.5,
+      "change_pct": 0.7528473071230938,
       "up": true
     },
     {
       "label": "/GC",
       "yahoo": "GC=F",
       "name": "Gold",
-      "last": 4167.7001953125,
+      "last": 4168.7001953125,
       "prev_close": 4172.0,
-      "change": -4.2998046875,
-      "change_pct": -0.1030633913590604,
+      "change": -3.2998046875,
+      "change_pct": -0.07909407208772772,
       "up": false
     },
     {
       "label": "/NQ",
       "yahoo": "NQ=F",
       "name": "E-mini Nasdaq",
-      "last": 31312.0,
+      "last": 31342.25,
       "prev_close": 31077.0,
-      "change": 235.0,
-      "change_pct": 0.7561862470637449,
+      "change": 265.25,
+      "change_pct": 0.8535251150368439,
       "up": true
     },
     {
