@@ -1,26 +1,26 @@
 {
-  "generated_at": "2026-10-05T20:03:28-07:00",
-  "generated_display": "Oct-05 20-03-28",
+  "generated_at": "2026-10-05T21:03:30-07:00",
+  "generated_display": "Oct-05 21-03-30",
   "spx": [
     {
       "occ": ".SPXW261006C7800",
       "strike": 7800.0,
       "side": "CALL",
       "expiration": "2026-10-06",
-      "mark": 7.1,
-      "recommended": 7.1,
-      "scanned_at": "2026-10-05T20:00:01-07:00",
-      "scanned_display": "Oct-05 20-00-01"
+      "mark": 6.9,
+      "recommended": 6.9,
+      "scanned_at": "2026-10-05T21:00:01-07:00",
+      "scanned_display": "Oct-05 21-00-01"
     },
     {
       "occ": ".SPXW261006P7750",
       "strike": 7750.0,
       "side": "PUT",
       "expiration": "2026-10-06",
-      "mark": 5.15,
-      "recommended": 5.15,
-      "scanned_at": "2026-10-05T20:00:01-07:00",
-      "scanned_display": "Oct-05 20-00-01"
+      "mark": 5.2,
+      "recommended": 5.2,
+      "scanned_at": "2026-10-05T21:00:01-07:00",
+      "scanned_display": "Oct-05 21-00-01"
     }
   ],
   "options": [
@@ -6650,28 +6650,6 @@
     }
   ],
   "history": [
-    {
-      "symbol": "SHOP",
-      "side": "CALL",
-      "strike": 160.0,
-      "expiration": "2026-10-09",
-      "source": "rvol",
-      "mark": 2.86,
-      "occ": "",
-      "scanned_at": "2026-10-05T11:00:01-07:00",
-      "scanned_display": "Oct-05 11-00-01"
-    },
-    {
-      "symbol": "SHOP",
-      "side": "CALL",
-      "strike": 162.5,
-      "expiration": "2026-10-09",
-      "source": "rvol",
-      "mark": 1.98,
-      "occ": "",
-      "scanned_at": "2026-10-05T11:00:01-07:00",
-      "scanned_display": "Oct-05 11-00-01"
-    },
     {
       "symbol": "SHOP",
       "side": "CALL",
@@ -50649,6 +50627,28 @@
       "occ": "",
       "scanned_at": "2026-10-05T20:00:01-07:00",
       "scanned_display": "Oct-05 20-00-01"
+    },
+    {
+      "symbol": "SPX",
+      "side": "CALL",
+      "strike": 7800.0,
+      "expiration": "2026-10-06",
+      "source": "spx",
+      "mark": 6.85,
+      "occ": "",
+      "scanned_at": "2026-10-05T21:00:01-07:00",
+      "scanned_display": "Oct-05 21-00-01"
+    },
+    {
+      "symbol": "SPX",
+      "side": "PUT",
+      "strike": 7750.0,
+      "expiration": "2026-10-06",
+      "source": "spx",
+      "mark": 5.25,
+      "occ": "",
+      "scanned_at": "2026-10-05T21:00:01-07:00",
+      "scanned_display": "Oct-05 21-00-01"
     }
   ],
   "futures": [
@@ -50656,40 +50656,40 @@
       "label": "/CL",
       "yahoo": "CL=F",
       "name": "Crude oil",
-      "last": 89.73999786376953,
+      "last": 89.77,
       "prev_close": 89.91999816894531,
-      "change": -0.18000030517578125,
-      "change_pct": -0.20017827940519908,
+      "change": -0.14999816894531648,
+      "change_pct": -0.166812913700792,
       "up": false
     },
     {
       "label": "/ES",
       "yahoo": "ES=F",
       "name": "E-mini S&P",
-      "last": 7832.75,
+      "last": 7834.0,
       "prev_close": 7770.5,
-      "change": 62.25,
-      "change_pct": 0.8011067498873946,
+      "change": 63.5,
+      "change_pct": 0.8171932308088282,
       "up": true
     },
     {
       "label": "/GC",
       "yahoo": "GC=F",
       "name": "Gold",
-      "last": 4165.60009765625,
+      "last": 4154.4,
       "prev_close": 4172.0,
-      "change": -6.39990234375,
-      "change_pct": -0.15340130258269416,
+      "change": -17.600000000000364,
+      "change_pct": -0.4218600191754641,
       "up": false
     },
     {
       "label": "/NQ",
       "yahoo": "NQ=F",
       "name": "E-mini Nasdaq",
-      "last": 31339.25,
+      "last": 31356.25,
       "prev_close": 31077.0,
-      "change": 262.25,
-      "change_pct": 0.8438716735849663,
+      "change": 279.25,
+      "change_pct": 0.8985745084789394,
       "up": true
     },
     {
@@ -50705,6 +50705,6 @@
   ],
   "scan_at": "2026-10-05T13:00:02-07:00",
   "scan_display": "Oct-05 13-00-02",
-  "spx_at": "2026-10-05T20:00:01-07:00",
-  "spx_display": "Oct-05 20-00-01"
+  "spx_at": "2026-10-05T21:00:01-07:00",
+  "spx_display": "Oct-05 21-00-01"
 }
