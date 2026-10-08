@@ -25,6 +25,7 @@ CHART_DIR_HOME = Path.home() / "spx_daily_outlook"
 DEFAULT_ALLOWED = ("josephdayalu@gmail.com", "anilgrao@gmail.com")
 PACIFIC = ZoneInfo("America/Los_Angeles")
 SERIES_NAME = "option_mark_series.json"
+PIVOT_SERIES_NAME = "spx_pivot_series.json"
 CHART_NAME_RE = re.compile(
     r"^(?P<symbol>[a-z0-9]+)_"
     r"(?P<strike>[\d.]+)_"
@@ -45,6 +46,10 @@ MONTHLY_RE = re.compile(
 )
 EXCEL_RE = re.compile(
     r"^watchlist_excel_(?P<session>\d{4}-\d{2}-\d{2})\.png$",
+    re.IGNORECASE,
+)
+PIVOT_RE = re.compile(
+    r"^spx_pivot_(?P<session>\d{4}-\d{2}-\d{2})\.(?:html|xlsx)$",
     re.IGNORECASE,
 )
 MONTHS = (
@@ -182,10 +187,24 @@ def _parse_chart(path: Path, folder: Path) -> ChartCard | None:
     one_min = SPX_1M_RE.match(path.name)
     monthly = MONTHLY_RE.match(path.name)
     excel = EXCEL_RE.match(path.name)
+    pivot = PIVOT_RE.match(path.name)
     html_name = f"{path.stem}.html"
     if path.name.lower() == "spx_intraday_plotly.html":
         html_name = "spx_intraday_plotly.html"
     has_plotly = (folder / html_name).is_file()
+    if pivot:
+        session_day = pivot.group("session")
+        return ChartCard(
+            filename=path.name,
+            symbol="SPX",
+            title="SPX Excel pivot · price history",
+            subtitle=f"futures + options · {_fmt_day(session_day)}",
+            session=_fmt_day(session_day),
+            kind="spx-pivot",
+            mtime=path.stat().st_mtime,
+            has_plotly=path.suffix.lower() == ".html" or (folder / f"{path.stem}.html").is_file(),
+            session_iso=session_day,
+        )
     if excel:
         session_day = excel.group("session")
         return ChartCard(
@@ -459,6 +478,126 @@ def _sync_query(stock: str, session: str, strike: float, side: str) -> None:
         st.query_params.from_dict(desired)
 
 
+def _load_pivot_series(folder: Path) -> dict:
+    for path in (folder / PIVOT_SERIES_NAME, CHART_DIR_HOME / PIVOT_SERIES_NAME):
+        if not path.is_file():
+            continue
+        try:
+            payload = json.loads(path.read_text(encoding="utf-8"))
+        except (OSError, json.JSONDecodeError):
+            continue
+        if isinstance(payload, dict) and payload.get("series"):
+            return payload
+    return {}
+
+
+def _pivot_figure(rows: list[dict], *, title: str, ytitle: str):
+    import plotly.graph_objects as go
+
+    colors = (
+        "#0d7680",
+        "#990f3d",
+        "#111111",
+        "#2e6eb5",
+        "#cc6c3c",
+        "#584477",
+        "#f5b335",
+        "#0b6e4f",
+    )
+    fig = go.Figure()
+    for index, item in enumerate(rows):
+        times = [str(stamp) for stamp in (item.get("t") or [])]
+        values = [float(value) for value in (item.get("m") or [])]
+        if not times or not values:
+            continue
+        clocks = []
+        for stamp in times:
+            when = _as_dt(stamp)
+            clocks.append(when.strftime("%-I:%M %p") if when else stamp)
+        color = colors[index % len(colors)]
+        fig.add_trace(
+            go.Scatter(
+                x=clocks,
+                y=values,
+                mode="lines+markers",
+                name=str(item.get("label") or ""),
+                line={"color": color, "width": 2.2},
+                marker={"size": 6},
+            )
+        )
+        if values:
+            high_i = values.index(max(values))
+            low_i = values.index(min(values))
+            fig.add_trace(
+                go.Scatter(
+                    x=[clocks[high_i]],
+                    y=[values[high_i]],
+                    mode="markers",
+                    name=f"{item.get('label')} high",
+                    marker={"color": "#0d7680", "size": 10, "symbol": "triangle-up"},
+                    showlegend=False,
+                )
+            )
+            fig.add_trace(
+                go.Scatter(
+                    x=[clocks[low_i]],
+                    y=[values[low_i]],
+                    mode="markers",
+                    name=f"{item.get('label')} low",
+                    marker={"color": "#990f3d", "size": 10, "symbol": "triangle-down"},
+                    showlegend=False,
+                )
+            )
+    fig.update_layout(
+        title=title,
+        height=460,
+        paper_bgcolor="#fff1e5",
+        plot_bgcolor="#fff1e5",
+        font={"color": "#111111"},
+        yaxis_title=ytitle,
+        legend={"orientation": "h", "y": 1.12},
+        hovermode="x unified",
+        margin={"l": 48, "r": 16, "t": 64, "b": 36},
+    )
+    fig.update_xaxes(gridcolor="#e8dcd0")
+    fig.update_yaxes(gridcolor="#e8dcd0")
+    return fig
+
+
+def _show_pivot_history(folder: Path) -> bool:
+    payload = _load_pivot_series(folder)
+    series = [row for row in (payload.get("series") or []) if isinstance(row, dict)]
+    if not series:
+        return False
+    session = str(payload.get("session") or "")
+    st.subheader(str(payload.get("title") or "SPX Excel pivot"))
+    if session:
+        st.caption(f"Price history from the Excel workbook · {_fmt_day(session)}")
+    futures = [row for row in series if row.get("kind") == "futures"]
+    options = [row for row in series if row.get("kind") != "futures"]
+    if options:
+        cols = st.columns(min(4, len(options)))
+        for column, row in zip(cols, options):
+            last = row.get("last")
+            delta = float(row.get("delta") or 0)
+            column.metric(
+                str(row.get("label") or ""),
+                _money(last),
+                f"{delta:+.2f}",
+            )
+    if futures:
+        st.plotly_chart(
+            _pivot_figure(futures, title="Futures", ytitle="Last"),
+            use_container_width=True,
+        )
+    if options:
+        st.plotly_chart(
+            _pivot_figure(options, title="SPX options", ytitle="Option mark ($)"),
+            use_container_width=True,
+        )
+    return True
+
+
 def _show_futures(folder: Path) -> None:
     payload = _load_marks(folder)
     futures = [row for row in (payload.get("futures") or []) if isinstance(row, dict)]
@@ -609,6 +748,8 @@ def main() -> None:
         _file_mtime(folder / "latest_option_marks.json"),
     )
     _show_futures(folder)
+    if _show_pivot_history(folder):
+        st.divider()
     monthly_order = {"TNX": 0, "CL": 1, "GC": 2}
     monthly_cards = [card for card in cards if card.kind == "monthly"]
     monthly_cards.sort(
