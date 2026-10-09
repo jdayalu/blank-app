@@ -1,26 +1,26 @@
 {
-  "generated_at": "2026-10-08T19:02:50-07:00",
-  "generated_display": "Oct-08 19-02-50",
+  "generated_at": "2026-10-08T20:03:10-07:00",
+  "generated_display": "Oct-08 20-03-10",
   "spx": [
     {
       "occ": ".SPXW261009C7820",
       "strike": 7820.0,
       "side": "CALL",
       "expiration": "2026-10-09",
-      "mark": 4.65,
-      "recommended": 4.65,
-      "scanned_at": "2026-10-08T19:00:01-07:00",
-      "scanned_display": "Oct-08 19-00-01"
+      "mark": 5.4,
+      "recommended": 5.4,
+      "scanned_at": "2026-10-08T20:00:01-07:00",
+      "scanned_display": "Oct-08 20-00-01"
     },
     {
       "occ": ".SPXW261009P7755",
       "strike": 7755.0,
       "side": "PUT",
       "expiration": "2026-10-09",
-      "mark": 7.5,
-      "recommended": 7.5,
-      "scanned_at": "2026-10-08T19:00:01-07:00",
-      "scanned_display": "Oct-08 19-00-01"
+      "mark": 7.2,
+      "recommended": 7.2,
+      "scanned_at": "2026-10-08T20:00:01-07:00",
+      "scanned_display": "Oct-08 20-00-01"
     }
   ],
   "options": [
@@ -6650,28 +6650,6 @@
     }
   ],
   "history": [
-    {
-      "symbol": "LHX",
-      "side": "PUT",
-      "strike": 230.0,
-      "expiration": "2026-10-09",
-      "source": "rvol",
-      "mark": 0.01,
-      "occ": "",
-      "scanned_at": "2026-10-08T11:00:01-07:00",
-      "scanned_display": "Oct-08 11-00-01"
-    },
-    {
-      "symbol": "LHX",
-      "side": "PUT",
-      "strike": 232.5,
-      "expiration": "2026-10-09",
-      "source": "rvol",
-      "mark": 0.83,
-      "occ": "",
-      "scanned_at": "2026-10-08T11:00:01-07:00",
-      "scanned_display": "Oct-08 11-00-01"
-    },
     {
       "symbol": "LHX",
       "side": "PUT",
@@ -50649,6 +50627,28 @@
       "occ": "",
       "scanned_at": "2026-10-08T19:00:01-07:00",
       "scanned_display": "Oct-08 19-00-01"
+    },
+    {
+      "symbol": "SPX",
+      "side": "CALL",
+      "strike": 7820.0,
+      "expiration": "2026-10-09",
+      "source": "spx",
+      "mark": 5.4,
+      "occ": "",
+      "scanned_at": "2026-10-08T20:00:01-07:00",
+      "scanned_display": "Oct-08 20-00-01"
+    },
+    {
+      "symbol": "SPX",
+      "side": "PUT",
+      "strike": 7755.0,
+      "expiration": "2026-10-09",
+      "source": "spx",
+      "mark": 7.2,
+      "occ": "",
+      "scanned_at": "2026-10-08T20:00:01-07:00",
+      "scanned_display": "Oct-08 20-00-01"
     }
   ],
   "futures": [
@@ -50656,40 +50656,40 @@
       "label": "/CL",
       "yahoo": "CL=F",
       "name": "Crude oil",
-      "last": 90.7699966430664,
+      "last": 91.01000213623047,
       "prev_close": 89.87000274658203,
-      "change": 0.899993896484375,
-      "change_pct": 1.001439711782588,
+      "change": 1.1399993896484375,
+      "change_pct": 1.26849822500066,
       "up": true
     },
     {
       "label": "/ES",
       "yahoo": "ES=F",
       "name": "E-mini S&P",
-      "last": 7833.75,
+      "last": 7837.25,
       "prev_close": 7847.0,
-      "change": -13.25,
-      "change_pct": -0.16885433923792534,
+      "change": -9.75,
+      "change_pct": -0.1242513062316809,
       "up": false
     },
     {
       "label": "/GC",
       "yahoo": "GC=F",
       "name": "Gold",
-      "last": 4198.60009765625,
+      "last": 4200.60009765625,
       "prev_close": 4160.39990234375,
-      "change": 38.2001953125,
-      "change_pct": 0.9181856602529969,
+      "change": 40.2001953125,
+      "change_pct": 0.966257962121702,
       "up": true
     },
     {
       "label": "/NQ",
       "yahoo": "NQ=F",
       "name": "E-mini Nasdaq",
-      "last": 31061.25,
+      "last": 31072.0,
       "prev_close": 31359.0,
-      "change": -297.75,
-      "change_pct": -0.9494881852099876,
+      "change": -287.0,
+      "change_pct": -0.9152077553493416,
       "up": false
     },
     {
@@ -50705,6 +50705,6 @@
   ],
   "scan_at": "2026-10-08T13:00:01-07:00",
   "scan_display": "Oct-08 13-00-01",
-  "spx_at": "2026-10-08T19:00:01-07:00",
-  "spx_display": "Oct-08 19-00-01"
+  "spx_at": "2026-10-08T20:00:01-07:00",
+  "spx_display": "Oct-08 20-00-01"
 }
