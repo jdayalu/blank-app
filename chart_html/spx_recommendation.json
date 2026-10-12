@@ -1,15 +1,15 @@
 {
-  "updated_at": "2026-10-12T06:35:01-07:00",
-  "subject": "SPX - Now 7815 CALL $14.90 ($14.90)",
-  "close_expected": "",
+  "updated_at": "2026-10-12T07:00:01-07:00",
+  "subject": "SPX above 7813 - Now 7815 CALL $6.40 ($14.90)",
+  "close_expected": "Close expected above 7813",
   "target_lows": [],
-  "target_highs": "",
+  "target_highs": "Target highs 7832, 7852, 7867",
   "worst_case": "",
   "no_trade": false,
   "buy_line": "BUY 1 .SPXW261012C7815",
   "contract_line": "SPXW 2026-10-12 7815 CALL",
-  "comparison": "Recommended $14.90 \u00b7 Current unavailable",
-  "comparison_direction": "flat",
+  "comparison": "Recommended $14.90 \u00b7 Current $6.40 (\u25bc $8.50 vs recommended)",
+  "comparison_direction": "down",
   "limit_line": "Limit $1.00 \u00b7 Est. debit $100",
   "debit_spread": null,
   "trade": {
@@ -20,7 +20,7 @@
     "option_type": "call",
     "quantity": 1,
     "recommended": 14.9,
-    "current": null,
+    "current": 6.4,
     "limit": 1.0
   },
   "chart": {
