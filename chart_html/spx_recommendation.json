@@ -1,117 +1,27 @@
 {
-  "updated_at": "2026-10-09T12:30:00-07:00",
-  "subject": "SPX outlook - Oct 9 - above 7788, recommend 7790 CALL $18.40 and now $26.40",
-  "close_expected": "Close expected above 7788",
+  "updated_at": "2026-10-12T06:31:01-07:00",
+  "subject": "SPX - Now 7815 CALL $14.90 ($14.90)",
+  "close_expected": "",
   "target_lows": [],
-  "target_highs": "Target highs 7825, 7845",
+  "target_highs": "",
   "worst_case": "",
   "no_trade": false,
-  "buy_line": "BUY 1 .SPXW261009C7790",
-  "contract_line": "SPXW 2026-10-09 7790 CALL",
-  "comparison": "Recommended $18.40 \u00b7 Current $26.40 (\u25b2 $8.00 vs recommended)",
-  "comparison_direction": "up",
+  "buy_line": "BUY 1 .SPXW261012C7815",
+  "contract_line": "SPXW 2026-10-12 7815 CALL",
+  "comparison": "Recommended $14.90 \u00b7 Current unavailable",
+  "comparison_direction": "flat",
   "limit_line": "Limit $1.00 \u00b7 Est. debit $100",
   "debit_spread": null,
   "trade": {
-    "occ": ".SPXW261009C7790",
+    "occ": ".SPXW261012C7815",
     "chain": "SPXW",
-    "expiration": "2026-10-09",
-    "strike": 7790.0,
+    "expiration": "2026-10-12",
+    "strike": 7815.0,
     "option_type": "call",
     "quantity": 1,
-    "recommended": 18.4,
-    "current": 26.4,
+    "recommended": 14.9,
+    "current": null,
     "limit": 1.0
   },
-  "chart": {
-    "headline": "Recommended SPX trade: 7790 CALL ($26.40)",
-    "session_change": "+$17.40 (+193.3%)",
-    "change": 17.4,
-    "prints": [
-      {
-        "time": "10:30am",
-        "label": "SPX 7790 Call",
-        "price": 17.5,
-        "delta": -2.25
-      },
-      {
-        "time": "11:00am",
-        "label": "SPX 7790 Call",
-        "price": 21.95,
-        "delta": 4.45
-      },
-      {
-        "time": "11:30am",
-        "label": "SPX 7790 Call",
-        "price": 22.9,
-        "delta": 0.95
-      },
-      {
-        "time": "12:00pm",
-        "label": "SPX 7790 Call",
-        "price": 27.55,
-        "delta": 4.65
-      },
-      {
-        "time": "12:30pm",
-        "label": "SPX 7790 Call",
-        "price": 26.4,
-        "delta": -1.15
-      }
-    ],
-    "bars": [
-      {
-        "time": "6:30am",
-        "price": 9.0
-      },
-      {
-        "time": "7:00am",
-        "price": 10.1
-      },
-      {
-        "time": "7:30am",
-        "price": 14.75
-      },
-      {
-        "time": "8:00am",
-        "price": 12.65
-      },
-      {
-        "time": "8:30am",
-        "price": 13.1
-      },
-      {
-        "time": "9:00am",
-        "price": 18.76
-      },
-      {
-        "time": "9:30am",
-        "price": 20.1
-      },
-      {
-        "time": "10:00am",
-        "price": 19.75
-      },
-      {
-        "time": "10:30am",
-        "price": 17.5
-      },
-      {
-        "time": "11:00am",
-        "price": 21.95
-      },
-      {
-        "time": "11:30am",
-        "price": 22.9
-      },
-      {
-        "time": "12:00pm",
-        "price": 27.55
-      },
-      {
-        "time": "12:30pm",
-        "price": 26.4
-      }
-    ]
-  }
+  "chart": null
 }
