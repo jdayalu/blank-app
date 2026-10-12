@@ -1,26 +1,26 @@
 {
-  "generated_at": "2026-10-12T02:01:53-07:00",
-  "generated_display": "Oct-12 02-01-53",
+  "generated_at": "2026-10-12T03:01:51-07:00",
+  "generated_display": "Oct-12 03-01-51",
   "spx": [
     {
       "occ": ".SPXW261013C7820",
       "strike": 7820.0,
       "side": "CALL",
       "expiration": "2026-10-13",
-      "mark": 20.15,
-      "recommended": 20.15,
-      "scanned_at": "2026-10-12T02:00:03-07:00",
-      "scanned_display": "Oct-12 02-00-03"
+      "mark": 19.65,
+      "recommended": 19.65,
+      "scanned_at": "2026-10-12T03:00:02-07:00",
+      "scanned_display": "Oct-12 03-00-02"
     },
     {
       "occ": ".SPXW261013P7755",
       "strike": 7755.0,
       "side": "PUT",
       "expiration": "2026-10-13",
-      "mark": 4.6,
-      "recommended": 4.6,
-      "scanned_at": "2026-10-12T02:00:03-07:00",
-      "scanned_display": "Oct-12 02-00-03"
+      "mark": 4.1,
+      "recommended": 4.1,
+      "scanned_at": "2026-10-12T03:00:02-07:00",
+      "scanned_display": "Oct-12 03-00-02"
     }
   ],
   "options": [
@@ -6650,28 +6650,6 @@
     }
   ],
   "history": [
-    {
-      "symbol": "MSTR",
-      "side": "PUT",
-      "strike": 155.0,
-      "expiration": "2026-10-09",
-      "source": "rvol",
-      "mark": 0.2,
-      "occ": "",
-      "scanned_at": "2026-10-09T10:00:02-07:00",
-      "scanned_display": "Oct-09 10-00-02"
-    },
-    {
-      "symbol": "MU",
-      "side": "CALL",
-      "strike": 1030.0,
-      "expiration": "2026-10-09",
-      "source": "rvol",
-      "mark": 2.94,
-      "occ": "",
-      "scanned_at": "2026-10-09T10:00:02-07:00",
-      "scanned_display": "Oct-09 10-00-02"
-    },
     {
       "symbol": "MU",
       "side": "CALL",
@@ -50649,6 +50627,28 @@
       "occ": "",
       "scanned_at": "2026-10-12T02:00:03-07:00",
       "scanned_display": "Oct-12 02-00-03"
+    },
+    {
+      "symbol": "SPX",
+      "side": "CALL",
+      "strike": 7820.0,
+      "expiration": "2026-10-13",
+      "source": "spx",
+      "mark": 20.05,
+      "occ": "",
+      "scanned_at": "2026-10-12T03:00:02-07:00",
+      "scanned_display": "Oct-12 03-00-02"
+    },
+    {
+      "symbol": "SPX",
+      "side": "PUT",
+      "strike": 7755.0,
+      "expiration": "2026-10-13",
+      "source": "spx",
+      "mark": 4.1,
+      "occ": "",
+      "scanned_at": "2026-10-12T03:00:02-07:00",
+      "scanned_display": "Oct-12 03-00-02"
     }
   ],
   "futures": [
@@ -50656,40 +50656,40 @@
       "label": "/CL",
       "yahoo": "CL=F",
       "name": "Crude oil",
-      "last": 92.01000213623047,
+      "last": 92.94999694824219,
       "prev_close": 90.33000183105469,
-      "change": 1.6800003051757812,
-      "change_pct": 1.8598475269799135,
+      "change": 2.6199951171875,
+      "change_pct": 2.900470568004315,
       "up": true
     },
     {
       "label": "/ES",
       "yahoo": "ES=F",
       "name": "E-mini S&P",
-      "last": 7870.0,
+      "last": 7866.5,
       "prev_close": 7885.0,
-      "change": -15.0,
-      "change_pct": -0.19023462270133165,
+      "change": -18.5,
+      "change_pct": -0.23462270133164237,
       "up": false
     },
     {
       "label": "/GC",
       "yahoo": "GC=F",
       "name": "Gold",
-      "last": 4197.5,
+      "last": 4195.5,
       "prev_close": 4227.39990234375,
-      "change": -29.89990234375,
-      "change_pct": -0.7072882394488615,
+      "change": -31.89990234375,
+      "change_pct": -0.7545986440995112,
       "up": false
     },
     {
       "label": "/NQ",
       "yahoo": "NQ=F",
       "name": "E-mini Nasdaq",
-      "last": 31083.75,
+      "last": 31083.25,
       "prev_close": 31236.25,
-      "change": -152.5,
-      "change_pct": -0.48821481451838805,
+      "change": -153.0,
+      "change_pct": -0.48981551882828445,
       "up": false
     },
     {
@@ -50705,6 +50705,6 @@
   ],
   "scan_at": "2026-10-09T12:30:01-07:00",
   "scan_display": "Oct-09 12-30-01",
-  "spx_at": "2026-10-12T02:00:03-07:00",
-  "spx_display": "Oct-12 02-00-03"
+  "spx_at": "2026-10-12T03:00:02-07:00",
+  "spx_display": "Oct-12 03-00-02"
 }
