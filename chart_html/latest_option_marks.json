@@ -1,26 +1,26 @@
 {
-  "generated_at": "2026-10-12T06:01:56-07:00",
-  "generated_display": "Oct-12 06-01-56",
+  "generated_at": "2026-10-12T06:17:03-07:00",
+  "generated_display": "Oct-12 06-17-03",
   "spx": [
     {
       "occ": ".SPXW261013C7820",
       "strike": 7820.0,
       "side": "CALL",
       "expiration": "2026-10-13",
-      "mark": 16.9,
-      "recommended": 16.9,
-      "scanned_at": "2026-10-12T06:00:01-07:00",
-      "scanned_display": "Oct-12 06-00-01"
+      "mark": 16.75,
+      "recommended": 16.75,
+      "scanned_at": "2026-10-12T06:15:01-07:00",
+      "scanned_display": "Oct-12 06-15-01"
     },
     {
       "occ": ".SPXW261013P7755",
       "strike": 7755.0,
       "side": "PUT",
       "expiration": "2026-10-13",
-      "mark": 4.0,
-      "recommended": 4.0,
-      "scanned_at": "2026-10-12T06:00:01-07:00",
-      "scanned_display": "Oct-12 06-00-01"
+      "mark": 3.7,
+      "recommended": 3.7,
+      "scanned_at": "2026-10-12T06:15:01-07:00",
+      "scanned_display": "Oct-12 06-15-01"
     }
   ],
   "options": [
@@ -6650,28 +6650,6 @@
     }
   ],
   "history": [
-    {
-      "symbol": "ORCL",
-      "side": "CALL",
-      "strike": 142.0,
-      "expiration": "2026-10-09",
-      "source": "rvol",
-      "mark": 0.38,
-      "occ": "",
-      "scanned_at": "2026-10-09T10:00:02-07:00",
-      "scanned_display": "Oct-09 10-00-02"
-    },
-    {
-      "symbol": "ORCL",
-      "side": "CALL",
-      "strike": 143.0,
-      "expiration": "2026-10-09",
-      "source": "rvol",
-      "mark": 0.14,
-      "occ": "",
-      "scanned_at": "2026-10-09T10:00:02-07:00",
-      "scanned_display": "Oct-09 10-00-02"
-    },
     {
       "symbol": "ORCL",
       "side": "CALL",
@@ -50649,6 +50627,28 @@
       "occ": "",
       "scanned_at": "2026-10-12T06:00:01-07:00",
       "scanned_display": "Oct-12 06-00-01"
+    },
+    {
+      "symbol": "SPX",
+      "side": "CALL",
+      "strike": 7820.0,
+      "expiration": "2026-10-13",
+      "source": "spx",
+      "mark": 17.55,
+      "occ": "",
+      "scanned_at": "2026-10-12T06:15:01-07:00",
+      "scanned_display": "Oct-12 06-15-01"
+    },
+    {
+      "symbol": "SPX",
+      "side": "PUT",
+      "strike": 7755.0,
+      "expiration": "2026-10-13",
+      "source": "spx",
+      "mark": 3.6,
+      "occ": "",
+      "scanned_at": "2026-10-12T06:15:01-07:00",
+      "scanned_display": "Oct-12 06-15-01"
     }
   ],
   "futures": [
@@ -50656,40 +50656,40 @@
       "label": "/CL",
       "yahoo": "CL=F",
       "name": "Crude oil",
-      "last": 93.80999755859375,
+      "last": 93.5199966430664,
       "prev_close": 90.33000183105469,
-      "change": 3.4799957275390625,
-      "change_pct": 3.8525358762283,
+      "change": 3.1899948120117188,
+      "change_pct": 3.531489812186659,
       "up": true
     },
     {
       "label": "/ES",
       "yahoo": "ES=F",
       "name": "E-mini S&P",
-      "last": 7862.5,
+      "last": 7865.75,
       "prev_close": 7885.0,
-      "change": -22.5,
-      "change_pct": -0.2853519340519975,
+      "change": -19.25,
+      "change_pct": -0.24413443246670893,
       "up": false
     },
     {
       "label": "/GC",
       "yahoo": "GC=F",
       "name": "Gold",
-      "last": 4187.7998046875,
+      "last": 4194.60009765625,
       "prev_close": 4227.39990234375,
-      "change": -39.60009765625,
-      "change_pct": -0.936748322161217,
+      "change": -32.7998046875,
+      "change_pct": -0.7758860161139515,
       "up": false
     },
     {
       "label": "/NQ",
       "yahoo": "NQ=F",
       "name": "E-mini Nasdaq",
-      "last": 31060.75,
+      "last": 31078.5,
       "prev_close": 31236.25,
-      "change": -175.5,
-      "change_pct": -0.5618472127736204,
+      "change": -157.75,
+      "change_pct": -0.5050222097722998,
       "up": false
     },
     {
@@ -50705,6 +50705,6 @@
   ],
   "scan_at": "2026-10-09T12:30:01-07:00",
   "scan_display": "Oct-09 12-30-01",
-  "spx_at": "2026-10-12T06:00:01-07:00",
-  "spx_display": "Oct-12 06-00-01"
+  "spx_at": "2026-10-12T06:15:01-07:00",
+  "spx_display": "Oct-12 06-15-01"
 }
