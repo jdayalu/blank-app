@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-10-11T21:02:20-07:00",
-  "generated_display": "Oct-11 21-02-20",
+  "generated_at": "2026-10-11T22:01:55-07:00",
+  "generated_display": "Oct-11 22-01-55",
   "spx": [
     {
       "occ": ".SPXW261012C7820",
@@ -9,18 +9,18 @@
       "expiration": "2026-10-12",
       "mark": 23.85,
       "recommended": 23.85,
-      "scanned_at": "2026-10-11T21:00:02-07:00",
-      "scanned_display": "Oct-11 21-00-02"
+      "scanned_at": "2026-10-11T22:00:01-07:00",
+      "scanned_display": "Oct-11 22-00-01"
     },
     {
       "occ": ".SPXW261012P7755",
       "strike": 7755.0,
       "side": "PUT",
       "expiration": "2026-10-12",
-      "mark": 0.9,
-      "recommended": 0.9,
-      "scanned_at": "2026-10-11T21:00:02-07:00",
-      "scanned_display": "Oct-11 21-00-02"
+      "mark": 0.93,
+      "recommended": 0.93,
+      "scanned_at": "2026-10-11T22:00:01-07:00",
+      "scanned_display": "Oct-11 22-00-01"
     }
   ],
   "options": [
@@ -6650,28 +6650,6 @@
     }
   ],
   "history": [
-    {
-      "symbol": "MRK",
-      "side": "PUT",
-      "strike": 145.0,
-      "expiration": "2026-10-09",
-      "source": "rvol",
-      "mark": 0.24,
-      "occ": "",
-      "scanned_at": "2026-10-09T10:00:02-07:00",
-      "scanned_display": "Oct-09 10-00-02"
-    },
-    {
-      "symbol": "MRNA",
-      "side": "CALL",
-      "strike": 220.0,
-      "expiration": "2026-10-09",
-      "source": "rvol",
-      "mark": 2.06,
-      "occ": "",
-      "scanned_at": "2026-10-09T10:00:02-07:00",
-      "scanned_display": "Oct-09 10-00-02"
-    },
     {
       "symbol": "MRNA",
       "side": "CALL",
@@ -50649,6 +50627,28 @@
       "occ": "",
       "scanned_at": "2026-10-11T21:00:02-07:00",
       "scanned_display": "Oct-11 21-00-02"
+    },
+    {
+      "symbol": "SPX",
+      "side": "CALL",
+      "strike": 7820.0,
+      "expiration": "2026-10-12",
+      "source": "spx",
+      "mark": 24.25,
+      "occ": "",
+      "scanned_at": "2026-10-11T22:00:01-07:00",
+      "scanned_display": "Oct-11 22-00-01"
+    },
+    {
+      "symbol": "SPX",
+      "side": "PUT",
+      "strike": 7755.0,
+      "expiration": "2026-10-12",
+      "source": "spx",
+      "mark": 0.85,
+      "occ": "",
+      "scanned_at": "2026-10-11T22:00:01-07:00",
+      "scanned_display": "Oct-11 22-00-01"
     }
   ],
   "futures": [
@@ -50656,40 +50656,40 @@
       "label": "/CL",
       "yahoo": "CL=F",
       "name": "Crude oil",
-      "last": 90.33,
-      "prev_close": 91.8499984741211,
-      "change": -1.5199984741210955,
-      "change_pct": -1.6548704402530372,
+      "last": 90.38999938964844,
+      "prev_close": 91.0999984741211,
+      "change": -0.7099990844726562,
+      "change_pct": -0.7793623450765992,
       "up": false
     },
     {
       "label": "/ES",
       "yahoo": "ES=F",
       "name": "E-mini S&P",
-      "last": 7886.25,
-      "prev_close": 7859.75,
-      "change": 26.5,
-      "change_pct": 0.3371608511721111,
+      "last": 7885.75,
+      "prev_close": 7884.0,
+      "change": 1.75,
+      "change_pct": 0.02219685438863521,
       "up": true
     },
     {
       "label": "/GC",
       "yahoo": "GC=F",
       "name": "Gold",
-      "last": 4229.0,
-      "prev_close": 4216.2998046875,
-      "change": 12.7001953125,
-      "change_pct": 0.3012166093687283,
-      "up": true
+      "last": 4220.2998046875,
+      "prev_close": 4229.0,
+      "change": -8.7001953125,
+      "change_pct": -0.20572701140931662,
+      "up": false
     },
     {
       "label": "/NQ",
       "yahoo": "NQ=F",
       "name": "E-mini Nasdaq",
-      "last": 31239.25,
-      "prev_close": 31108.75,
-      "change": 130.5,
-      "change_pct": 0.4194961224735806,
+      "last": 31245.75,
+      "prev_close": 31233.25,
+      "change": 12.5,
+      "change_pct": 0.04002145149800293,
       "up": true
     },
     {
@@ -50705,6 +50705,6 @@
   ],
   "scan_at": "2026-10-09T12:30:01-07:00",
   "scan_display": "Oct-09 12-30-01",
-  "spx_at": "2026-10-11T21:00:02-07:00",
-  "spx_display": "Oct-11 21-00-02"
+  "spx_at": "2026-10-11T22:00:01-07:00",
+  "spx_display": "Oct-11 22-00-01"
 }
