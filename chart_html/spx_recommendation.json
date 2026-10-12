@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-12T06:31:01-07:00",
+  "updated_at": "2026-10-12T06:35:01-07:00",
   "subject": "SPX - Now 7815 CALL $14.90 ($14.90)",
   "close_expected": "",
   "target_lows": [],
@@ -23,5 +23,23 @@
     "current": null,
     "limit": 1.0
   },
-  "chart": null
+  "chart": {
+    "headline": "Recommended SPX trade: 7815 CALL ($14.90)",
+    "session_change": "+$0.00 (+0.0%)",
+    "change": 0.0,
+    "prints": [
+      {
+        "time": "6:30am",
+        "label": "SPX 7815 Call",
+        "price": 14.9,
+        "delta": null
+      }
+    ],
+    "bars": [
+      {
+        "time": "6:30am",
+        "price": 14.9
+      }
+    ]
+  }
 }
