@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-10-12T11:30:01-07:00",
-  "subject": "SPX above 7813 - Now 7815 CALL $0.23 ($1.23)",
+  "updated_at": "2026-10-12T11:45:00-07:00",
+  "subject": "SPX above 7813 - Now 7815 CALL $0.28 ($1.68)",
   "close_expected": "Close expected above 7813",
   "target_lows": [],
   "target_highs": "Target highs 7832, 7852, 7867",
@@ -8,7 +8,7 @@
   "no_trade": false,
   "buy_line": "BUY 1 .SPXW261012C7815",
   "contract_line": "SPXW 2026-10-12 7815 CALL",
-  "comparison": "Recommended $1.23 \u00b7 Current $0.23 (\u25bc $1.00 vs recommended)",
+  "comparison": "Recommended $1.68 \u00b7 Current $0.28 (\u25bc $1.40 vs recommended)",
   "comparison_direction": "down",
   "limit_line": "Limit $1.00 \u00b7 Est. debit $100",
   "debit_spread": null,
@@ -19,21 +19,15 @@
     "strike": 7815.0,
     "option_type": "call",
     "quantity": 1,
-    "recommended": 1.23,
-    "current": 0.23,
+    "recommended": 1.68,
+    "current": 0.28,
     "limit": 1.0
   },
   "chart": {
-    "headline": "Recommended SPX trade: 7815 CALL ($0.33)",
-    "session_change": "$-14.57 (-97.8%)",
-    "change": -14.57,
+    "headline": "Recommended SPX trade: 7815 CALL ($0.23)",
+    "session_change": "$-14.67 (-98.5%)",
+    "change": -14.67,
     "prints": [
-      {
-        "time": "9:00am",
-        "label": "SPX 7815 Call",
-        "price": 5.35,
-        "delta": 2.92
-      },
       {
         "time": "9:30am",
         "label": "SPX 7815 Call",
@@ -57,6 +51,12 @@
         "label": "SPX 7815 Call",
         "price": 0.33,
         "delta": -0.2
+      },
+      {
+        "time": "11:30am",
+        "label": "SPX 7815 Call",
+        "price": 0.23,
+        "delta": -0.1
       }
     ],
     "bars": [
@@ -99,6 +99,10 @@
       {
         "time": "11:00am",
         "price": 0.33
+      },
+      {
+        "time": "11:30am",
+        "price": 0.23
       }
     ]
   }
