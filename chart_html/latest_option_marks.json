@@ -1,26 +1,26 @@
 {
-  "generated_at": "2026-10-13T05:02:04-07:00",
-  "generated_display": "Oct-13 05-02-04",
+  "generated_at": "2026-10-13T05:17:08-07:00",
+  "generated_display": "Oct-13 05-17-08",
   "spx": [
     {
       "occ": ".SPXW261014C7820",
       "strike": 7820.0,
       "side": "CALL",
       "expiration": "2026-10-14",
-      "mark": 15.4,
-      "recommended": 15.4,
-      "scanned_at": "2026-10-13T05:00:02-07:00",
-      "scanned_display": "Oct-13 05-00-02"
+      "mark": 14.95,
+      "recommended": 14.95,
+      "scanned_at": "2026-10-13T05:15:01-07:00",
+      "scanned_display": "Oct-13 05-15-01"
     },
     {
       "occ": ".SPXW261014P7755",
       "strike": 7755.0,
       "side": "PUT",
       "expiration": "2026-10-14",
-      "mark": 8.4,
-      "recommended": 8.4,
-      "scanned_at": "2026-10-13T05:00:02-07:00",
-      "scanned_display": "Oct-13 05-00-02"
+      "mark": 7.9,
+      "recommended": 7.9,
+      "scanned_at": "2026-10-13T05:15:01-07:00",
+      "scanned_display": "Oct-13 05-15-01"
     }
   ],
   "options": [
@@ -6650,28 +6650,6 @@
     }
   ],
   "history": [
-    {
-      "symbol": "SBUX",
-      "side": "PUT",
-      "strike": 89.0,
-      "expiration": "2026-10-16",
-      "source": "rvol",
-      "mark": 0.27,
-      "occ": "",
-      "scanned_at": "2026-10-12T11:00:02-07:00",
-      "scanned_display": "Oct-12 11-00-02"
-    },
-    {
-      "symbol": "SBUX",
-      "side": "PUT",
-      "strike": 90.0,
-      "expiration": "2026-10-16",
-      "source": "rvol",
-      "mark": 0.45,
-      "occ": "",
-      "scanned_at": "2026-10-12T11:00:02-07:00",
-      "scanned_display": "Oct-12 11-00-02"
-    },
     {
       "symbol": "SBUX",
       "side": "PUT",
@@ -50649,6 +50627,28 @@
       "occ": "",
       "scanned_at": "2026-10-13T05:00:02-07:00",
       "scanned_display": "Oct-13 05-00-02"
+    },
+    {
+      "symbol": "SPX",
+      "side": "CALL",
+      "strike": 7820.0,
+      "expiration": "2026-10-14",
+      "source": "spx",
+      "mark": 15.0,
+      "occ": "",
+      "scanned_at": "2026-10-13T05:15:01-07:00",
+      "scanned_display": "Oct-13 05-15-01"
+    },
+    {
+      "symbol": "SPX",
+      "side": "PUT",
+      "strike": 7755.0,
+      "expiration": "2026-10-14",
+      "source": "spx",
+      "mark": 8.1,
+      "occ": "",
+      "scanned_at": "2026-10-13T05:15:01-07:00",
+      "scanned_display": "Oct-13 05-15-01"
     }
   ],
   "futures": [
@@ -50656,40 +50656,40 @@
       "label": "/CL",
       "yahoo": "CL=F",
       "name": "Crude oil",
-      "last": 92.62000274658203,
+      "last": 92.23999786376953,
       "prev_close": 92.63999938964844,
-      "change": -0.01999664306640625,
-      "change_pct": -0.02158532296864487,
+      "change": -0.40000152587890625,
+      "change_pct": -0.4317805791389095,
       "up": false
     },
     {
       "label": "/ES",
       "yahoo": "ES=F",
       "name": "E-mini S&P",
-      "last": 7851.5,
+      "last": 7850.75,
       "prev_close": 7844.75,
-      "change": 6.75,
-      "change_pct": 0.08604480703655311,
+      "change": 6.0,
+      "change_pct": 0.07648427292138053,
       "up": true
     },
     {
       "label": "/GC",
       "yahoo": "GC=F",
       "name": "Gold",
-      "last": 4209.7001953125,
+      "last": 4211.60009765625,
       "prev_close": 4211.10009765625,
-      "change": -1.39990234375,
-      "change_pct": -0.03324315051378466,
-      "up": false
+      "change": 0.5,
+      "change_pct": 0.01187338197632211,
+      "up": true
     },
     {
       "label": "/NQ",
       "yahoo": "NQ=F",
       "name": "E-mini Nasdaq",
-      "last": 30675.75,
+      "last": 30672.5,
       "prev_close": 30672.5,
-      "change": 3.25,
-      "change_pct": 0.010595810579509332,
+      "change": 0.0,
+      "change_pct": 0.0,
       "up": true
     },
     {
@@ -50705,6 +50705,6 @@
   ],
   "scan_at": "2026-10-12T13:00:01-07:00",
   "scan_display": "Oct-12 13-00-01",
-  "spx_at": "2026-10-13T05:00:02-07:00",
-  "spx_display": "Oct-13 05-00-02"
+  "spx_at": "2026-10-13T05:15:01-07:00",
+  "spx_display": "Oct-13 05-15-01"
 }
