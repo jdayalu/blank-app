@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-10-13T06:35:01-07:00",
-  "subject": "SPX below 7799 - Now 7795 PUT $5.80 ($12.60)",
+  "updated_at": "2026-10-13T07:00:01-07:00",
+  "subject": "SPX below 7799 - Now 7795 PUT $5.35 ($12.60)",
   "close_expected": "Close expected below 7799",
   "target_lows": [
     "Target low 1 7776",
@@ -12,14 +12,14 @@
   "no_trade": false,
   "buy_line": "BUY 1 .SPXW261013P7795",
   "contract_line": "SPXW 2026-10-13 7795 PUT",
-  "comparison": "Recommended $12.60 \u00b7 Current $5.80 (\u25bc $6.80 vs recommended)",
+  "comparison": "Recommended $12.60 \u00b7 Current $5.35 (\u25bc $7.25 vs recommended)",
   "comparison_direction": "down",
   "limit_line": "Limit $1.00 \u00b7 Est. debit $100",
   "debit_spread": {
     "title": "Debit spread vs below 7799 (\u221210)",
-    "buy": "BUY 7790 CALL $19.30",
-    "sell": "SELL 7795 CALL $15.20",
-    "net": "Net debit $4.10 \u00b7 new entry"
+    "buy": "BUY 7790 CALL $16.95",
+    "sell": "SELL 7795 CALL $13.30",
+    "net": "Net debit $3.65 \u00b7 new entry"
   },
   "trade": {
     "occ": ".SPXW261013P7795",
@@ -29,25 +29,25 @@
     "option_type": "put",
     "quantity": 1,
     "recommended": 12.6,
-    "current": 5.8,
+    "current": 5.35,
     "limit": 1.0
   },
   "chart": {
-    "headline": "Recommended SPX trade: 7795 PUT ($12.60)",
+    "headline": "Recommended SPX trade: 7795 PUT ($5.80)",
     "session_change": "+$0.00 (+0.0%)",
     "change": 0.0,
     "prints": [
       {
         "time": "6:30am",
         "label": "SPX 7795 Put",
-        "price": 12.6,
+        "price": 5.8,
         "delta": null
       }
     ],
     "bars": [
       {
         "time": "6:30am",
-        "price": 12.6
+        "price": 5.8
       }
     ]
   }
