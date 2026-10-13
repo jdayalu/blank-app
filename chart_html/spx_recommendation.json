@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-10-13T12:00:02-07:00",
-  "subject": "SPX below 7799 - Now 7795 PUT $0.58 ($1.33)",
+  "updated_at": "2026-10-13T12:15:01-07:00",
+  "subject": "SPX below 7799 - Now 7795 PUT $0.28 ($1.28)",
   "close_expected": "Close expected below 7799",
   "target_lows": [
     "Target low 1 7776",
@@ -12,14 +12,14 @@
   "no_trade": false,
   "buy_line": "BUY 1 .SPXW261013P7795",
   "contract_line": "SPXW 2026-10-13 7795 PUT",
-  "comparison": "Recommended $1.33 \u00b7 Current $0.58 (\u25bc $0.75 vs recommended)",
+  "comparison": "Recommended $1.28 \u00b7 Current $0.28 (\u25bc $1.00 vs recommended)",
   "comparison_direction": "down",
   "limit_line": "Limit $1.00 \u00b7 Est. debit $100",
   "debit_spread": {
     "title": "Debit spread vs below 7799 (\u221210)",
-    "buy": "BUY 7790 CALL $14.50",
-    "sell": "SELL 7795 CALL $9.70",
-    "net": "Net debit $4.80 \u00b7 new entry"
+    "buy": "BUY 7790 CALL $19.55",
+    "sell": "SELL 7795 CALL $14.85",
+    "net": "Net debit $4.70 \u00b7 new entry"
   },
   "trade": {
     "occ": ".SPXW261013P7795",
@@ -28,21 +28,15 @@
     "strike": 7795.0,
     "option_type": "put",
     "quantity": 1,
-    "recommended": 1.33,
-    "current": 0.58,
+    "recommended": 1.28,
+    "current": 0.28,
     "limit": 1.0
   },
   "chart": {
-    "headline": "Recommended SPX trade: 7795 PUT ($1.33)",
-    "session_change": "$-4.47 (-77.1%)",
-    "change": -4.47,
+    "headline": "Recommended SPX trade: 7795 PUT ($0.58)",
+    "session_change": "$-5.22 (-90.0%)",
+    "change": -5.22,
     "prints": [
-      {
-        "time": "9:30am",
-        "label": "SPX 7795 Put",
-        "price": 2.68,
-        "delta": -2.37
-      },
       {
         "time": "10:00am",
         "label": "SPX 7795 Put",
@@ -66,6 +60,12 @@
         "label": "SPX 7795 Put",
         "price": 1.33,
         "delta": 0.35
+      },
+      {
+        "time": "12:00pm",
+        "label": "SPX 7795 Put",
+        "price": 0.58,
+        "delta": -0.75
       }
     ],
     "bars": [
@@ -112,6 +112,10 @@
       {
         "time": "11:30am",
         "price": 1.33
+      },
+      {
+        "time": "12:00pm",
+        "price": 0.58
       }
     ]
   }
