@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-10-14T12:45:01-07:00",
-  "subject": "SPX below 7775 - Now 7770 PUT $56.85 ($15.50)",
+  "updated_at": "2026-10-14T12:50:02-07:00",
+  "subject": "SPX below 7775 - Now 7770 PUT $50.20 ($15.50)",
   "close_expected": "Close expected below 7775",
   "target_lows": [
     "Target low 1 7751",
@@ -12,7 +12,7 @@
   "no_trade": false,
   "buy_line": "BUY 1 .SPXW261014P7770",
   "contract_line": "SPXW 2026-10-14 7770 PUT",
-  "comparison": "Recommended $15.50 \u00b7 Current $56.85 (\u25b2 $41.35 vs recommended)",
+  "comparison": "Recommended $15.50 \u00b7 Current $50.20 (\u25b2 $34.70 vs recommended)",
   "comparison_direction": "up",
   "limit_line": "Limit $1.00 \u00b7 Est. debit $100",
   "debit_spread": {
@@ -29,13 +29,13 @@
     "option_type": "put",
     "quantity": 1,
     "recommended": 15.5,
-    "current": 56.85,
+    "current": 50.2,
     "limit": 1.0
   },
   "chart": {
-    "headline": "Recommended SPX trade: 7770 PUT ($49.55)",
-    "session_change": "+$31.55 (+175.3%)",
-    "change": 31.549999999999997,
+    "headline": "Recommended SPX trade: 7770 PUT ($56.85)",
+    "session_change": "+$38.85 (+215.8%)",
+    "change": 38.85,
     "prints": [
       {
         "time": "10:30am",
@@ -64,8 +64,8 @@
       {
         "time": "12:30pm",
         "label": "SPX 7770 Put",
-        "price": 49.55,
-        "delta": -10.45
+        "price": 56.85,
+        "delta": -3.15
       }
     ],
     "bars": [
@@ -119,7 +119,7 @@
       },
       {
         "time": "12:30pm",
-        "price": 49.55
+        "price": 56.85
       }
     ]
   }
