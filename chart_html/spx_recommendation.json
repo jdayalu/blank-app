@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-10-14T12:00:01-07:00",
-  "subject": "SPX below 7775 - Now 7770 PUT $71.45 ($15.50)",
+  "updated_at": "2026-10-14T12:15:02-07:00",
+  "subject": "SPX below 7775 - Now 7770 PUT $60 ($15.50)",
   "close_expected": "Close expected below 7775",
   "target_lows": [
     "Target low 1 7751",
@@ -12,14 +12,14 @@
   "no_trade": false,
   "buy_line": "BUY 1 .SPXW261014P7770",
   "contract_line": "SPXW 2026-10-14 7770 PUT",
-  "comparison": "Recommended $15.50 \u00b7 Current $71.45 (\u25b2 $55.95 vs recommended)",
+  "comparison": "Recommended $15.50 \u00b7 Current $60.00 (\u25b2 $44.50 vs recommended)",
   "comparison_direction": "up",
   "limit_line": "Limit $1.00 \u00b7 Est. debit $100",
   "debit_spread": {
     "title": "Debit spread vs below 7775 (\u221210)",
-    "buy": "BUY 7765 CALL $0.08",
+    "buy": "BUY 7765 CALL $0.13",
     "sell": "SELL 7770 CALL $0.08",
-    "net": "Net debit $0.00 \u00b7 new entry"
+    "net": "Net debit $0.05 \u00b7 new entry"
   },
   "trade": {
     "occ": ".SPXW261014P7770",
@@ -29,20 +29,14 @@
     "option_type": "put",
     "quantity": 1,
     "recommended": 15.5,
-    "current": 71.45,
+    "current": 60.0,
     "limit": 1.0
   },
   "chart": {
-    "headline": "Recommended SPX trade: 7770 PUT ($64.30)",
-    "session_change": "+$46.30 (+257.2%)",
-    "change": 46.3,
+    "headline": "Recommended SPX trade: 7770 PUT ($71.45)",
+    "session_change": "+$53.45 (+296.9%)",
+    "change": 53.45,
     "prints": [
-      {
-        "time": "9:30am",
-        "label": "SPX 7770 Put",
-        "price": 50.0,
-        "delta": 1.22
-      },
       {
         "time": "10:00am",
         "label": "SPX 7770 Put",
@@ -66,6 +60,12 @@
         "label": "SPX 7770 Put",
         "price": 64.3,
         "delta": 2.8
+      },
+      {
+        "time": "12:00pm",
+        "label": "SPX 7770 Put",
+        "price": 71.45,
+        "delta": 7.15
       }
     ],
     "bars": [
@@ -112,6 +112,10 @@
       {
         "time": "11:30am",
         "price": 64.3
+      },
+      {
+        "time": "12:00pm",
+        "price": 71.45
       }
     ]
   }
