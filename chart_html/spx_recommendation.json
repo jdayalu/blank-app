@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-10-14T10:00:02-07:00",
-  "subject": "SPX below 7775 - Now 7770 PUT $43.95 ($15.50)",
+  "updated_at": "2026-10-14T10:30:01-07:00",
+  "subject": "SPX below 7775 - Now 7770 PUT $57.70 ($15.50)",
   "close_expected": "Close expected below 7775",
   "target_lows": [
     "Target low 1 7751",
@@ -12,14 +12,14 @@
   "no_trade": false,
   "buy_line": "BUY 1 .SPXW261014P7770",
   "contract_line": "SPXW 2026-10-14 7770 PUT",
-  "comparison": "Recommended $15.50 \u00b7 Current $43.95 (\u25b2 $28.45 vs recommended)",
+  "comparison": "Recommended $15.50 \u00b7 Current $57.70 (\u25b2 $42.20 vs recommended)",
   "comparison_direction": "up",
   "limit_line": "Limit $1.00 \u00b7 Est. debit $100",
   "debit_spread": {
     "title": "Debit spread vs below 7775 (\u221210)",
-    "buy": "BUY 7765 CALL $1.08",
-    "sell": "SELL 7770 CALL $0.88",
-    "net": "Net debit $0.20 \u00b7 new entry"
+    "buy": "BUY 7765 CALL $0.38",
+    "sell": "SELL 7770 CALL $0.33",
+    "net": "Net debit $0.05 \u00b7 new entry"
   },
   "trade": {
     "occ": ".SPXW261014P7770",
@@ -29,20 +29,14 @@
     "option_type": "put",
     "quantity": 1,
     "recommended": 15.5,
-    "current": 43.95,
+    "current": 57.7,
     "limit": 1.0
   },
   "chart": {
-    "headline": "Recommended SPX trade: 7770 PUT ($50)",
-    "session_change": "+$32.00 (+177.8%)",
-    "change": 32.0,
+    "headline": "Recommended SPX trade: 7770 PUT ($44)",
+    "session_change": "+$25.95 (+144.2%)",
+    "change": 25.950000000000003,
     "prints": [
-      {
-        "time": "7:30am",
-        "label": "SPX 7770 Put",
-        "price": 21.8,
-        "delta": 2.72
-      },
       {
         "time": "8:00am",
         "label": "SPX 7770 Put",
@@ -66,6 +60,12 @@
         "label": "SPX 7770 Put",
         "price": 50.0,
         "delta": 1.22
+      },
+      {
+        "time": "10:00am",
+        "label": "SPX 7770 Put",
+        "price": 43.95,
+        "delta": -6.05
       }
     ],
     "bars": [
@@ -96,6 +96,10 @@
       {
         "time": "9:30am",
         "price": 50.0
+      },
+      {
+        "time": "10:00am",
+        "price": 43.95
       }
     ]
   }
