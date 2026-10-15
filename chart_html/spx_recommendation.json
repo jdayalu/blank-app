@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-10-15T09:30:01-07:00",
-  "subject": "SPX below 7686 - Now 7685 PUT $1.53 ($21.30)",
+  "updated_at": "2026-10-15T10:00:01-07:00",
+  "subject": "SPX below 7686 - Now 7685 PUT $0.88 ($2.08)",
   "close_expected": "Close expected below 7686",
   "target_lows": [
     "Target low 1 7663",
@@ -12,14 +12,14 @@
   "no_trade": false,
   "buy_line": "BUY 1 .SPXW261015P7685",
   "contract_line": "SPXW 2026-10-15 7685 PUT",
-  "comparison": "Recommended $21.30 \u00b7 Current $1.53 (\u25bc $19.77 vs recommended)",
+  "comparison": "Recommended $2.08 \u00b7 Current $0.88 (\u25bc $1.20 vs recommended)",
   "comparison_direction": "down",
   "limit_line": "Limit $1.00 \u00b7 Est. debit $100",
   "debit_spread": {
     "title": "Debit spread vs below 7686 (\u221210)",
-    "buy": "BUY 7675 CALL $46.55",
-    "sell": "SELL 7680 CALL $42.55",
-    "net": "Net debit $4.00 \u00b7 new entry"
+    "buy": "BUY 7675 CALL $47.85",
+    "sell": "SELL 7680 CALL $42.95",
+    "net": "Net debit $4.90 \u00b7 new entry"
   },
   "trade": {
     "occ": ".SPXW261015P7685",
@@ -28,9 +28,75 @@
     "strike": 7685.0,
     "option_type": "put",
     "quantity": 1,
-    "recommended": 21.3,
-    "current": 1.53,
+    "recommended": 2.08,
+    "current": 0.88,
     "limit": 1.0
   },
-  "chart": null
+  "chart": {
+    "headline": "Recommended SPX trade: 7685 PUT ($1.53)",
+    "session_change": "$-18.37 (-92.3%)",
+    "change": -18.369999999999997,
+    "prints": [
+      {
+        "time": "7:30am",
+        "label": "SPX 7685 Put",
+        "price": 3.27,
+        "delta": -6.73
+      },
+      {
+        "time": "8:00am",
+        "label": "SPX 7685 Put",
+        "price": 2.25,
+        "delta": -1.02
+      },
+      {
+        "time": "8:30am",
+        "label": "SPX 7685 Put",
+        "price": 1.2,
+        "delta": -1.05
+      },
+      {
+        "time": "9:00am",
+        "label": "SPX 7685 Put",
+        "price": 1.75,
+        "delta": 0.55
+      },
+      {
+        "time": "9:30am",
+        "label": "SPX 7685 Put",
+        "price": 1.53,
+        "delta": -0.22
+      }
+    ],
+    "bars": [
+      {
+        "time": "6:30am",
+        "price": 19.9
+      },
+      {
+        "time": "7:00am",
+        "price": 10.0
+      },
+      {
+        "time": "7:30am",
+        "price": 3.27
+      },
+      {
+        "time": "8:00am",
+        "price": 2.25
+      },
+      {
+        "time": "8:30am",
+        "price": 1.2
+      },
+      {
+        "time": "9:00am",
+        "price": 1.75
+      },
+      {
+        "time": "9:30am",
+        "price": 1.53
+      }
+    ]
+  }
 }
