@@ -1,26 +1,26 @@
 {
-  "generated_at": "2026-10-15T18:04:15-07:00",
-  "generated_display": "Oct-15 18-04-15",
+  "generated_at": "2026-10-15T18:29:25-07:00",
+  "generated_display": "Oct-15 18-29-25",
   "spx": [
     {
-      "occ": ".SPXW261014C7850",
-      "strike": 7850.0,
+      "occ": ".SPXW261016C7800",
+      "strike": 7800.0,
       "side": "CALL",
-      "expiration": "2026-10-14",
-      "mark": null,
-      "recommended": 0.0,
-      "scanned_at": "2026-10-15T18:00:02-07:00",
-      "scanned_display": "Oct-15 18-00-02"
+      "expiration": "2026-10-16",
+      "mark": 3.05,
+      "recommended": 3.05,
+      "scanned_at": "2026-10-15T18:25:23-07:00",
+      "scanned_display": "Oct-15 18-25-23"
     },
     {
-      "occ": ".SPXW261014P7755",
-      "strike": 7755.0,
+      "occ": ".SPXW261016P7700",
+      "strike": 7700.0,
       "side": "PUT",
-      "expiration": "2026-10-14",
-      "mark": null,
-      "recommended": 0.0,
-      "scanned_at": "2026-10-15T18:00:02-07:00",
-      "scanned_display": "Oct-15 18-00-02"
+      "expiration": "2026-10-16",
+      "mark": 7.5,
+      "recommended": 7.5,
+      "scanned_at": "2026-10-15T18:25:23-07:00",
+      "scanned_display": "Oct-15 18-25-23"
     }
   ],
   "options": [
@@ -6747,336 +6747,6 @@
   ],
   "history": [
     {
-      "symbol": "REGN",
-      "side": "PUT",
-      "strike": 800.0,
-      "expiration": "2026-10-16",
-      "source": "rvol",
-      "mark": 6.0,
-      "occ": "",
-      "scanned_at": "2026-10-15T11:00:02-07:00",
-      "scanned_display": "Oct-15 11-00-02"
-    },
-    {
-      "symbol": "SNDK",
-      "side": "CALL",
-      "strike": 1355.0,
-      "expiration": "2026-10-16",
-      "source": "rvol",
-      "mark": 27.2,
-      "occ": "",
-      "scanned_at": "2026-10-15T11:00:02-07:00",
-      "scanned_display": "Oct-15 11-00-02"
-    },
-    {
-      "symbol": "SNDK",
-      "side": "CALL",
-      "strike": 1360.0,
-      "expiration": "2026-10-16",
-      "source": "rvol",
-      "mark": 24.95,
-      "occ": "",
-      "scanned_at": "2026-10-15T11:00:02-07:00",
-      "scanned_display": "Oct-15 11-00-02"
-    },
-    {
-      "symbol": "SNDK",
-      "side": "CALL",
-      "strike": 1365.0,
-      "expiration": "2026-10-16",
-      "source": "rvol",
-      "mark": 22.5,
-      "occ": "",
-      "scanned_at": "2026-10-15T11:00:02-07:00",
-      "scanned_display": "Oct-15 11-00-02"
-    },
-    {
-      "symbol": "SNDK",
-      "side": "PUT",
-      "strike": 1340.0,
-      "expiration": "2026-10-16",
-      "source": "rvol",
-      "mark": 23.25,
-      "occ": "",
-      "scanned_at": "2026-10-15T11:00:02-07:00",
-      "scanned_display": "Oct-15 11-00-02"
-    },
-    {
-      "symbol": "SNDK",
-      "side": "PUT",
-      "strike": 1345.0,
-      "expiration": "2026-10-16",
-      "source": "rvol",
-      "mark": 25.6,
-      "occ": "",
-      "scanned_at": "2026-10-15T11:00:02-07:00",
-      "scanned_display": "Oct-15 11-00-02"
-    },
-    {
-      "symbol": "SNDK",
-      "side": "PUT",
-      "strike": 1350.0,
-      "expiration": "2026-10-16",
-      "source": "rvol",
-      "mark": 28.1,
-      "occ": "",
-      "scanned_at": "2026-10-15T11:00:02-07:00",
-      "scanned_display": "Oct-15 11-00-02"
-    },
-    {
-      "symbol": "SNPS",
-      "side": "CALL",
-      "strike": 465.0,
-      "expiration": "2026-10-16",
-      "source": "rvol",
-      "mark": 4.35,
-      "occ": "",
-      "scanned_at": "2026-10-15T11:00:02-07:00",
-      "scanned_display": "Oct-15 11-00-02"
-    },
-    {
-      "symbol": "SNPS",
-      "side": "CALL",
-      "strike": 467.5,
-      "expiration": "2026-10-16",
-      "source": "rvol",
-      "mark": 4.4,
-      "occ": "",
-      "scanned_at": "2026-10-15T11:00:02-07:00",
-      "scanned_display": "Oct-15 11-00-02"
-    },
-    {
-      "symbol": "SNPS",
-      "side": "CALL",
-      "strike": 470.0,
-      "expiration": "2026-10-16",
-      "source": "rvol",
-      "mark": 3.45,
-      "occ": "",
-      "scanned_at": "2026-10-15T11:00:02-07:00",
-      "scanned_display": "Oct-15 11-00-02"
-    },
-    {
-      "symbol": "SNPS",
-      "side": "PUT",
-      "strike": 457.5,
-      "expiration": "2026-10-16",
-      "source": "rvol",
-      "mark": 4.58,
-      "occ": "",
-      "scanned_at": "2026-10-15T11:00:02-07:00",
-      "scanned_display": "Oct-15 11-00-02"
-    },
-    {
-      "symbol": "SNPS",
-      "side": "PUT",
-      "strike": 460.0,
-      "expiration": "2026-10-16",
-      "source": "rvol",
-      "mark": 3.93,
-      "occ": "",
-      "scanned_at": "2026-10-15T11:00:02-07:00",
-      "scanned_display": "Oct-15 11-00-02"
-    },
-    {
-      "symbol": "SNPS",
-      "side": "PUT",
-      "strike": 462.5,
-      "expiration": "2026-10-16",
-      "source": "rvol",
-      "mark": 5.0,
-      "occ": "",
-      "scanned_at": "2026-10-15T11:00:02-07:00",
-      "scanned_display": "Oct-15 11-00-02"
-    },
-    {
-      "symbol": "SPX",
-      "side": "CALL",
-      "strike": 7850.0,
-      "expiration": "2026-10-14",
-      "source": "spx",
-      "mark": 0.01,
-      "occ": "",
-      "scanned_at": "2026-10-15T11:00:02-07:00",
-      "scanned_display": "Oct-15 11-00-02"
-    },
-    {
-      "symbol": "SPX",
-      "side": "PUT",
-      "strike": 7685.0,
-      "expiration": "2026-10-15",
-      "source": "spx",
-      "mark": 0.38,
-      "occ": ".SPXW261015P7685",
-      "scanned_at": "2026-10-15T11:00:02-07:00",
-      "scanned_display": "Oct-15 11-00-02"
-    },
-    {
-      "symbol": "SPX",
-      "side": "PUT",
-      "strike": 7690.0,
-      "expiration": "2026-10-15",
-      "source": "spx",
-      "mark": 0.48,
-      "occ": ".SPXW261015P7685",
-      "scanned_at": "2026-10-15T11:00:02-07:00",
-      "scanned_display": "Oct-15 11-00-02"
-    },
-    {
-      "symbol": "SPX",
-      "side": "PUT",
-      "strike": 7695.0,
-      "expiration": "2026-10-15",
-      "source": "spx",
-      "mark": 0.68,
-      "occ": ".SPXW261015P7685",
-      "scanned_at": "2026-10-15T11:00:02-07:00",
-      "scanned_display": "Oct-15 11-00-02"
-    },
-    {
-      "symbol": "SPX",
-      "side": "PUT",
-      "strike": 7700.0,
-      "expiration": "2026-10-15",
-      "source": "spx",
-      "mark": 1.03,
-      "occ": ".SPXW261015P7685",
-      "scanned_at": "2026-10-15T11:00:02-07:00",
-      "scanned_display": "Oct-15 11-00-02"
-    },
-    {
-      "symbol": "SPX",
-      "side": "PUT",
-      "strike": 7705.0,
-      "expiration": "2026-10-15",
-      "source": "spx",
-      "mark": 1.48,
-      "occ": ".SPXW261015P7685",
-      "scanned_at": "2026-10-15T11:00:02-07:00",
-      "scanned_display": "Oct-15 11-00-02"
-    },
-    {
-      "symbol": "SPX",
-      "side": "PUT",
-      "strike": 7710.0,
-      "expiration": "2026-10-15",
-      "source": "spx",
-      "mark": 2.1,
-      "occ": ".SPXW261015P7685",
-      "scanned_at": "2026-10-15T11:00:02-07:00",
-      "scanned_display": "Oct-15 11-00-02"
-    },
-    {
-      "symbol": "SPX",
-      "side": "PUT",
-      "strike": 7755.0,
-      "expiration": "2026-10-14",
-      "source": "spx",
-      "mark": 36.6,
-      "occ": "",
-      "scanned_at": "2026-10-15T11:00:02-07:00",
-      "scanned_display": "Oct-15 11-00-02"
-    },
-    {
-      "symbol": "STX",
-      "side": "CALL",
-      "strike": 677.5,
-      "expiration": "2026-10-16",
-      "source": "rvol",
-      "mark": 10.8,
-      "occ": "",
-      "scanned_at": "2026-10-15T11:00:02-07:00",
-      "scanned_display": "Oct-15 11-00-02"
-    },
-    {
-      "symbol": "STX",
-      "side": "CALL",
-      "strike": 680.0,
-      "expiration": "2026-10-16",
-      "source": "rvol",
-      "mark": 9.7,
-      "occ": "",
-      "scanned_at": "2026-10-15T11:00:02-07:00",
-      "scanned_display": "Oct-15 11-00-02"
-    },
-    {
-      "symbol": "STX",
-      "side": "CALL",
-      "strike": 682.5,
-      "expiration": "2026-10-16",
-      "source": "rvol",
-      "mark": 8.7,
-      "occ": "",
-      "scanned_at": "2026-10-15T11:00:02-07:00",
-      "scanned_display": "Oct-15 11-00-02"
-    },
-    {
-      "symbol": "STX",
-      "side": "PUT",
-      "strike": 670.0,
-      "expiration": "2026-10-16",
-      "source": "rvol",
-      "mark": 9.2,
-      "occ": "",
-      "scanned_at": "2026-10-15T11:00:02-07:00",
-      "scanned_display": "Oct-15 11-00-02"
-    },
-    {
-      "symbol": "STX",
-      "side": "PUT",
-      "strike": 672.5,
-      "expiration": "2026-10-16",
-      "source": "rvol",
-      "mark": 10.25,
-      "occ": "",
-      "scanned_at": "2026-10-15T11:00:02-07:00",
-      "scanned_display": "Oct-15 11-00-02"
-    },
-    {
-      "symbol": "STX",
-      "side": "PUT",
-      "strike": 675.0,
-      "expiration": "2026-10-16",
-      "source": "rvol",
-      "mark": 11.5,
-      "occ": "",
-      "scanned_at": "2026-10-15T11:00:02-07:00",
-      "scanned_display": "Oct-15 11-00-02"
-    },
-    {
-      "symbol": "SYK",
-      "side": "CALL",
-      "strike": 300.0,
-      "expiration": "2026-10-16",
-      "source": "rvol",
-      "mark": 0.3,
-      "occ": "",
-      "scanned_at": "2026-10-15T11:00:02-07:00",
-      "scanned_display": "Oct-15 11-00-02"
-    },
-    {
-      "symbol": "SYK",
-      "side": "CALL",
-      "strike": 310.0,
-      "expiration": "2026-10-16",
-      "source": "rvol",
-      "mark": 0.13,
-      "occ": "",
-      "scanned_at": "2026-10-15T11:00:02-07:00",
-      "scanned_display": "Oct-15 11-00-02"
-    },
-    {
-      "symbol": "SYK",
-      "side": "CALL",
-      "strike": 320.0,
-      "expiration": "2026-10-16",
-      "source": "rvol",
-      "mark": 0.01,
-      "occ": "",
-      "scanned_at": "2026-10-15T11:00:02-07:00",
-      "scanned_display": "Oct-15 11-00-02"
-    },
-    {
       "symbol": "SYK",
       "side": "PUT",
       "strike": 270.0,
@@ -11721,6 +11391,17 @@
     {
       "symbol": "SPX",
       "side": "CALL",
+      "strike": 7800.0,
+      "expiration": "2026-10-16",
+      "source": "spx",
+      "mark": 2.6,
+      "occ": "",
+      "scanned_at": "2026-10-15T11:15:02-07:00",
+      "scanned_display": "Oct-15 11-15-02"
+    },
+    {
+      "symbol": "SPX",
+      "side": "CALL",
       "strike": 7850.0,
       "expiration": "2026-10-14",
       "source": "spx",
@@ -11770,6 +11451,17 @@
       "source": "spx",
       "mark": 1.03,
       "occ": ".SPXW261015P7685",
+      "scanned_at": "2026-10-15T11:15:02-07:00",
+      "scanned_display": "Oct-15 11-15-02"
+    },
+    {
+      "symbol": "SPX",
+      "side": "PUT",
+      "strike": 7700.0,
+      "expiration": "2026-10-16",
+      "source": "spx",
+      "mark": 13.15,
+      "occ": "",
       "scanned_at": "2026-10-15T11:15:02-07:00",
       "scanned_display": "Oct-15 11-15-02"
     },
@@ -16484,6 +16176,17 @@
     {
       "symbol": "SPX",
       "side": "CALL",
+      "strike": 7800.0,
+      "expiration": "2026-10-16",
+      "source": "spx",
+      "mark": 2.63,
+      "occ": "",
+      "scanned_at": "2026-10-15T11:30:01-07:00",
+      "scanned_display": "Oct-15 11-30-01"
+    },
+    {
+      "symbol": "SPX",
+      "side": "CALL",
       "strike": 7850.0,
       "expiration": "2026-10-14",
       "source": "spx",
@@ -16533,6 +16236,17 @@
       "source": "spx",
       "mark": 0.58,
       "occ": ".SPXW261015P7685",
+      "scanned_at": "2026-10-15T11:30:01-07:00",
+      "scanned_display": "Oct-15 11-30-01"
+    },
+    {
+      "symbol": "SPX",
+      "side": "PUT",
+      "strike": 7700.0,
+      "expiration": "2026-10-16",
+      "source": "spx",
+      "mark": 12.5,
+      "occ": "",
       "scanned_at": "2026-10-15T11:30:01-07:00",
       "scanned_display": "Oct-15 11-30-01"
     },
@@ -21247,6 +20961,17 @@
     {
       "symbol": "SPX",
       "side": "CALL",
+      "strike": 7800.0,
+      "expiration": "2026-10-16",
+      "source": "spx",
+      "mark": 2.7,
+      "occ": "",
+      "scanned_at": "2026-10-15T11:45:01-07:00",
+      "scanned_display": "Oct-15 11-45-01"
+    },
+    {
+      "symbol": "SPX",
+      "side": "CALL",
       "strike": 7850.0,
       "expiration": "2026-10-14",
       "source": "spx",
@@ -21296,6 +21021,17 @@
       "source": "spx",
       "mark": 0.28,
       "occ": ".SPXW261015P7685",
+      "scanned_at": "2026-10-15T11:45:01-07:00",
+      "scanned_display": "Oct-15 11-45-01"
+    },
+    {
+      "symbol": "SPX",
+      "side": "PUT",
+      "strike": 7700.0,
+      "expiration": "2026-10-16",
+      "source": "spx",
+      "mark": 11.4,
+      "occ": "",
       "scanned_at": "2026-10-15T11:45:01-07:00",
       "scanned_display": "Oct-15 11-45-01"
     },
@@ -25944,6 +25680,17 @@
     {
       "symbol": "SPX",
       "side": "CALL",
+      "strike": 7800.0,
+      "expiration": "2026-10-16",
+      "source": "spx",
+      "mark": 3.65,
+      "occ": "",
+      "scanned_at": "2026-10-15T12:00:02-07:00",
+      "scanned_display": "Oct-15 12-00-02"
+    },
+    {
+      "symbol": "SPX",
+      "side": "CALL",
       "strike": 7850.0,
       "expiration": "2026-10-14",
       "source": "spx",
@@ -25993,6 +25740,17 @@
       "source": "spx",
       "mark": 0.13,
       "occ": ".SPXW261015P7685",
+      "scanned_at": "2026-10-15T12:00:02-07:00",
+      "scanned_display": "Oct-15 12-00-02"
+    },
+    {
+      "symbol": "SPX",
+      "side": "PUT",
+      "strike": 7700.0,
+      "expiration": "2026-10-16",
+      "source": "spx",
+      "mark": 8.7,
+      "occ": "",
       "scanned_at": "2026-10-15T12:00:02-07:00",
       "scanned_display": "Oct-15 12-00-02"
     },
@@ -30707,6 +30465,17 @@
     {
       "symbol": "SPX",
       "side": "CALL",
+      "strike": 7800.0,
+      "expiration": "2026-10-16",
+      "source": "spx",
+      "mark": 5.95,
+      "occ": "",
+      "scanned_at": "2026-10-15T12:15:01-07:00",
+      "scanned_display": "Oct-15 12-15-01"
+    },
+    {
+      "symbol": "SPX",
+      "side": "CALL",
       "strike": 7850.0,
       "expiration": "2026-10-14",
       "source": "spx",
@@ -30756,6 +30525,17 @@
       "source": "spx",
       "mark": 0.13,
       "occ": ".SPXW261015P7685",
+      "scanned_at": "2026-10-15T12:15:01-07:00",
+      "scanned_display": "Oct-15 12-15-01"
+    },
+    {
+      "symbol": "SPX",
+      "side": "PUT",
+      "strike": 7700.0,
+      "expiration": "2026-10-16",
+      "source": "spx",
+      "mark": 6.3,
+      "occ": "",
       "scanned_at": "2026-10-15T12:15:01-07:00",
       "scanned_display": "Oct-15 12-15-01"
     },
@@ -35470,6 +35250,17 @@
     {
       "symbol": "SPX",
       "side": "CALL",
+      "strike": 7800.0,
+      "expiration": "2026-10-16",
+      "source": "spx",
+      "mark": 4.85,
+      "occ": "",
+      "scanned_at": "2026-10-15T12:30:01-07:00",
+      "scanned_display": "Oct-15 12-30-01"
+    },
+    {
+      "symbol": "SPX",
+      "side": "CALL",
       "strike": 7850.0,
       "expiration": "2026-10-14",
       "source": "spx",
@@ -35519,6 +35310,17 @@
       "source": "spx",
       "mark": 0.08,
       "occ": ".SPXW261015P7685",
+      "scanned_at": "2026-10-15T12:30:01-07:00",
+      "scanned_display": "Oct-15 12-30-01"
+    },
+    {
+      "symbol": "SPX",
+      "side": "PUT",
+      "strike": 7700.0,
+      "expiration": "2026-10-16",
+      "source": "spx",
+      "mark": 6.8,
+      "occ": "",
       "scanned_at": "2026-10-15T12:30:01-07:00",
       "scanned_display": "Oct-15 12-30-01"
     },
@@ -40233,6 +40035,17 @@
     {
       "symbol": "SPX",
       "side": "CALL",
+      "strike": 7800.0,
+      "expiration": "2026-10-16",
+      "source": "spx",
+      "mark": 5.55,
+      "occ": "",
+      "scanned_at": "2026-10-15T12:45:01-07:00",
+      "scanned_display": "Oct-15 12-45-01"
+    },
+    {
+      "symbol": "SPX",
+      "side": "CALL",
       "strike": 7850.0,
       "expiration": "2026-10-14",
       "source": "spx",
@@ -40282,6 +40095,17 @@
       "source": "spx",
       "mark": 0.01,
       "occ": ".SPXW261015P7685",
+      "scanned_at": "2026-10-15T12:45:01-07:00",
+      "scanned_display": "Oct-15 12-45-01"
+    },
+    {
+      "symbol": "SPX",
+      "side": "PUT",
+      "strike": 7700.0,
+      "expiration": "2026-10-16",
+      "source": "spx",
+      "mark": 6.25,
+      "occ": "",
       "scanned_at": "2026-10-15T12:45:01-07:00",
       "scanned_display": "Oct-15 12-45-01"
     },
@@ -44996,6 +44820,17 @@
     {
       "symbol": "SPX",
       "side": "CALL",
+      "strike": 7800.0,
+      "expiration": "2026-10-16",
+      "source": "spx",
+      "mark": 4.15,
+      "occ": "",
+      "scanned_at": "2026-10-15T12:50:01-07:00",
+      "scanned_display": "Oct-15 12-50-01"
+    },
+    {
+      "symbol": "SPX",
+      "side": "CALL",
       "strike": 7850.0,
       "expiration": "2026-10-14",
       "source": "spx",
@@ -45045,6 +44880,17 @@
       "source": "spx",
       "mark": 0.01,
       "occ": ".SPXW261015P7685",
+      "scanned_at": "2026-10-15T12:50:01-07:00",
+      "scanned_display": "Oct-15 12-50-01"
+    },
+    {
+      "symbol": "SPX",
+      "side": "PUT",
+      "strike": 7700.0,
+      "expiration": "2026-10-16",
+      "source": "spx",
+      "mark": 7.4,
+      "occ": "",
       "scanned_at": "2026-10-15T12:50:01-07:00",
       "scanned_display": "Oct-15 12-50-01"
     },
@@ -49891,6 +49737,17 @@
     {
       "symbol": "SPX",
       "side": "CALL",
+      "strike": 7800.0,
+      "expiration": "2026-10-16",
+      "source": "spx",
+      "mark": 4.5,
+      "occ": "",
+      "scanned_at": "2026-10-15T13:00:01-07:00",
+      "scanned_display": "Oct-15 13-00-01"
+    },
+    {
+      "symbol": "SPX",
+      "side": "CALL",
       "strike": 7850.0,
       "expiration": "2026-10-14",
       "source": "spx",
@@ -49940,6 +49797,17 @@
       "source": "spx",
       "mark": 0.01,
       "occ": ".SPXW261015P7685",
+      "scanned_at": "2026-10-15T13:00:01-07:00",
+      "scanned_display": "Oct-15 13-00-01"
+    },
+    {
+      "symbol": "SPX",
+      "side": "PUT",
+      "strike": 7700.0,
+      "expiration": "2026-10-16",
+      "source": "spx",
+      "mark": 6.75,
+      "occ": "",
       "scanned_at": "2026-10-15T13:00:01-07:00",
       "scanned_display": "Oct-15 13-00-01"
     },
@@ -50639,10 +50507,32 @@
     {
       "symbol": "SPX",
       "side": "CALL",
+      "strike": 7800.0,
+      "expiration": "2026-10-16",
+      "source": "spx",
+      "mark": 3.4,
+      "occ": "",
+      "scanned_at": "2026-10-15T14:00:01-07:00",
+      "scanned_display": "Oct-15 14-00-01"
+    },
+    {
+      "symbol": "SPX",
+      "side": "CALL",
       "strike": 7850.0,
       "expiration": "2026-10-14",
       "source": "spx",
       "mark": 0.01,
+      "occ": "",
+      "scanned_at": "2026-10-15T14:00:01-07:00",
+      "scanned_display": "Oct-15 14-00-01"
+    },
+    {
+      "symbol": "SPX",
+      "side": "PUT",
+      "strike": 7700.0,
+      "expiration": "2026-10-16",
+      "source": "spx",
+      "mark": 8.15,
       "occ": "",
       "scanned_at": "2026-10-15T14:00:01-07:00",
       "scanned_display": "Oct-15 14-00-01"
@@ -50661,10 +50551,32 @@
     {
       "symbol": "SPX",
       "side": "CALL",
+      "strike": 7800.0,
+      "expiration": "2026-10-16",
+      "source": "spx",
+      "mark": 3.4,
+      "occ": "",
+      "scanned_at": "2026-10-15T15:00:02-07:00",
+      "scanned_display": "Oct-15 15-00-02"
+    },
+    {
+      "symbol": "SPX",
+      "side": "CALL",
       "strike": 7850.0,
       "expiration": "2026-10-14",
       "source": "spx",
       "mark": 0.01,
+      "occ": "",
+      "scanned_at": "2026-10-15T15:00:02-07:00",
+      "scanned_display": "Oct-15 15-00-02"
+    },
+    {
+      "symbol": "SPX",
+      "side": "PUT",
+      "strike": 7700.0,
+      "expiration": "2026-10-16",
+      "source": "spx",
+      "mark": 8.15,
       "occ": "",
       "scanned_at": "2026-10-15T15:00:02-07:00",
       "scanned_display": "Oct-15 15-00-02"
@@ -50683,10 +50595,32 @@
     {
       "symbol": "SPX",
       "side": "CALL",
+      "strike": 7800.0,
+      "expiration": "2026-10-16",
+      "source": "spx",
+      "mark": 3.4,
+      "occ": "",
+      "scanned_at": "2026-10-15T16:00:02-07:00",
+      "scanned_display": "Oct-15 16-00-02"
+    },
+    {
+      "symbol": "SPX",
+      "side": "CALL",
       "strike": 7850.0,
       "expiration": "2026-10-14",
       "source": "spx",
       "mark": 0.01,
+      "occ": "",
+      "scanned_at": "2026-10-15T16:00:02-07:00",
+      "scanned_display": "Oct-15 16-00-02"
+    },
+    {
+      "symbol": "SPX",
+      "side": "PUT",
+      "strike": 7700.0,
+      "expiration": "2026-10-16",
+      "source": "spx",
+      "mark": 8.15,
       "occ": "",
       "scanned_at": "2026-10-15T16:00:02-07:00",
       "scanned_display": "Oct-15 16-00-02"
@@ -50705,10 +50639,32 @@
     {
       "symbol": "SPX",
       "side": "CALL",
+      "strike": 7800.0,
+      "expiration": "2026-10-16",
+      "source": "spx",
+      "mark": 3.4,
+      "occ": "",
+      "scanned_at": "2026-10-15T17:00:02-07:00",
+      "scanned_display": "Oct-15 17-00-02"
+    },
+    {
+      "symbol": "SPX",
+      "side": "CALL",
       "strike": 7850.0,
       "expiration": "2026-10-14",
       "source": "spx",
       "mark": 0.01,
+      "occ": "",
+      "scanned_at": "2026-10-15T17:00:02-07:00",
+      "scanned_display": "Oct-15 17-00-02"
+    },
+    {
+      "symbol": "SPX",
+      "side": "PUT",
+      "strike": 7700.0,
+      "expiration": "2026-10-16",
+      "source": "spx",
+      "mark": 8.15,
       "occ": "",
       "scanned_at": "2026-10-15T17:00:02-07:00",
       "scanned_display": "Oct-15 17-00-02"
@@ -50727,10 +50683,32 @@
     {
       "symbol": "SPX",
       "side": "CALL",
+      "strike": 7800.0,
+      "expiration": "2026-10-16",
+      "source": "spx",
+      "mark": 3.6,
+      "occ": "",
+      "scanned_at": "2026-10-15T18:00:02-07:00",
+      "scanned_display": "Oct-15 18-00-02"
+    },
+    {
+      "symbol": "SPX",
+      "side": "CALL",
       "strike": 7850.0,
       "expiration": "2026-10-14",
       "source": "spx",
       "mark": 0.01,
+      "occ": "",
+      "scanned_at": "2026-10-15T18:00:02-07:00",
+      "scanned_display": "Oct-15 18-00-02"
+    },
+    {
+      "symbol": "SPX",
+      "side": "PUT",
+      "strike": 7700.0,
+      "expiration": "2026-10-16",
+      "source": "spx",
+      "mark": 7.2,
       "occ": "",
       "scanned_at": "2026-10-15T18:00:02-07:00",
       "scanned_display": "Oct-15 18-00-02"
@@ -50745,6 +50723,28 @@
       "occ": "",
       "scanned_at": "2026-10-15T18:00:02-07:00",
       "scanned_display": "Oct-15 18-00-02"
+    },
+    {
+      "symbol": "SPX",
+      "side": "CALL",
+      "strike": 7800.0,
+      "expiration": "2026-10-16",
+      "source": "spx",
+      "mark": 3.3,
+      "occ": "",
+      "scanned_at": "2026-10-15T18:25:23-07:00",
+      "scanned_display": "Oct-15 18-25-23"
+    },
+    {
+      "symbol": "SPX",
+      "side": "PUT",
+      "strike": 7700.0,
+      "expiration": "2026-10-16",
+      "source": "spx",
+      "mark": 7.3,
+      "occ": "",
+      "scanned_at": "2026-10-15T18:25:23-07:00",
+      "scanned_display": "Oct-15 18-25-23"
     }
   ],
   "futures": [
@@ -50752,40 +50752,40 @@
       "label": "/CL",
       "yahoo": "CL=F",
       "name": "Crude oil",
-      "last": 96.02999877929688,
+      "last": 95.87000274658203,
       "prev_close": 94.01000213623047,
-      "change": 2.0199966430664062,
-      "change_pct": 2.148703964647524,
+      "change": 1.8600006103515625,
+      "change_pct": 1.9785135284394784,
       "up": true
     },
     {
       "label": "/ES",
       "yahoo": "ES=F",
       "name": "E-mini S&P",
-      "last": 7787.0,
+      "last": 7789.0,
       "prev_close": 7732.5,
-      "change": 54.5,
-      "change_pct": 0.7048173294536049,
+      "change": 56.5,
+      "change_pct": 0.7306821855803427,
       "up": true
     },
     {
       "label": "/GC",
       "yahoo": "GC=F",
       "name": "Gold",
-      "last": 4177.0,
+      "last": 4178.7001953125,
       "prev_close": 4165.60009765625,
-      "change": 11.39990234375,
-      "change_pct": 0.27366770876935803,
+      "change": 13.10009765625,
+      "change_pct": 0.3144828439873691,
       "up": true
     },
     {
       "label": "/NQ",
       "yahoo": "NQ=F",
       "name": "E-mini Nasdaq",
-      "last": 30044.0,
+      "last": 30074.0,
       "prev_close": 29848.0,
-      "change": 196.0,
-      "change_pct": 0.6566604127579738,
+      "change": 226.0,
+      "change_pct": 0.757169659608684,
       "up": true
     },
     {
@@ -50801,6 +50801,6 @@
   ],
   "scan_at": "2026-10-15T13:00:01-07:00",
   "scan_display": "Oct-15 13-00-01",
-  "spx_at": "2026-10-15T18:00:02-07:00",
-  "spx_display": "Oct-15 18-00-02"
+  "spx_at": "2026-10-15T18:25:23-07:00",
+  "spx_display": "Oct-15 18-25-23"
 }
