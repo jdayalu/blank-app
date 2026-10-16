@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-10-16T10:30:01-07:00",
-  "subject": "SPX above 7753 - Now 7755 CALL $0.20 ($0.55)",
+  "updated_at": "2026-10-16T11:00:02-07:00",
+  "subject": "SPX above 7753 - Now 7755 CALL $0.18 ($0.33)",
   "close_expected": "Close expected above 7753",
   "target_lows": [],
   "target_highs": "Target highs 7772, 7791, 7807",
@@ -8,7 +8,7 @@
   "no_trade": false,
   "buy_line": "BUY 1 .SPXW261016C7755",
   "contract_line": "SPXW 2026-10-16 7755 CALL",
-  "comparison": "Recommended $0.55 \u00b7 Current $0.20 (\u25bc $0.35 vs recommended)",
+  "comparison": "Recommended $0.33 \u00b7 Current $0.18 (\u25bc $0.15 vs recommended)",
   "comparison_direction": "down",
   "limit_line": "Limit $1.00 \u00b7 Est. debit $100",
   "debit_spread": null,
@@ -19,21 +19,15 @@
     "strike": 7755.0,
     "option_type": "call",
     "quantity": 1,
-    "recommended": 0.55,
-    "current": 0.2,
+    "recommended": 0.33,
+    "current": 0.18,
     "limit": 1.0
   },
   "chart": {
-    "headline": "Recommended SPX trade: 7755 CALL ($0.23)",
-    "session_change": "$-5.77 (-96.2%)",
-    "change": -5.77,
+    "headline": "Recommended SPX trade: 7755 CALL ($0.20)",
+    "session_change": "$-5.80 (-96.7%)",
+    "change": -5.8,
     "prints": [
-      {
-        "time": "8:00am",
-        "label": "SPX 7755 Call",
-        "price": 1.05,
-        "delta": -2.95
-      },
       {
         "time": "8:30am",
         "label": "SPX 7755 Call",
@@ -57,6 +51,12 @@
         "label": "SPX 7755 Call",
         "price": 0.23,
         "delta": -0.25
+      },
+      {
+        "time": "10:30am",
+        "label": "SPX 7755 Call",
+        "price": 0.2,
+        "delta": -0.03
       }
     ],
     "bars": [
@@ -91,6 +91,10 @@
       {
         "time": "10:00am",
         "price": 0.23
+      },
+      {
+        "time": "10:30am",
+        "price": 0.2
       }
     ]
   }
