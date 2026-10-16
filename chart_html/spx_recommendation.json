@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-16T12:30:01-07:00",
+  "updated_at": "2026-10-16T12:45:01-07:00",
   "subject": "SPX above 7753 - Now 7755 CALL $0.01 ($0.01)",
   "close_expected": "Close expected above 7753",
   "target_lows": [],
@@ -29,12 +29,6 @@
     "change": -5.99,
     "prints": [
       {
-        "time": "10:00am",
-        "label": "SPX 7755 Call",
-        "price": 0.23,
-        "delta": -0.25
-      },
-      {
         "time": "10:30am",
         "label": "SPX 7755 Call",
         "price": 0.2,
@@ -57,6 +51,12 @@
         "label": "SPX 7755 Call",
         "price": 0.01,
         "delta": -0.12
+      },
+      {
+        "time": "12:30pm",
+        "label": "SPX 7755 Call",
+        "price": 0.01,
+        "delta": 0.0
       }
     ],
     "bars": [
@@ -106,6 +106,10 @@
       },
       {
         "time": "12:00pm",
+        "price": 0.01
+      },
+      {
+        "time": "12:30pm",
         "price": 0.01
       }
     ]
