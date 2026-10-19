@@ -1,26 +1,26 @@
 {
-  "generated_at": "2026-10-19T00:02:05-07:00",
-  "generated_display": "Oct-19 00-02-05",
+  "generated_at": "2026-10-19T01:02:12-07:00",
+  "generated_display": "Oct-19 01-02-12",
   "spx": [
     {
       "occ": ".SPXW261023C7755",
       "strike": 7755.0,
       "side": "CALL",
       "expiration": "2026-10-23",
-      "mark": 29.4,
-      "recommended": 29.4,
-      "scanned_at": "2026-10-19T00:00:01-07:00",
-      "scanned_display": "Oct-19 00-00-01"
+      "mark": 25.6,
+      "recommended": 25.6,
+      "scanned_at": "2026-10-19T01:00:02-07:00",
+      "scanned_display": "Oct-19 01-00-02"
     },
     {
       "occ": ".SPXW261023P7650",
       "strike": 7650.0,
       "side": "PUT",
       "expiration": "2026-10-23",
-      "mark": 24.75,
-      "recommended": 24.75,
-      "scanned_at": "2026-10-19T00:00:01-07:00",
-      "scanned_display": "Oct-19 00-00-01"
+      "mark": 29.75,
+      "recommended": 29.75,
+      "scanned_at": "2026-10-19T01:00:02-07:00",
+      "scanned_display": "Oct-19 01-00-02"
     }
   ],
   "options": [
@@ -6650,28 +6650,6 @@
     }
   ],
   "history": [
-    {
-      "symbol": "SLB",
-      "side": "CALL",
-      "strike": 50.0,
-      "expiration": "2026-10-16",
-      "source": "rvol",
-      "mark": 0.02,
-      "occ": "",
-      "scanned_at": "2026-10-16T11:00:02-07:00",
-      "scanned_display": "Oct-16 11-00-02"
-    },
-    {
-      "symbol": "SLB",
-      "side": "CALL",
-      "strike": 51.0,
-      "expiration": "2026-10-16",
-      "source": "rvol",
-      "mark": 0.01,
-      "occ": "",
-      "scanned_at": "2026-10-16T11:00:02-07:00",
-      "scanned_display": "Oct-16 11-00-02"
-    },
     {
       "symbol": "SLB",
       "side": "PUT",
@@ -50649,6 +50627,28 @@
       "occ": "",
       "scanned_at": "2026-10-19T00:00:01-07:00",
       "scanned_display": "Oct-19 00-00-01"
+    },
+    {
+      "symbol": "SPX",
+      "side": "CALL",
+      "strike": 7755.0,
+      "expiration": "2026-10-23",
+      "source": "spx",
+      "mark": 25.1,
+      "occ": "",
+      "scanned_at": "2026-10-19T01:00:02-07:00",
+      "scanned_display": "Oct-19 01-00-02"
+    },
+    {
+      "symbol": "SPX",
+      "side": "PUT",
+      "strike": 7650.0,
+      "expiration": "2026-10-23",
+      "source": "spx",
+      "mark": 30.15,
+      "occ": "",
+      "scanned_at": "2026-10-19T01:00:02-07:00",
+      "scanned_display": "Oct-19 01-00-02"
     }
   ],
   "futures": [
@@ -50656,40 +50656,40 @@
       "label": "/CL",
       "yahoo": "CL=F",
       "name": "Crude oil",
-      "last": 96.9800033569336,
+      "last": 96.81999969482422,
       "prev_close": 97.44000244140625,
-      "change": -0.45999908447265625,
-      "change_pct": -0.4720844344695786,
+      "change": -0.6200027465820312,
+      "change_pct": -0.6362918011571874,
       "up": false
     },
     {
       "label": "/ES",
       "yahoo": "ES=F",
       "name": "E-mini S&P",
-      "last": 7756.25,
+      "last": 7749.0,
       "prev_close": 7767.5,
-      "change": -11.25,
-      "change_pct": -0.14483424525265529,
+      "change": -18.5,
+      "change_pct": -0.23817186997103315,
       "up": false
     },
     {
       "label": "/GC",
       "yahoo": "GC=F",
       "name": "Gold",
-      "last": 4198.7998046875,
+      "last": 4200.0,
       "prev_close": 4200.39990234375,
-      "change": -1.60009765625,
-      "change_pct": -0.03809393613587062,
+      "change": -0.39990234375,
+      "change_pct": -0.009520577874665254,
       "up": false
     },
     {
       "label": "/NQ",
       "yahoo": "NQ=F",
       "name": "E-mini Nasdaq",
-      "last": 29776.25,
+      "last": 29725.0,
       "prev_close": 29782.25,
-      "change": -6.0,
-      "change_pct": -0.020146228038512872,
+      "change": -57.25,
+      "change_pct": -0.19222859253414368,
       "up": false
     },
     {
@@ -50705,6 +50705,6 @@
   ],
   "scan_at": "2026-10-16T13:00:01-07:00",
   "scan_display": "Oct-16 13-00-01",
-  "spx_at": "2026-10-19T00:00:01-07:00",
-  "spx_display": "Oct-19 00-00-01"
+  "spx_at": "2026-10-19T01:00:02-07:00",
+  "spx_display": "Oct-19 01-00-02"
 }
