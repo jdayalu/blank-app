@@ -1,26 +1,26 @@
 {
-  "generated_at": "2026-10-19T04:02:13-07:00",
-  "generated_display": "Oct-19 04-02-13",
+  "generated_at": "2026-10-19T04:16:46-07:00",
+  "generated_display": "Oct-19 04-16-46",
   "spx": [
     {
       "occ": ".SPXW261023C7755",
       "strike": 7755.0,
       "side": "CALL",
       "expiration": "2026-10-23",
-      "mark": 25.35,
-      "recommended": 25.35,
-      "scanned_at": "2026-10-19T04:00:01-07:00",
-      "scanned_display": "Oct-19 04-00-01"
+      "mark": 24.0,
+      "recommended": 24.0,
+      "scanned_at": "2026-10-19T04:15:02-07:00",
+      "scanned_display": "Oct-19 04-15-02"
     },
     {
       "occ": ".SPXW261023P7650",
       "strike": 7650.0,
       "side": "PUT",
       "expiration": "2026-10-23",
-      "mark": 30.95,
-      "recommended": 30.95,
-      "scanned_at": "2026-10-19T04:00:01-07:00",
-      "scanned_display": "Oct-19 04-00-01"
+      "mark": 32.65,
+      "recommended": 32.65,
+      "scanned_at": "2026-10-19T04:15:02-07:00",
+      "scanned_display": "Oct-19 04-15-02"
     }
   ],
   "options": [
@@ -6650,28 +6650,6 @@
     }
   ],
   "history": [
-    {
-      "symbol": "SNDK",
-      "side": "PUT",
-      "strike": 1315.0,
-      "expiration": "2026-10-16",
-      "source": "rvol",
-      "mark": 3.65,
-      "occ": "",
-      "scanned_at": "2026-10-16T11:00:02-07:00",
-      "scanned_display": "Oct-16 11-00-02"
-    },
-    {
-      "symbol": "SNDK",
-      "side": "PUT",
-      "strike": 1320.0,
-      "expiration": "2026-10-16",
-      "source": "rvol",
-      "mark": 5.2,
-      "occ": "",
-      "scanned_at": "2026-10-16T11:00:02-07:00",
-      "scanned_display": "Oct-16 11-00-02"
-    },
     {
       "symbol": "SNDK",
       "side": "PUT",
@@ -50649,6 +50627,28 @@
       "occ": "",
       "scanned_at": "2026-10-19T04:00:01-07:00",
       "scanned_display": "Oct-19 04-00-01"
+    },
+    {
+      "symbol": "SPX",
+      "side": "CALL",
+      "strike": 7755.0,
+      "expiration": "2026-10-23",
+      "source": "spx",
+      "mark": 24.25,
+      "occ": "",
+      "scanned_at": "2026-10-19T04:15:02-07:00",
+      "scanned_display": "Oct-19 04-15-02"
+    },
+    {
+      "symbol": "SPX",
+      "side": "PUT",
+      "strike": 7650.0,
+      "expiration": "2026-10-23",
+      "source": "spx",
+      "mark": 32.3,
+      "occ": "",
+      "scanned_at": "2026-10-19T04:15:02-07:00",
+      "scanned_display": "Oct-19 04-15-02"
     }
   ],
   "futures": [
@@ -50656,40 +50656,40 @@
       "label": "/CL",
       "yahoo": "CL=F",
       "name": "Crude oil",
-      "last": 98.02999877929688,
+      "last": 98.61000061035156,
       "prev_close": 97.36000061035156,
-      "change": 0.6699981689453125,
-      "change_pct": 0.6881657402887039,
+      "change": 1.25,
+      "change_pct": 1.283894815287313,
       "up": true
     },
     {
       "label": "/ES",
       "yahoo": "ES=F",
       "name": "E-mini S&P",
-      "last": 7749.25,
+      "last": 7740.5,
       "prev_close": 7766.5,
-      "change": -17.25,
-      "change_pct": -0.22210777055301617,
+      "change": -26.0,
+      "change_pct": -0.33477113242773454,
       "up": false
     },
     {
       "label": "/GC",
       "yahoo": "GC=F",
       "name": "Gold",
-      "last": 4186.0,
+      "last": 4192.7001953125,
       "prev_close": 4201.10009765625,
-      "change": -15.10009765625,
-      "change_pct": -0.35943198936569465,
+      "change": -8.39990234375,
+      "change_pct": -0.19994530357503784,
       "up": false
     },
     {
       "label": "/NQ",
       "yahoo": "NQ=F",
       "name": "E-mini Nasdaq",
-      "last": 29749.0,
+      "last": 29697.0,
       "prev_close": 29771.0,
-      "change": -22.0,
-      "change_pct": -0.07389741694938026,
+      "change": -74.0,
+      "change_pct": -0.24856403882973366,
       "up": false
     },
     {
@@ -50705,6 +50705,6 @@
   ],
   "scan_at": "2026-10-16T13:00:01-07:00",
   "scan_display": "Oct-16 13-00-01",
-  "spx_at": "2026-10-19T04:00:01-07:00",
-  "spx_display": "Oct-19 04-00-01"
+  "spx_at": "2026-10-19T04:15:02-07:00",
+  "spx_display": "Oct-19 04-15-02"
 }
