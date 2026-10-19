@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-10-19T11:45:04-07:00",
-  "subject": "SPX below 7703 - Now 7700 PUT $3.55 ($24.40)",
+  "updated_at": "2026-10-19T12:00:01-07:00",
+  "subject": "SPX below 7703 - Now 7700 PUT $2.85 ($24.40)",
   "close_expected": "Close expected below 7703",
   "target_lows": [
     "Target low 1 7680",
@@ -12,14 +12,14 @@
   "no_trade": false,
   "buy_line": "BUY 1 .SPXW261019P7700",
   "contract_line": "SPXW 2026-10-19 7700 PUT",
-  "comparison": "Recommended $24.40 \u00b7 Current $3.55 (\u25bc $20.85 vs recommended)",
+  "comparison": "Recommended $24.40 \u00b7 Current $2.85 (\u25bc $21.55 vs recommended)",
   "comparison_direction": "down",
   "limit_line": "Limit $1.00 \u00b7 Est. debit $100",
   "debit_spread": {
     "title": "Debit spread vs below 7703 (\u221210)",
-    "buy": "BUY 7695 CALL $10.40",
-    "sell": "SELL 7700 CALL $6.75",
-    "net": "Net debit $3.65 \u00b7 new entry"
+    "buy": "BUY 7695 CALL $9.05",
+    "sell": "SELL 7700 CALL $5.50",
+    "net": "Net debit $3.55 \u00b7 new entry"
   },
   "trade": {
     "occ": ".SPXW261019P7700",
@@ -29,19 +29,19 @@
     "option_type": "put",
     "quantity": 1,
     "recommended": 24.4,
-    "current": 3.55,
+    "current": 2.85,
     "limit": 1.0
   },
   "chart": {
-    "headline": "Recommended SPX trade: 7700 PUT ($7.55)",
-    "session_change": "$-11.35 (-60.1%)",
-    "change": -11.349999999999998,
+    "headline": "Recommended SPX trade: 7700 PUT ($3.55)",
+    "session_change": "$-4.70 (-57.0%)",
+    "change": -4.7,
     "prints": [
       {
         "time": "9:30am",
         "label": "SPX 7700 Put",
         "price": 8.25,
-        "delta": 1.75
+        "delta": null
       },
       {
         "time": "10:00am",
@@ -64,35 +64,11 @@
       {
         "time": "11:30am",
         "label": "SPX 7700 Put",
-        "price": 7.55,
-        "delta": 3.7
+        "price": 3.55,
+        "delta": -0.3
       }
     ],
     "bars": [
-      {
-        "time": "6:30am",
-        "price": 18.9
-      },
-      {
-        "time": "7:00am",
-        "price": 9.0
-      },
-      {
-        "time": "7:30am",
-        "price": 8.9
-      },
-      {
-        "time": "8:00am",
-        "price": 3.3
-      },
-      {
-        "time": "8:30am",
-        "price": 3.7
-      },
-      {
-        "time": "9:00am",
-        "price": 6.5
-      },
       {
         "time": "9:30am",
         "price": 8.25
@@ -111,7 +87,7 @@
       },
       {
         "time": "11:30am",
-        "price": 7.55
+        "price": 3.55
       }
     ]
   }
