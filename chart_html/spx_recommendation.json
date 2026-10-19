@@ -1,116 +1,97 @@
 {
-  "updated_at": "2026-10-16T13:00:01-07:00",
-  "subject": "SPX above 7753 - Now 7755 CALL $0.01 ($0.01)",
-  "close_expected": "Close expected above 7753",
-  "target_lows": [],
-  "target_highs": "Target highs 7772, 7791, 7807",
-  "worst_case": "",
+  "updated_at": "2026-10-19T09:30:02-07:00",
+  "subject": "SPX below 7703 - Now 7700 PUT $8.25 ($24.40)",
+  "close_expected": "Close expected below 7703",
+  "target_lows": [
+    "Target low 1 7680",
+    "Target low 2 7665",
+    "Target low 3 7649"
+  ],
+  "target_highs": "",
+  "worst_case": "Worst case scenario bottom 7640",
   "no_trade": false,
-  "buy_line": "BUY 1 .SPXW261016C7755",
-  "contract_line": "SPXW 2026-10-16 7755 CALL",
-  "comparison": "Recommended $0.01 \u00b7 Current $0.01 (matches recommended)",
-  "comparison_direction": "flat",
+  "buy_line": "BUY 1 .SPXW261019P7700",
+  "contract_line": "SPXW 2026-10-19 7700 PUT",
+  "comparison": "Recommended $24.40 \u00b7 Current $8.25 (\u25bc $16.15 vs recommended)",
+  "comparison_direction": "down",
   "limit_line": "Limit $1.00 \u00b7 Est. debit $100",
-  "debit_spread": null,
+  "debit_spread": {
+    "title": "Debit spread vs below 7703 (\u221210)",
+    "buy": "BUY 7695 CALL $17.00",
+    "sell": "SELL 7700 CALL $13.35",
+    "net": "Net debit $3.65 \u00b7 new entry"
+  },
   "trade": {
-    "occ": ".SPXW261016C7755",
+    "occ": ".SPXW261019P7700",
     "chain": "SPXW",
-    "expiration": "2026-10-16",
-    "strike": 7755.0,
-    "option_type": "call",
+    "expiration": "2026-10-19",
+    "strike": 7700.0,
+    "option_type": "put",
     "quantity": 1,
-    "recommended": 0.01,
-    "current": 0.01,
+    "recommended": 24.4,
+    "current": 8.25,
     "limit": 1.0
   },
   "chart": {
-    "headline": "Recommended SPX trade: 7755 CALL ($0)",
-    "session_change": "$-5.99 (-99.8%)",
-    "change": -5.99,
+    "headline": "Recommended SPX trade: 7650 PUT ($27.35)",
+    "session_change": "+$0.20 (+0.7%)",
+    "change": 0.20000000000000284,
     "prints": [
       {
-        "time": "10:30am",
-        "label": "SPX 7755 Call",
-        "price": 0.2,
-        "delta": -0.03
+        "time": "7:00am",
+        "label": "SPX 7650 Put",
+        "price": 34.35,
+        "delta": 7.2
       },
       {
-        "time": "11:00am",
-        "label": "SPX 7755 Call",
-        "price": 0.13,
-        "delta": -0.07
+        "time": "7:30am",
+        "label": "SPX 7650 Put",
+        "price": 29.0,
+        "delta": -5.35
       },
       {
-        "time": "11:30am",
-        "label": "SPX 7755 Call",
-        "price": 0.13,
-        "delta": 0.0
+        "time": "8:00am",
+        "label": "SPX 7650 Put",
+        "price": 24.3,
+        "delta": -4.7
       },
       {
-        "time": "12:00pm",
-        "label": "SPX 7755 Call",
-        "price": 0.01,
-        "delta": -0.12
+        "time": "8:30am",
+        "label": "SPX 7650 Put",
+        "price": 19.4,
+        "delta": -4.9
       },
       {
-        "time": "12:30pm",
-        "label": "SPX 7755 Call",
-        "price": 0.01,
-        "delta": 0.0
+        "time": "9:00am",
+        "label": "SPX 7650 Put",
+        "price": 27.35,
+        "delta": 7.95
       }
     ],
     "bars": [
       {
         "time": "6:30am",
-        "price": 6.0
+        "price": 27.15
       },
       {
         "time": "7:00am",
-        "price": 3.3
+        "price": 34.35
       },
       {
         "time": "7:30am",
-        "price": 4.0
+        "price": 29.0
       },
       {
         "time": "8:00am",
-        "price": 1.05
+        "price": 24.3
       },
       {
         "time": "8:30am",
-        "price": 0.52
+        "price": 19.4
       },
       {
         "time": "9:00am",
-        "price": 0.47
-      },
-      {
-        "time": "9:30am",
-        "price": 0.48
-      },
-      {
-        "time": "10:00am",
-        "price": 0.23
-      },
-      {
-        "time": "10:30am",
-        "price": 0.2
-      },
-      {
-        "time": "11:00am",
-        "price": 0.13
-      },
-      {
-        "time": "11:30am",
-        "price": 0.13
-      },
-      {
-        "time": "12:00pm",
-        "price": 0.01
-      },
-      {
-        "time": "12:30pm",
-        "price": 0.01
+        "price": 27.35
       }
     ]
   }
