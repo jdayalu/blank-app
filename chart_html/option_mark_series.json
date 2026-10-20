@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-10-19T14:03:43-07:00",
-  "generated_display": "Oct-19 14-03-43",
-  "count": 15489,
-  "prints": 112197,
+  "generated_at": "2026-10-20T09:47:56-07:00",
+  "generated_display": "Oct-20 09-47-56",
+  "count": 15490,
+  "prints": 112198,
   "series": [
     {
       "symbol": "A",
@@ -337841,6 +337841,19 @@
       ],
       "m": [
         20.1
+      ]
+    },
+    {
+      "symbol": "SPX",
+      "session": "2026-10-20",
+      "side": "CALL",
+      "strike": 7680.0,
+      "expiration": "2026-10-20",
+      "t": [
+        "2026-10-20T09:47:14-07:00"
+      ],
+      "m": [
+        40.6
       ]
     },
     {
