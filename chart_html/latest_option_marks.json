@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-10-20T15:02:09-07:00",
-  "generated_display": "Oct-20 15-02-09",
+  "generated_at": "2026-10-20T16:02:21-07:00",
+  "generated_display": "Oct-20 16-02-21",
   "spx": [
     {
       "occ": ".SPXW261023C7755",
@@ -9,8 +9,8 @@
       "expiration": "2026-10-23",
       "mark": 33.25,
       "recommended": 33.25,
-      "scanned_at": "2026-10-20T15:00:01-07:00",
-      "scanned_display": "Oct-20 15-00-01"
+      "scanned_at": "2026-10-20T16:00:01-07:00",
+      "scanned_display": "Oct-20 16-00-01"
     },
     {
       "occ": ".SPXW261023P7650",
@@ -19,8 +19,8 @@
       "expiration": "2026-10-23",
       "mark": 11.35,
       "recommended": 11.35,
-      "scanned_at": "2026-10-20T15:00:01-07:00",
-      "scanned_display": "Oct-20 15-00-01"
+      "scanned_at": "2026-10-20T16:00:01-07:00",
+      "scanned_display": "Oct-20 16-00-01"
     }
   ],
   "options": [
@@ -50672,40 +50672,40 @@
       "label": "/CL",
       "yahoo": "CL=F",
       "name": "Crude oil",
-      "last": 98.18000030517578,
+      "last": 98.19999694824219,
       "prev_close": 98.58999633789062,
-      "change": -0.40999603271484375,
-      "change_pct": -0.4158596692809409,
+      "change": -0.3899993896484375,
+      "change_pct": -0.3955770404046063,
       "up": false
     },
     {
       "label": "/ES",
       "yahoo": "ES=F",
       "name": "E-mini S&P",
-      "last": 7784.75,
+      "last": 7777.0,
       "prev_close": 7744.25,
-      "change": 40.5,
-      "change_pct": 0.522968654162766,
+      "change": 32.75,
+      "change_pct": 0.4228944055266811,
       "up": true
     },
     {
       "label": "/GC",
       "yahoo": "GC=F",
       "name": "Gold",
-      "last": 4142.5,
+      "last": 4140.2001953125,
       "prev_close": 4165.2998046875,
-      "change": -22.7998046875,
-      "change_pct": -0.5473748771178921,
+      "change": -25.099609375,
+      "change_pct": -0.6025883022094514,
       "up": false
     },
     {
       "label": "/NQ",
       "yahoo": "NQ=F",
       "name": "E-mini Nasdaq",
-      "last": 29893.75,
+      "last": 29920.0,
       "prev_close": 29713.25,
-      "change": 180.5,
-      "change_pct": 0.6074730970190066,
+      "change": 206.75,
+      "change_pct": 0.6958175224857598,
       "up": true
     },
     {
@@ -50721,6 +50721,6 @@
   ],
   "scan_at": "2026-10-19T13:00:01-07:00",
   "scan_display": "Oct-19 13-00-01",
-  "spx_at": "2026-10-20T15:00:01-07:00",
-  "spx_display": "Oct-20 15-00-01"
+  "spx_at": "2026-10-20T16:00:01-07:00",
+  "spx_display": "Oct-20 16-00-01"
 }
