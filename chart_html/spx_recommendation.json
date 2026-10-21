@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-10-21T08:00:01-07:00",
-  "subject": "SPX above 7736 - Now 7740 CALL $8.60 ($18.20)",
+  "updated_at": "2026-10-21T08:30:01-07:00",
+  "subject": "SPX above 7736 - Now 7740 CALL $13.30 ($18.20)",
   "close_expected": "Close expected above 7736",
   "target_lows": [],
   "target_highs": "Target highs 7755, 7775, 7790",
@@ -8,7 +8,7 @@
   "no_trade": false,
   "buy_line": "BUY 1 .SPXW261021C7740",
   "contract_line": "SPXW 2026-10-21 7740 CALL",
-  "comparison": "Recommended $18.20 \u00b7 Current $8.60 (\u25bc $9.60 vs recommended)",
+  "comparison": "Recommended $18.20 \u00b7 Current $13.30 (\u25bc $4.90 vs recommended)",
   "comparison_direction": "down",
   "limit_line": "Limit $1.00 \u00b7 Est. debit $100",
   "debit_spread": null,
@@ -20,13 +20,13 @@
     "option_type": "call",
     "quantity": 1,
     "recommended": 18.2,
-    "current": 8.6,
+    "current": 13.3,
     "limit": 1.0
   },
   "chart": {
-    "headline": "Recommended SPX trade: 7740 CALL ($5)",
-    "session_change": "$-7.60 (-60.6%)",
-    "change": -7.6000000000000005,
+    "headline": "Recommended SPX trade: 7740 CALL ($8.60)",
+    "session_change": "$-3.95 (-31.5%)",
+    "change": -3.950000000000001,
     "prints": [
       {
         "time": "6:30am",
@@ -45,6 +45,12 @@
         "label": "SPX 7740 Call",
         "price": 4.95,
         "delta": -4.7
+      },
+      {
+        "time": "8:00am",
+        "label": "SPX 7740 Call",
+        "price": 8.6,
+        "delta": 3.65
       }
     ],
     "bars": [
@@ -59,6 +65,10 @@
       {
         "time": "7:30am",
         "price": 4.95
+      },
+      {
+        "time": "8:00am",
+        "price": 8.6
       }
     ]
   }
