@@ -1,39 +1,33 @@
 {
-  "updated_at": "2026-10-20T13:00:01-07:00",
-  "subject": "SPX above 7679 - Now 7680 CALL $31.10 ($21)",
-  "close_expected": "Close expected above 7679",
+  "updated_at": "2026-10-21T06:31:01-07:00",
+  "subject": "SPX - Now 7740 CALL $18.20 ($18.20)",
+  "close_expected": "",
   "target_lows": [],
-  "target_highs": "Target highs 7698, 7717, 7732",
+  "target_highs": "",
   "worst_case": "",
   "no_trade": false,
-  "buy_line": "BUY 1 .SPXW261020C7680",
-  "contract_line": "SPXW 2026-10-20 7680 CALL",
-  "comparison": "Recommended $21.00 \u00b7 Current $31.10 (\u25b2 $10.10 vs recommended)",
-  "comparison_direction": "up",
+  "buy_line": "BUY 1 .SPXW261021C7740",
+  "contract_line": "SPXW 2026-10-21 7740 CALL",
+  "comparison": "Recommended $18.20 \u00b7 Current unavailable",
+  "comparison_direction": "flat",
   "limit_line": "Limit $1.00 \u00b7 Est. debit $100",
   "debit_spread": null,
   "trade": {
-    "occ": ".SPXW261020C7680",
+    "occ": ".SPXW261021C7740",
     "chain": "SPXW",
-    "expiration": "2026-10-20",
-    "strike": 7680.0,
+    "expiration": "2026-10-21",
+    "strike": 7740.0,
     "option_type": "call",
     "quantity": 1,
-    "recommended": 21.0,
-    "current": 31.1,
+    "recommended": 18.2,
+    "current": null,
     "limit": 1.0
   },
   "chart": {
-    "headline": "Recommended SPX trade: 7680 CALL ($28.75)",
-    "session_change": "$-2.10 (-6.8%)",
-    "change": -2.1000000000000014,
+    "headline": "Recommended SPX trade: 7680 CALL ($31.10)",
+    "session_change": "+$0.25 (+0.8%)",
+    "change": 0.25,
     "prints": [
-      {
-        "time": "10:30am",
-        "label": "SPX 7680 Call",
-        "price": 43.9,
-        "delta": 8.5
-      },
       {
         "time": "11:00am",
         "label": "SPX 7680 Call",
@@ -57,6 +51,12 @@
         "label": "SPX 7680 Call",
         "price": 28.75,
         "delta": -2.75
+      },
+      {
+        "time": "1:00pm",
+        "label": "SPX 7680 Call",
+        "price": 31.1,
+        "delta": 2.35
       }
     ],
     "bars": [
@@ -111,6 +111,10 @@
       {
         "time": "12:30pm",
         "price": 28.75
+      },
+      {
+        "time": "1:00pm",
+        "price": 31.1
       }
     ]
   }
