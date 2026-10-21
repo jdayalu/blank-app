@@ -1,26 +1,26 @@
 {
-  "generated_at": "2026-10-20T19:02:24-07:00",
-  "generated_display": "Oct-20 19-02-24",
+  "generated_at": "2026-10-20T20:02:22-07:00",
+  "generated_display": "Oct-20 20-02-22",
   "spx": [
     {
       "occ": ".SPXW261023C7755",
       "strike": 7755.0,
       "side": "CALL",
       "expiration": "2026-10-23",
-      "mark": 29.4,
-      "recommended": 29.4,
-      "scanned_at": "2026-10-20T19:00:01-07:00",
-      "scanned_display": "Oct-20 19-00-01"
+      "mark": 30.65,
+      "recommended": 30.65,
+      "scanned_at": "2026-10-20T20:00:01-07:00",
+      "scanned_display": "Oct-20 20-00-01"
     },
     {
       "occ": ".SPXW261023P7650",
       "strike": 7650.0,
       "side": "PUT",
       "expiration": "2026-10-23",
-      "mark": 12.0,
-      "recommended": 12.0,
-      "scanned_at": "2026-10-20T19:00:01-07:00",
-      "scanned_display": "Oct-20 19-00-01"
+      "mark": 11.15,
+      "recommended": 11.15,
+      "scanned_at": "2026-10-20T20:00:01-07:00",
+      "scanned_display": "Oct-20 20-00-01"
     }
   ],
   "options": [
@@ -50672,40 +50672,40 @@
       "label": "/CL",
       "yahoo": "CL=F",
       "name": "Crude oil",
-      "last": 98.9800033569336,
+      "last": 99.12000274658203,
       "prev_close": 98.58999633789062,
-      "change": 0.39000701904296875,
-      "change_pct": 0.39558477891238053,
+      "change": 0.5300064086914062,
+      "change_pct": 0.5375863965700457,
       "up": true
     },
     {
       "label": "/ES",
       "yahoo": "ES=F",
       "name": "E-mini S&P",
-      "last": 7781.0,
+      "last": 7780.5,
       "prev_close": 7744.25,
-      "change": 36.75,
-      "change_pct": 0.4745456306291765,
+      "change": 36.25,
+      "change_pct": 0.46808922749136456,
       "up": true
     },
     {
       "label": "/GC",
       "yahoo": "GC=F",
       "name": "Gold",
-      "last": 4136.39990234375,
+      "last": 4136.10009765625,
       "prev_close": 4165.2998046875,
-      "change": -28.89990234375,
-      "change_pct": -0.6938252634594739,
+      "change": -29.19970703125,
+      "change_pct": -0.7010229371338301,
       "up": false
     },
     {
       "label": "/NQ",
       "yahoo": "NQ=F",
       "name": "E-mini Nasdaq",
-      "last": 29988.25,
+      "last": 29972.5,
       "prev_close": 29713.25,
-      "change": 275.0,
-      "change_pct": 0.9255130286993176,
+      "change": 259.25,
+      "change_pct": 0.8725063734192658,
       "up": true
     },
     {
@@ -50721,6 +50721,6 @@
   ],
   "scan_at": "2026-10-19T13:00:01-07:00",
   "scan_display": "Oct-19 13-00-01",
-  "spx_at": "2026-10-20T19:00:01-07:00",
-  "spx_display": "Oct-20 19-00-01"
+  "spx_at": "2026-10-20T20:00:01-07:00",
+  "spx_display": "Oct-20 20-00-01"
 }
