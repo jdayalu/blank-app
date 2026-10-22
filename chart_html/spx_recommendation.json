@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-10-22T12:00:01-07:00",
-  "subject": "SPX below 7689 - Now 7685 PUT $43.60 ($22.90)",
+  "updated_at": "2026-10-22T12:15:01-07:00",
+  "subject": "SPX below 7689 - Now 7685 PUT $36.85 ($22.90)",
   "close_expected": "Close expected below 7689",
   "target_lows": [
     "Target low 1 7666",
@@ -12,14 +12,14 @@
   "no_trade": false,
   "buy_line": "BUY 1 .SPXW261022P7685",
   "contract_line": "SPXW 2026-10-22 7685 PUT",
-  "comparison": "Recommended $22.90 \u00b7 Current $43.60 (\u25b2 $20.70 vs recommended)",
+  "comparison": "Recommended $22.90 \u00b7 Current $36.85 (\u25b2 $13.95 vs recommended)",
   "comparison_direction": "up",
   "limit_line": "Limit $1.00 \u00b7 Est. debit $100",
   "debit_spread": {
     "title": "Debit spread vs below 7689 (\u221210)",
-    "buy": "BUY 7680 CALL $0.33",
-    "sell": "SELL 7685 CALL $0.28",
-    "net": "Net debit $0.05 \u00b7 new entry"
+    "buy": "BUY 7680 CALL $0.45",
+    "sell": "SELL 7685 CALL $0.30",
+    "net": "Net debit $0.15 \u00b7 new entry"
   },
   "trade": {
     "occ": ".SPXW261022P7685",
@@ -29,20 +29,14 @@
     "option_type": "put",
     "quantity": 1,
     "recommended": 22.9,
-    "current": 43.6,
+    "current": 36.85,
     "limit": 1.0
   },
   "chart": {
-    "headline": "Recommended SPX trade: 7685 PUT ($38.50)",
-    "session_change": "+$15.60 (+68.1%)",
-    "change": 15.600000000000001,
+    "headline": "Recommended SPX trade: 7685 PUT ($43.60)",
+    "session_change": "+$20.70 (+90.4%)",
+    "change": 20.700000000000003,
     "prints": [
-      {
-        "time": "9:30am",
-        "label": "SPX 7685 Put",
-        "price": 17.75,
-        "delta": -0.25
-      },
       {
         "time": "10:00am",
         "label": "SPX 7685 Put",
@@ -66,6 +60,12 @@
         "label": "SPX 7685 Put",
         "price": 38.5,
         "delta": 3.5
+      },
+      {
+        "time": "12:00pm",
+        "label": "SPX 7685 Put",
+        "price": 43.6,
+        "delta": 5.1
       }
     ],
     "bars": [
@@ -112,6 +112,10 @@
       {
         "time": "11:30am",
         "price": 38.5
+      },
+      {
+        "time": "12:00pm",
+        "price": 43.6
       }
     ]
   }
