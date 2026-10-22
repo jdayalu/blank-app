@@ -1,17 +1,26 @@
 {
-  "updated_at": "2026-10-22T07:30:01-07:00",
-  "subject": "SPX - Now 7685 PUT $22.90 ($22.90)",
-  "close_expected": "",
-  "target_lows": [],
+  "updated_at": "2026-10-22T08:00:01-07:00",
+  "subject": "SPX below 7689 - Now 7685 PUT $33.75 ($22.90)",
+  "close_expected": "Close expected below 7689",
+  "target_lows": [
+    "Target low 1 7666",
+    "Target low 2 7651",
+    "Target low 3 7636"
+  ],
   "target_highs": "",
-  "worst_case": "",
+  "worst_case": "Worst case scenario bottom 7630",
   "no_trade": false,
   "buy_line": "BUY 1 .SPXW261022P7685",
   "contract_line": "SPXW 2026-10-22 7685 PUT",
-  "comparison": "Recommended $22.90 \u00b7 Current unavailable",
-  "comparison_direction": "flat",
+  "comparison": "Recommended $22.90 \u00b7 Current $33.75 (\u25b2 $10.85 vs recommended)",
+  "comparison_direction": "up",
   "limit_line": "Limit $1.00 \u00b7 Est. debit $100",
-  "debit_spread": null,
+  "debit_spread": {
+    "title": "Debit spread vs below 7689 (\u221210)",
+    "buy": "BUY 7680 CALL $5.75",
+    "sell": "SELL 7685 CALL $4.85",
+    "net": "Net debit $0.90 \u00b7 new entry"
+  },
   "trade": {
     "occ": ".SPXW261022P7685",
     "chain": "SPXW",
@@ -20,7 +29,7 @@
     "option_type": "put",
     "quantity": 1,
     "recommended": 22.9,
-    "current": null,
+    "current": 33.75,
     "limit": 1.0
   },
   "chart": {
@@ -39,6 +48,12 @@
         "label": "SPX 7685 Put",
         "price": 22.9,
         "delta": 0.0
+      },
+      {
+        "time": "7:30am",
+        "label": "SPX 7685 Put",
+        "price": 22.9,
+        "delta": 0.0
       }
     ],
     "bars": [
@@ -48,6 +63,10 @@
       },
       {
         "time": "7:00am",
+        "price": 22.9
+      },
+      {
+        "time": "7:30am",
         "price": 22.9
       }
     ]
