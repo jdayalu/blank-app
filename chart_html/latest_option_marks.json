@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-10-22T07:26:11-07:00",
-  "generated_display": "Oct-22 07-26-11",
+  "generated_at": "2026-10-22T07:26:33-07:00",
+  "generated_display": "Oct-22 07-26-33",
   "spx": [
     {
       "occ": ".SPXW261022P7685",
@@ -9,8 +9,8 @@
       "expiration": "2026-10-22",
       "mark": null,
       "recommended": 22.9,
-      "scanned_at": "2026-10-22T06:35:01-07:00",
-      "scanned_display": "Oct-22 06-35-01"
+      "scanned_at": "2026-10-22T07:00:01-07:00",
+      "scanned_display": "Oct-22 07-00-01"
     }
   ],
   "options": [
@@ -50662,40 +50662,40 @@
       "label": "/CL",
       "yahoo": "CL=F",
       "name": "Crude oil",
-      "last": 99.0,
+      "last": 99.0199966430664,
       "prev_close": 98.5199966430664,
-      "change": 0.48000335693359375,
-      "change_pct": 0.4872141425995219,
+      "change": 0.5,
+      "change_pct": 0.5075111825383815,
       "up": true
     },
     {
       "label": "/ES",
       "yahoo": "ES=F",
       "name": "E-mini S&P",
-      "last": 7718.5,
+      "last": 7721.75,
       "prev_close": 7750.75,
-      "change": -32.25,
-      "change_pct": -0.4160887656033287,
+      "change": -29.0,
+      "change_pct": -0.3741573396122956,
       "up": false
     },
     {
       "label": "/GC",
       "yahoo": "GC=F",
       "name": "Gold",
-      "last": 4067.39990234375,
+      "last": 4066.300048828125,
       "prev_close": 4107.2998046875,
-      "change": -39.89990234375,
-      "change_pct": -0.9714387612565757,
+      "change": -40.999755859375,
+      "change_pct": -0.998216780099266,
       "up": false
     },
     {
       "label": "/NQ",
       "yahoo": "NQ=F",
       "name": "E-mini Nasdaq",
-      "last": 29446.75,
+      "last": 29459.75,
       "prev_close": 29626.75,
-      "change": -180.0,
-      "change_pct": -0.6075590471448944,
+      "change": -167.0,
+      "change_pct": -0.5636797826288742,
       "up": false
     },
     {
@@ -50711,6 +50711,6 @@
   ],
   "scan_at": "2026-10-19T13:00:01-07:00",
   "scan_display": "Oct-19 13-00-01",
-  "spx_at": "2026-10-22T06:35:01-07:00",
-  "spx_display": "Oct-22 06-35-01"
+  "spx_at": "2026-10-22T07:00:01-07:00",
+  "spx_display": "Oct-22 07-00-01"
 }
