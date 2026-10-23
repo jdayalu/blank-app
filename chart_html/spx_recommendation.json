@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-23T12:30:01-07:00",
+  "updated_at": "2026-10-23T12:45:01-07:00",
   "subject": "SPX - Now 7685 PUT $22.90 ($22.90) \u00b7 Tue 10/27 SPX 7800 CALL $0.60",
   "close_expected": "",
   "target_lows": [],
@@ -29,12 +29,6 @@
     "change": 0.0,
     "prints": [
       {
-        "time": "10:00am",
-        "label": "SPX 7685 Put",
-        "price": 22.9,
-        "delta": 0.0
-      },
-      {
         "time": "10:30am",
         "label": "SPX 7685 Put",
         "price": 22.9,
@@ -54,6 +48,12 @@
       },
       {
         "time": "12:00pm",
+        "label": "SPX 7685 Put",
+        "price": 22.9,
+        "delta": 0.0
+      },
+      {
+        "time": "12:30pm",
         "label": "SPX 7685 Put",
         "price": 22.9,
         "delta": 0.0
@@ -106,6 +106,10 @@
       },
       {
         "time": "12:00pm",
+        "price": 22.9
+      },
+      {
+        "time": "12:30pm",
         "price": 22.9
       }
     ]
