@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-10-23T07:42:09-07:00",
-  "generated_display": "Oct-23 07-42-09",
+  "generated_at": "2026-10-23T08:21:39-07:00",
+  "generated_display": "Oct-23 08-21-39",
   "spx": [
     {
       "occ": ".SPXW261022P7685",
@@ -9,8 +9,8 @@
       "expiration": "2026-10-22",
       "mark": null,
       "recommended": 22.9,
-      "scanned_at": "2026-10-23T07:30:01-07:00",
-      "scanned_display": "Oct-23 07-30-01"
+      "scanned_at": "2026-10-23T08:00:01-07:00",
+      "scanned_display": "Oct-23 08-00-01"
     }
   ],
   "options": [
@@ -50662,55 +50662,55 @@
       "label": "/CL",
       "yahoo": "CL=F",
       "name": "Crude oil",
-      "last": 102.4000015258789,
+      "last": 102.44999694824219,
       "prev_close": 99.98999786376953,
-      "change": 2.410003662109375,
-      "change_pct": 2.4102447380715644,
+      "change": 2.4599990844726562,
+      "change_pct": 2.4602451615453176,
       "up": true
     },
     {
       "label": "/ES",
       "yahoo": "ES=F",
       "name": "E-mini S&P",
-      "last": 7663.75,
+      "last": 7684.25,
       "prev_close": 7701.0,
-      "change": -37.25,
-      "change_pct": -0.48370341514089077,
+      "change": -16.75,
+      "change_pct": -0.2175042202311388,
       "up": false
     },
     {
       "label": "/GC",
       "yahoo": "GC=F",
       "name": "Gold",
-      "last": 4000.39990234375,
+      "last": 4011.0,
       "prev_close": 4030.10009765625,
-      "change": -29.7001953125,
-      "change_pct": -0.7369592464904899,
+      "change": -19.10009765625,
+      "change_pct": -0.4739360609766957,
       "up": false
     },
     {
       "label": "/NQ",
       "yahoo": "NQ=F",
       "name": "E-mini Nasdaq",
-      "last": 29184.5,
+      "last": 29246.75,
       "prev_close": 29166.0,
-      "change": 18.5,
-      "change_pct": 0.06343002125762875,
+      "change": 80.75,
+      "change_pct": 0.2768634711650552,
       "up": true
     },
     {
       "label": "10Y",
       "yahoo": "^TNX",
       "name": "10-year yield",
-      "last": 4.986000061035156,
+      "last": 4.999000072479248,
       "prev_close": 4.953000068664551,
-      "change": 0.03299999237060547,
-      "change_pct": 0.6662627077149036,
+      "change": 0.046000003814697266,
+      "change_pct": 0.9287301267310498,
       "up": true
     }
   ],
   "scan_at": "2026-10-19T13:00:01-07:00",
   "scan_display": "Oct-19 13-00-01",
-  "spx_at": "2026-10-23T07:30:01-07:00",
-  "spx_display": "Oct-23 07-30-01"
+  "spx_at": "2026-10-23T08:00:01-07:00",
+  "spx_display": "Oct-23 08-00-01"
 }
