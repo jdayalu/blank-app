@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-10-26T07:30:01-07:00",
-  "subject": "SPX above 7646 - Now 7650 CALL $28.10 ($23.10) \u00b7 Wed 10/28 SPX 7800 CALL $2.25",
+  "updated_at": "2026-10-26T08:00:02-07:00",
+  "subject": "SPX above 7646 - Now 7650 CALL $48.45 ($23.10) \u00b7 Wed 10/28 SPX 7800 CALL $4.00",
   "close_expected": "Close expected above 7646",
   "target_lows": [],
   "target_highs": "Target highs 7665, 7684, 7699",
@@ -8,7 +8,7 @@
   "no_trade": false,
   "buy_line": "BUY 1 .SPXW261026C7650",
   "contract_line": "SPXW 2026-10-26 7650 CALL",
-  "comparison": "Recommended $23.10 \u00b7 Current $28.10 (\u25b2 $5.00 vs recommended)",
+  "comparison": "Recommended $23.10 \u00b7 Current $48.45 (\u25b2 $25.35 vs recommended)",
   "comparison_direction": "up",
   "limit_line": "Limit $1.00 \u00b7 Est. debit $100",
   "debit_spread": null,
@@ -20,13 +20,13 @@
     "option_type": "call",
     "quantity": 1,
     "recommended": 23.1,
-    "current": 28.1,
+    "current": 48.45,
     "limit": 1.0
   },
   "chart": {
-    "headline": "Recommended SPX trade: 7650 CALL ($21.45)",
-    "session_change": "$-1.65 (-7.1%)",
-    "change": -1.6500000000000021,
+    "headline": "Recommended SPX trade: 7650 CALL ($28.10)",
+    "session_change": "+$5.00 (+21.6%)",
+    "change": 5.0,
     "prints": [
       {
         "time": "6:30am",
@@ -39,6 +39,12 @@
         "label": "SPX 7650 Call",
         "price": 21.45,
         "delta": -1.65
+      },
+      {
+        "time": "7:30am",
+        "label": "SPX 7650 Call",
+        "price": 28.1,
+        "delta": 6.65
       }
     ],
     "bars": [
@@ -49,6 +55,10 @@
       {
         "time": "7:00am",
         "price": 21.45
+      },
+      {
+        "time": "7:30am",
+        "price": 28.1
       }
     ]
   }
