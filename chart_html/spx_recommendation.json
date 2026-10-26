@@ -1,111 +1,27 @@
 {
-  "updated_at": "2026-10-26T05:18:33-07:00",
-  "subject": "SPX Outlook \u2014 status",
+  "updated_at": "2026-10-26T06:31:01-07:00",
+  "subject": "SPX - Now 7650 CALL $23.10 ($23.10) \u00b7 Wed 10/28 SPX 7800 CALL $1.80",
   "close_expected": "",
   "target_lows": [],
   "target_highs": "",
   "worst_case": "",
   "no_trade": false,
-  "buy_line": "",
-  "contract_line": "",
-  "comparison": "",
+  "buy_line": "BUY 1 .SPXW261026C7650",
+  "contract_line": "SPXW 2026-10-26 7650 CALL",
+  "comparison": "Recommended $23.10 \u00b7 Current unavailable",
   "comparison_direction": "flat",
-  "limit_line": "",
+  "limit_line": "Limit $1.00 \u00b7 Est. debit $100",
   "debit_spread": null,
-  "trade": null,
-  "chart": {
-    "headline": "Recommended SPX trade: 7685 PUT ($22.90)",
-    "session_change": "+$0.00 (+0.0%)",
-    "change": 0.0,
-    "prints": [
-      {
-        "time": "11:00am",
-        "label": "SPX 7685 Put",
-        "price": 22.9,
-        "delta": 0.0
-      },
-      {
-        "time": "11:30am",
-        "label": "SPX 7685 Put",
-        "price": 22.9,
-        "delta": 0.0
-      },
-      {
-        "time": "12:00pm",
-        "label": "SPX 7685 Put",
-        "price": 22.9,
-        "delta": 0.0
-      },
-      {
-        "time": "12:30pm",
-        "label": "SPX 7685 Put",
-        "price": 22.9,
-        "delta": 0.0
-      },
-      {
-        "time": "1:00pm",
-        "label": "SPX 7685 Put",
-        "price": 22.9,
-        "delta": 0.0
-      }
-    ],
-    "bars": [
-      {
-        "time": "6:30am",
-        "price": 22.9
-      },
-      {
-        "time": "7:00am",
-        "price": 22.9
-      },
-      {
-        "time": "7:30am",
-        "price": 22.9
-      },
-      {
-        "time": "8:00am",
-        "price": 22.9
-      },
-      {
-        "time": "8:30am",
-        "price": 22.9
-      },
-      {
-        "time": "9:00am",
-        "price": 22.9
-      },
-      {
-        "time": "9:30am",
-        "price": 22.9
-      },
-      {
-        "time": "10:00am",
-        "price": 22.9
-      },
-      {
-        "time": "10:30am",
-        "price": 22.9
-      },
-      {
-        "time": "11:00am",
-        "price": 22.9
-      },
-      {
-        "time": "11:30am",
-        "price": 22.9
-      },
-      {
-        "time": "12:00pm",
-        "price": 22.9
-      },
-      {
-        "time": "12:30pm",
-        "price": 22.9
-      },
-      {
-        "time": "1:00pm",
-        "price": 22.9
-      }
-    ]
-  }
+  "trade": {
+    "occ": ".SPXW261026C7650",
+    "chain": "SPXW",
+    "expiration": "2026-10-26",
+    "strike": 7650.0,
+    "option_type": "call",
+    "quantity": 1,
+    "recommended": 23.1,
+    "current": null,
+    "limit": 1.0
+  },
+  "chart": null
 }
