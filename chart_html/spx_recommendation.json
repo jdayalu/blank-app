@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-10-26T06:31:01-07:00",
-  "subject": "SPX - Now 7650 CALL $23.10 ($23.10) \u00b7 Wed 10/28 SPX 7800 CALL $1.80",
+  "updated_at": "2026-10-26T06:35:01-07:00",
+  "subject": "SPX - Now 7650 CALL $23.10 ($23.10) \u00b7 Wed 10/28 SPX 7800 CALL $1.85",
   "close_expected": "",
   "target_lows": [],
   "target_highs": "",
@@ -23,5 +23,23 @@
     "current": null,
     "limit": 1.0
   },
-  "chart": null
+  "chart": {
+    "headline": "Recommended SPX trade: 7650 CALL ($23.10)",
+    "session_change": "+$0.00 (+0.0%)",
+    "change": 0.0,
+    "prints": [
+      {
+        "time": "6:30am",
+        "label": "SPX 7650 Call",
+        "price": 23.1,
+        "delta": null
+      }
+    ],
+    "bars": [
+      {
+        "time": "6:30am",
+        "price": 23.1
+      }
+    ]
+  }
 }
