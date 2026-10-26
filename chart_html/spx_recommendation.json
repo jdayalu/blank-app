@@ -1,15 +1,15 @@
 {
-  "updated_at": "2026-10-26T06:35:01-07:00",
-  "subject": "SPX - Now 7650 CALL $23.10 ($23.10) \u00b7 Wed 10/28 SPX 7800 CALL $1.85",
-  "close_expected": "",
+  "updated_at": "2026-10-26T07:00:01-07:00",
+  "subject": "SPX above 7646 - Now 7650 CALL $21.45 ($23.10) \u00b7 Wed 10/28 SPX 7800 CALL $1.75",
+  "close_expected": "Close expected above 7646",
   "target_lows": [],
-  "target_highs": "",
+  "target_highs": "Target highs 7665, 7684, 7699",
   "worst_case": "",
   "no_trade": false,
   "buy_line": "BUY 1 .SPXW261026C7650",
   "contract_line": "SPXW 2026-10-26 7650 CALL",
-  "comparison": "Recommended $23.10 \u00b7 Current unavailable",
-  "comparison_direction": "flat",
+  "comparison": "Recommended $23.10 \u00b7 Current $21.45 (\u25bc $1.65 vs recommended)",
+  "comparison_direction": "down",
   "limit_line": "Limit $1.00 \u00b7 Est. debit $100",
   "debit_spread": null,
   "trade": {
@@ -20,7 +20,7 @@
     "option_type": "call",
     "quantity": 1,
     "recommended": 23.1,
-    "current": null,
+    "current": 21.45,
     "limit": 1.0
   },
   "chart": {
