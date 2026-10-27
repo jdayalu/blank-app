@@ -7,7 +7,7 @@ callouts for the Streamlit gallery.
 
 from __future__ import annotations
 
-from datetime import date, datetime, timedelta
+from datetime import date, datetime, time, timedelta
 from pathlib import Path
 from zoneinfo import ZoneInfo
 import sys
@@ -421,6 +421,8 @@ def render_ft_ohlc_png(
     source: str = "Source: Yahoo Finance 1-minute OHLC",
     interval_label: str = "1-MINUTE OHLC",
     bar_minutes: float | None = None,
+    x_window: tuple[time, time] | None = None,
+    figsize: tuple[float, float] = (11.2, 7.0),
 ) -> Path:
     import matplotlib
 
@@ -450,7 +452,7 @@ def render_ft_ohlc_png(
             f"{interval_note}  ·  session range",
         )
 
-    fig, ax = plt.subplots(figsize=(11.2, 7.0), dpi=200, facecolor=FT_BG)
+    fig, ax = plt.subplots(figsize=figsize, dpi=200, facecolor=FT_BG)
     ax.set_facecolor(FT_BG)
     fig.subplots_adjust(left=0.09, right=0.90, top=0.74, bottom=0.14)
 
@@ -504,7 +506,10 @@ def render_ft_ohlc_png(
     session_day = plot_x[0].date()
     x_left = datetime.combine(session_day, datetime.min.time()).replace(hour=6, minute=25)
     x_right = datetime.combine(session_day, datetime.min.time()).replace(hour=13, minute=5)
-    if bar_minutes:
+    if x_window:
+        x_left = datetime.combine(session_day, x_window[0])
+        x_right = datetime.combine(session_day, x_window[1])
+    elif bar_minutes:
         # True-width candles on an axis zoomed to the bars actually printed.
         pad = timedelta(minutes=bar_minutes * 4)
         x_left = max(x_left, plot_x[0] - pad)
