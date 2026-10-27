@@ -7,7 +7,7 @@ callouts for the Streamlit gallery.
 
 from __future__ import annotations
 
-from datetime import date, datetime
+from datetime import date, datetime, timedelta
 from pathlib import Path
 from zoneinfo import ZoneInfo
 import sys
@@ -420,6 +420,7 @@ def render_ft_ohlc_png(
     trigger: str | None = None,
     source: str = "Source: Yahoo Finance 1-minute OHLC",
     interval_label: str = "1-MINUTE OHLC",
+    bar_minutes: float | None = None,
 ) -> Path:
     import matplotlib
 
@@ -503,10 +504,18 @@ def render_ft_ohlc_png(
     session_day = plot_x[0].date()
     x_left = datetime.combine(session_day, datetime.min.time()).replace(hour=6, minute=25)
     x_right = datetime.combine(session_day, datetime.min.time()).replace(hour=13, minute=5)
+    if bar_minutes:
+        # True-width candles on an axis zoomed to the bars actually printed.
+        pad = timedelta(minutes=bar_minutes * 4)
+        x_left = max(x_left, plot_x[0] - pad)
+        x_right = min(x_right, plot_x[-1] + pad)
     ax.set_xlim(x_left, x_right)
     span = max(date2num(x_right) - date2num(x_left), 1.0 / 1440.0)
-    # Size bars from the session span so sparse option prints stay readable.
-    body_w = max(span / max(len(xs) * 1.55, 1), span * 0.008, 3.0 / 1440.0)
+    if bar_minutes:
+        body_w = bar_minutes * 0.72 / 1440.0
+    else:
+        # Size bars from the session span so sparse option prints stay readable.
+        body_w = max(span / max(len(xs) * 1.55, 1), span * 0.008, 3.0 / 1440.0)
     half = body_w * 0.62
     min_body = max((y_max - y_min) * 0.028, 0.16)
 
