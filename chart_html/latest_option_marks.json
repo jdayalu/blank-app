@@ -1,7 +1,17 @@
 {
-  "generated_at": "2026-10-27T07:30:51-07:00",
-  "generated_display": "Oct-27 07-30-51",
+  "generated_at": "2026-10-27T07:32:42-07:00",
+  "generated_display": "Oct-27 07-32-42",
   "spx": [
+    {
+      "occ": ".SPXW261030C7755",
+      "strike": 7755.0,
+      "side": "CALL",
+      "expiration": "2026-10-30",
+      "mark": 22.05,
+      "recommended": 22.05,
+      "scanned_at": "2026-10-27T07:30:32-07:00",
+      "scanned_display": "Oct-27 07-30-32"
+    },
     {
       "occ": ".SPXW261028C7800",
       "strike": 7800.0,
@@ -9,6 +19,16 @@
       "expiration": "2026-10-28",
       "mark": 1.2,
       "recommended": 1.2,
+      "scanned_at": "2026-10-27T07:30:32-07:00",
+      "scanned_display": "Oct-27 07-30-32"
+    },
+    {
+      "occ": ".SPXW261030P7650",
+      "strike": 7650.0,
+      "side": "PUT",
+      "expiration": "2026-10-30",
+      "mark": 29.0,
+      "recommended": 29.0,
       "scanned_at": "2026-10-27T07:30:32-07:00",
       "scanned_display": "Oct-27 07-30-32"
     }
@@ -6656,28 +6676,6 @@
     }
   ],
   "history": [
-    {
-      "symbol": "PEP",
-      "side": "PUT",
-      "strike": 131.0,
-      "expiration": "2026-10-23",
-      "source": "rvol",
-      "mark": 0.54,
-      "occ": "",
-      "scanned_at": "2026-10-19T11:00:01-07:00",
-      "scanned_display": "Oct-19 11-00-01"
-    },
-    {
-      "symbol": "PEP",
-      "side": "PUT",
-      "strike": 132.0,
-      "expiration": "2026-10-23",
-      "source": "rvol",
-      "mark": 0.86,
-      "occ": "",
-      "scanned_at": "2026-10-19T11:00:01-07:00",
-      "scanned_display": "Oct-19 11-00-01"
-    },
     {
       "symbol": "PEP",
       "side": "PUT",
@@ -50648,11 +50646,33 @@
     {
       "symbol": "SPX",
       "side": "CALL",
+      "strike": 7755.0,
+      "expiration": "2026-10-30",
+      "source": "spx",
+      "mark": 22.05,
+      "occ": ".SPXW261030C7755",
+      "scanned_at": "2026-10-27T07:30:32-07:00",
+      "scanned_display": "Oct-27 07-30-32"
+    },
+    {
+      "symbol": "SPX",
+      "side": "CALL",
       "strike": 7800.0,
       "expiration": "2026-10-28",
       "source": "spx",
       "mark": 1.2,
       "occ": ".SPXW261028C7800",
+      "scanned_at": "2026-10-27T07:30:32-07:00",
+      "scanned_display": "Oct-27 07-30-32"
+    },
+    {
+      "symbol": "SPX",
+      "side": "PUT",
+      "strike": 7650.0,
+      "expiration": "2026-10-30",
+      "source": "spx",
+      "mark": 29.0,
+      "occ": ".SPXW261030P7650",
       "scanned_at": "2026-10-27T07:30:32-07:00",
       "scanned_display": "Oct-27 07-30-32"
     }
@@ -50662,50 +50682,50 @@
       "label": "/CL",
       "yahoo": "CL=F",
       "name": "Crude oil",
-      "last": 101.1500015258789,
+      "last": 101.18000030517578,
       "prev_close": 100.79000091552734,
-      "change": 0.3600006103515625,
-      "change_pct": 0.3571788938203116,
+      "change": 0.3899993896484375,
+      "change_pct": 0.38694254003956025,
       "up": true
     },
     {
       "label": "/ES",
       "yahoo": "ES=F",
       "name": "E-mini S&P",
-      "last": 7715.25,
+      "last": 7718.0,
       "prev_close": 7725.5,
-      "change": -10.25,
-      "change_pct": -0.1326774966021617,
+      "change": -7.5,
+      "change_pct": -0.09708109507475245,
       "up": false
     },
     {
       "label": "/GC",
       "yahoo": "GC=F",
       "name": "Gold",
-      "last": 4049.0,
+      "last": 4048.199951171875,
       "prev_close": 4029.89990234375,
-      "change": 19.10009765625,
-      "change_pct": 0.4739596049306727,
+      "change": 18.300048828125,
+      "change_pct": 0.45410678358243767,
       "up": true
     },
     {
       "label": "/NQ",
       "yahoo": "NQ=F",
       "name": "E-mini Nasdaq",
-      "last": 29524.25,
+      "last": 29543.5,
       "prev_close": 29446.0,
-      "change": 78.25,
-      "change_pct": 0.26574067785098143,
+      "change": 97.5,
+      "change_pct": 0.33111458262582355,
       "up": true
     },
     {
       "label": "10Y",
       "yahoo": "^TNX",
       "name": "10-year yield",
-      "last": 4.999000072479248,
+      "last": 5.000999927520752,
       "prev_close": 4.986000061035156,
-      "change": 0.013000011444091797,
-      "change_pct": 0.2607302704563712,
+      "change": 0.014999866485595703,
+      "change_pct": 0.3008396771355342,
       "up": true
     }
   ],
