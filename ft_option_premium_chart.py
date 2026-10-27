@@ -517,7 +517,11 @@ def render_ft_ohlc_png(
         # Size bars from the session span so sparse option prints stay readable.
         body_w = max(span / max(len(xs) * 1.55, 1), span * 0.008, 3.0 / 1440.0)
     half = body_w * 0.62
-    min_body = max((y_max - y_min) * 0.028, 0.16)
+    min_body = (
+        max((y_max - y_min) * 0.008, 0.03)
+        if bar_minutes
+        else max((y_max - y_min) * 0.028, 0.16)
+    )
 
     for x, open_px, high_px, low_px, close_px in zip(
         xs, frame["open"], frame["high"], frame["low"], frame["close"]
