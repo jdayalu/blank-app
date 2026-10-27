@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-10-27T08:30:02-07:00",
-  "subject": "SPX below 7700 - Now 7695 PUT $2.10 ($18) \u00b7 Wed 10/28 SPX 7800 CALL $2.55",
+  "updated_at": "2026-10-27T09:00:01-07:00",
+  "subject": "SPX below 7700 - Now 7695 PUT $0.93 ($1.98) \u00b7 Wed 10/28 SPX 7800 CALL $4.05",
   "close_expected": "Close expected below 7700",
   "target_lows": [
     "Target low 1 7677",
@@ -12,14 +12,14 @@
   "no_trade": false,
   "buy_line": "BUY 1 .SPXW261027P7695",
   "contract_line": "SPXW 2026-10-27 7695 PUT",
-  "comparison": "Recommended $18.00 \u00b7 Current $2.10 (\u25bc $15.90 vs recommended)",
+  "comparison": "Recommended $1.98 \u00b7 Current $0.93 (\u25bc $1.05 vs recommended)",
   "comparison_direction": "down",
   "limit_line": "Limit $1.00 \u00b7 Est. debit $100",
   "debit_spread": {
     "title": "Debit spread vs below 7700 (\u221210)",
-    "buy": "BUY 7690 CALL $31.30",
-    "sell": "SELL 7695 CALL $27.05",
-    "net": "Net debit $4.25 \u00b7 new entry"
+    "buy": "BUY 7690 CALL $45.45",
+    "sell": "SELL 7695 CALL $40.50",
+    "net": "Net debit $4.95 \u00b7 new entry"
   },
   "trade": {
     "occ": ".SPXW261027P7695",
@@ -28,14 +28,14 @@
     "strike": 7695.0,
     "option_type": "put",
     "quantity": 1,
-    "recommended": 18.0,
-    "current": 2.1,
+    "recommended": 1.98,
+    "current": 0.93,
     "limit": 1.0
   },
   "chart": {
-    "headline": "Recommended SPX trade: 7695 PUT ($3.55)",
-    "session_change": "$-14.45 (-80.3%)",
-    "change": -14.45,
+    "headline": "Recommended SPX trade: 7695 PUT ($2.10)",
+    "session_change": "$-15.90 (-88.3%)",
+    "change": -15.9,
     "prints": [
       {
         "time": "6:30am",
@@ -60,6 +60,12 @@
         "label": "SPX 7695 Put",
         "price": 3.55,
         "delta": -8.0
+      },
+      {
+        "time": "8:30am",
+        "label": "SPX 7695 Put",
+        "price": 2.1,
+        "delta": -1.45
       }
     ],
     "bars": [
@@ -78,6 +84,10 @@
       {
         "time": "8:00am",
         "price": 3.55
+      },
+      {
+        "time": "8:30am",
+        "price": 2.1
       }
     ]
   }
