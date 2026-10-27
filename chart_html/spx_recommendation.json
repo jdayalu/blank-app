@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-10-27T12:50:01-07:00",
-  "subject": "SPX below 7700 - Now 7695 PUT $0.03 ($0.07) \u00b7 Wed 10/28 SPX 7800 CALL $2.17",
+  "updated_at": "2026-10-27T13:00:01-07:00",
+  "subject": "SPX below 7700 - Now 7695 PUT $0.07 ($0.09) \u00b7 Wed 10/28 SPX 7800 CALL $1.65",
   "close_expected": "Close expected below 7700",
   "target_lows": [
     "Target low 1 7677",
@@ -12,14 +12,14 @@
   "no_trade": false,
   "buy_line": "BUY 1 .SPXW261027P7695",
   "contract_line": "SPXW 2026-10-27 7695 PUT",
-  "comparison": "Recommended $0.07 \u00b7 Current $0.03 (\u25bc $0.04 vs recommended)",
+  "comparison": "Recommended $0.09 \u00b7 Current $0.07 (\u25bc $0.02 vs recommended)",
   "comparison_direction": "down",
   "limit_line": "Limit $1.00 \u00b7 Est. debit $100",
   "debit_spread": {
     "title": "Debit spread vs below 7700 (\u221210)",
-    "buy": "BUY 7690 CALL $39.90",
-    "sell": "SELL 7695 CALL $34.90",
-    "net": "Net debit $5.00 \u00b7 new entry"
+    "buy": "BUY 7690 CALL $32.30",
+    "sell": "SELL 7695 CALL $27.32",
+    "net": "Net debit $4.98 \u00b7 new entry"
   },
   "trade": {
     "occ": ".SPXW261027P7695",
@@ -28,8 +28,8 @@
     "strike": 7695.0,
     "option_type": "put",
     "quantity": 1,
-    "recommended": 0.07,
-    "current": 0.03,
+    "recommended": 0.09,
+    "current": 0.07,
     "limit": 1.0
   },
   "chart": {
