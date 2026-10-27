@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-10-27T11:30:02-07:00",
-  "subject": "SPX below 7700 - Now 7695 PUT $0.42 ($1.48) \u00b7 Wed 10/28 SPX 7800 CALL $1.65",
+  "updated_at": "2026-10-27T11:45:01-07:00",
+  "subject": "SPX below 7700 - Now 7695 PUT $0.28 ($1.68) \u00b7 Wed 10/28 SPX 7800 CALL $1.75",
   "close_expected": "Close expected below 7700",
   "target_lows": [
     "Target low 1 7677",
@@ -12,14 +12,14 @@
   "no_trade": false,
   "buy_line": "BUY 1 .SPXW261027P7695",
   "contract_line": "SPXW 2026-10-27 7695 PUT",
-  "comparison": "Recommended $1.48 \u00b7 Current $0.42 (\u25bc $1.06 vs recommended)",
+  "comparison": "Recommended $1.68 \u00b7 Current $0.28 (\u25bc $1.40 vs recommended)",
   "comparison_direction": "down",
   "limit_line": "Limit $1.00 \u00b7 Est. debit $100",
   "debit_spread": {
     "title": "Debit spread vs below 7700 (\u221210)",
-    "buy": "BUY 7690 CALL $27.85",
-    "sell": "SELL 7695 CALL $22.95",
-    "net": "Net debit $4.90 \u00b7 new entry"
+    "buy": "BUY 7690 CALL $29.85",
+    "sell": "SELL 7695 CALL $24.85",
+    "net": "Net debit $5.00 \u00b7 new entry"
   },
   "trade": {
     "occ": ".SPXW261027P7695",
@@ -28,21 +28,15 @@
     "strike": 7695.0,
     "option_type": "put",
     "quantity": 1,
-    "recommended": 1.48,
-    "current": 0.42,
+    "recommended": 1.68,
+    "current": 0.28,
     "limit": 1.0
   },
   "chart": {
-    "headline": "Recommended SPX trade: 7695 PUT ($0.38)",
-    "session_change": "$-17.62 (-97.9%)",
-    "change": -17.62,
+    "headline": "Recommended SPX trade: 7695 PUT ($0.42)",
+    "session_change": "$-17.58 (-97.7%)",
+    "change": -17.58,
     "prints": [
-      {
-        "time": "9:00am",
-        "label": "SPX 7695 Put",
-        "price": 0.93,
-        "delta": -1.17
-      },
       {
         "time": "9:30am",
         "label": "SPX 7695 Put",
@@ -66,6 +60,12 @@
         "label": "SPX 7695 Put",
         "price": 0.38,
         "delta": -0.15
+      },
+      {
+        "time": "11:30am",
+        "label": "SPX 7695 Put",
+        "price": 0.42,
+        "delta": 0.04
       }
     ],
     "bars": [
@@ -108,6 +108,10 @@
       {
         "time": "11:00am",
         "price": 0.38
+      },
+      {
+        "time": "11:30am",
+        "price": 0.42
       }
     ]
   }
