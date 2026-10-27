@@ -1,39 +1,33 @@
 {
-  "updated_at": "2026-10-26T13:00:01-07:00",
-  "subject": "SPX above 7646 - Now 7650 CALL $26.95 ($23.10) \u00b7 Wed 10/28 SPX 7800 CALL $1.45",
-  "close_expected": "Close expected above 7646",
+  "updated_at": "2026-10-27T06:31:01-07:00",
+  "subject": "SPX - Now 7695 PUT $18 ($18) \u00b7 Wed 10/28 SPX 7800 CALL $1.80",
+  "close_expected": "",
   "target_lows": [],
-  "target_highs": "Target highs 7665, 7684, 7699",
+  "target_highs": "",
   "worst_case": "",
   "no_trade": false,
-  "buy_line": "BUY 1 .SPXW261026C7650",
-  "contract_line": "SPXW 2026-10-26 7650 CALL",
-  "comparison": "Recommended $23.10 \u00b7 Current $26.95 (\u25b2 $3.85 vs recommended)",
-  "comparison_direction": "up",
+  "buy_line": "BUY 1 .SPXW261027P7695",
+  "contract_line": "SPXW 2026-10-27 7695 PUT",
+  "comparison": "Recommended $18.00 \u00b7 Current unavailable",
+  "comparison_direction": "flat",
   "limit_line": "Limit $1.00 \u00b7 Est. debit $100",
   "debit_spread": null,
   "trade": {
-    "occ": ".SPXW261026C7650",
+    "occ": ".SPXW261027P7695",
     "chain": "SPXW",
-    "expiration": "2026-10-26",
-    "strike": 7650.0,
-    "option_type": "call",
+    "expiration": "2026-10-27",
+    "strike": 7695.0,
+    "option_type": "put",
     "quantity": 1,
-    "recommended": 23.1,
-    "current": 26.95,
+    "recommended": 18.0,
+    "current": null,
     "limit": 1.0
   },
   "chart": {
-    "headline": "Recommended SPX trade: 7650 CALL ($27.85)",
-    "session_change": "+$4.75 (+20.6%)",
-    "change": 4.75,
+    "headline": "Recommended SPX trade: 7650 CALL ($26.95)",
+    "session_change": "+$3.85 (+16.7%)",
+    "change": 3.849999999999998,
     "prints": [
-      {
-        "time": "10:30am",
-        "label": "SPX 7650 Call",
-        "price": 31.15,
-        "delta": -1.2
-      },
       {
         "time": "11:00am",
         "label": "SPX 7650 Call",
@@ -56,6 +50,12 @@
         "time": "12:30pm",
         "label": "SPX 7650 Call",
         "price": 27.85,
+        "delta": -0.9
+      },
+      {
+        "time": "1:00pm",
+        "label": "SPX 7650 Call",
+        "price": 26.95,
         "delta": -0.9
       }
     ],
@@ -111,6 +111,10 @@
       {
         "time": "12:30pm",
         "price": 27.85
+      },
+      {
+        "time": "1:00pm",
+        "price": 26.95
       }
     ]
   }
