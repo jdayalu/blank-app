@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-10-27T06:31:01-07:00",
-  "subject": "SPX - Now 7695 PUT $18 ($18) \u00b7 Wed 10/28 SPX 7800 CALL $1.80",
+  "updated_at": "2026-10-27T06:35:01-07:00",
+  "subject": "SPX - Now 7695 PUT $18 ($18) \u00b7 Wed 10/28 SPX 7800 CALL $1.52",
   "close_expected": "",
   "target_lows": [],
   "target_highs": "",
@@ -24,97 +24,21 @@
     "limit": 1.0
   },
   "chart": {
-    "headline": "Recommended SPX trade: 7650 CALL ($26.95)",
-    "session_change": "+$3.85 (+16.7%)",
-    "change": 3.849999999999998,
+    "headline": "Recommended SPX trade: 7695 PUT ($18)",
+    "session_change": "+$0.00 (+0.0%)",
+    "change": 0.0,
     "prints": [
       {
-        "time": "11:00am",
-        "label": "SPX 7650 Call",
-        "price": 30.75,
-        "delta": -0.4
-      },
-      {
-        "time": "11:30am",
-        "label": "SPX 7650 Call",
-        "price": 29.35,
-        "delta": -1.4
-      },
-      {
-        "time": "12:00pm",
-        "label": "SPX 7650 Call",
-        "price": 28.75,
-        "delta": -0.6
-      },
-      {
-        "time": "12:30pm",
-        "label": "SPX 7650 Call",
-        "price": 27.85,
-        "delta": -0.9
-      },
-      {
-        "time": "1:00pm",
-        "label": "SPX 7650 Call",
-        "price": 26.95,
-        "delta": -0.9
+        "time": "6:30am",
+        "label": "SPX 7695 Put",
+        "price": 18.0,
+        "delta": null
       }
     ],
     "bars": [
       {
         "time": "6:30am",
-        "price": 23.1
-      },
-      {
-        "time": "7:00am",
-        "price": 21.45
-      },
-      {
-        "time": "7:30am",
-        "price": 28.1
-      },
-      {
-        "time": "8:00am",
-        "price": 48.45
-      },
-      {
-        "time": "8:30am",
-        "price": 44.1
-      },
-      {
-        "time": "9:00am",
-        "price": 28.9
-      },
-      {
-        "time": "9:30am",
-        "price": 32.3
-      },
-      {
-        "time": "10:00am",
-        "price": 32.35
-      },
-      {
-        "time": "10:30am",
-        "price": 31.15
-      },
-      {
-        "time": "11:00am",
-        "price": 30.75
-      },
-      {
-        "time": "11:30am",
-        "price": 29.35
-      },
-      {
-        "time": "12:00pm",
-        "price": 28.75
-      },
-      {
-        "time": "12:30pm",
-        "price": 27.85
-      },
-      {
-        "time": "1:00pm",
-        "price": 26.95
+        "price": 18.0
       }
     ]
   }
