@@ -1,26 +1,26 @@
 {
-  "generated_at": "2026-10-28T11:45:45-07:00",
-  "generated_display": "Oct-28 11-45-45",
+  "generated_at": "2026-10-28T12:01:11-07:00",
+  "generated_display": "Oct-28 12-01-11",
   "spx": [
     {
       "occ": ".SPXW261028C7800",
       "strike": 7800.0,
       "side": "CALL",
       "expiration": "2026-10-28",
-      "mark": 0.33,
-      "recommended": 0.33,
-      "scanned_at": "2026-10-28T11:45:01-07:00",
-      "scanned_display": "Oct-28 11-45-01"
+      "mark": 0.12,
+      "recommended": 0.12,
+      "scanned_at": "2026-10-28T12:00:01-07:00",
+      "scanned_display": "Oct-28 12-00-01"
     },
     {
       "occ": ".SPXW261028P7735",
       "strike": 7735.0,
       "side": "PUT",
       "expiration": "2026-10-28",
-      "mark": 9.5,
-      "recommended": 9.5,
-      "scanned_at": "2026-10-28T11:45:01-07:00",
-      "scanned_display": "Oct-28 11-45-01"
+      "mark": 10.7,
+      "recommended": 10.7,
+      "scanned_at": "2026-10-28T12:00:01-07:00",
+      "scanned_display": "Oct-28 12-00-01"
     }
   ],
   "options": [
@@ -6666,28 +6666,6 @@
     }
   ],
   "history": [
-    {
-      "symbol": "AMAT",
-      "side": "CALL",
-      "strike": 420.0,
-      "expiration": "2026-10-23",
-      "source": "rvol",
-      "mark": 9.58,
-      "occ": "",
-      "scanned_at": "2026-10-19T11:15:01-07:00",
-      "scanned_display": "Oct-19 11-15-01"
-    },
-    {
-      "symbol": "AMAT",
-      "side": "CALL",
-      "strike": 422.5,
-      "expiration": "2026-10-23",
-      "source": "rvol",
-      "mark": 8.58,
-      "occ": "",
-      "scanned_at": "2026-10-19T11:15:01-07:00",
-      "scanned_display": "Oct-19 11-15-01"
-    },
     {
       "symbol": "AMAT",
       "side": "PUT",
@@ -50665,6 +50643,28 @@
       "occ": ".SPXW261028P7735",
       "scanned_at": "2026-10-28T11:45:01-07:00",
       "scanned_display": "Oct-28 11-45-01"
+    },
+    {
+      "symbol": "SPX",
+      "side": "CALL",
+      "strike": 7800.0,
+      "expiration": "2026-10-28",
+      "source": "spx",
+      "mark": 0.12,
+      "occ": ".SPXW261028C7800",
+      "scanned_at": "2026-10-28T12:00:01-07:00",
+      "scanned_display": "Oct-28 12-00-01"
+    },
+    {
+      "symbol": "SPX",
+      "side": "PUT",
+      "strike": 7735.0,
+      "expiration": "2026-10-28",
+      "source": "spx",
+      "mark": 10.7,
+      "occ": ".SPXW261028P7735",
+      "scanned_at": "2026-10-28T12:00:01-07:00",
+      "scanned_display": "Oct-28 12-00-01"
     }
   ],
   "futures": [
@@ -50672,55 +50672,55 @@
       "label": "/CL",
       "yahoo": "CL=F",
       "name": "Crude oil",
-      "last": 102.63999938964844,
+      "last": 102.61000061035156,
       "prev_close": 101.33999633789062,
-      "change": 1.3000030517578125,
-      "change_pct": 1.2828133991867399,
+      "change": 1.2700042724609375,
+      "change_pct": 1.2532112871076628,
       "up": true
     },
     {
       "label": "/ES",
       "yahoo": "ES=F",
       "name": "E-mini S&P",
-      "last": 7782.0,
+      "last": 7781.0,
       "prev_close": 7763.0,
-      "change": 19.0,
-      "change_pct": 0.24475074069303104,
+      "change": 18.0,
+      "change_pct": 0.2318691227618189,
       "up": true
     },
     {
       "label": "/GC",
       "yahoo": "GC=F",
       "name": "Gold",
-      "last": 4063.199951171875,
+      "last": 4067.199951171875,
       "prev_close": 4056.300048828125,
-      "change": 6.89990234375,
-      "change_pct": 0.17010335184014305,
+      "change": 10.89990234375,
+      "change_pct": 0.2687153862520355,
       "up": true
     },
     {
       "label": "/NQ",
       "yahoo": "NQ=F",
       "name": "E-mini Nasdaq",
-      "last": 29938.25,
+      "last": 29944.75,
       "prev_close": 29933.0,
-      "change": 5.25,
-      "change_pct": 0.017539170814819764,
+      "change": 11.75,
+      "change_pct": 0.03925433468078709,
       "up": true
     },
     {
       "label": "10Y",
       "yahoo": "^TNX",
       "name": "10-year yield",
-      "last": 5.0279998779296875,
+      "last": 5.015999794006348,
       "prev_close": 4.993000030517578,
-      "change": 0.034999847412109375,
-      "change_pct": 0.7009783136027993,
+      "change": 0.02299976348876953,
+      "change_pct": 0.4606401631923354,
       "up": true
     }
   ],
   "scan_at": "2026-10-19T13:00:01-07:00",
   "scan_display": "Oct-19 13-00-01",
-  "spx_at": "2026-10-28T11:45:01-07:00",
-  "spx_display": "Oct-28 11-45-01"
+  "spx_at": "2026-10-28T12:00:01-07:00",
+  "spx_display": "Oct-28 12-00-01"
 }
