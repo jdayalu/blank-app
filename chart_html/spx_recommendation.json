@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-10-28T07:00:00-07:00",
-  "subject": "SPX - Now 7695 PUT $18 ($18) \u00b7 Wed 10/28 SPX 7800 CALL $1.07",
+  "updated_at": "2026-10-28T07:28:47-07:00",
+  "subject": "SPX - Now 7695 PUT $18 ($18) \u00b7 Wed 10/28 SPX 7800 CALL $1.27",
   "close_expected": "",
   "target_lows": [],
   "target_highs": "",
@@ -33,11 +33,21 @@
         "label": "SPX 7695 Put",
         "price": 18.0,
         "delta": null
+      },
+      {
+        "time": "7:00am",
+        "label": "SPX 7695 Put",
+        "price": 18.0,
+        "delta": 0.0
       }
     ],
     "bars": [
       {
         "time": "6:30am",
+        "price": 18.0
+      },
+      {
+        "time": "7:00am",
         "price": 18.0
       }
     ]
