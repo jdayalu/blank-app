@@ -1,28 +1,22 @@
 {
-  "updated_at": "2026-10-28T07:30:01-07:00",
-  "subject": "SPX - Now 7695 PUT $18 ($18) \u00b7 Wed 10/28 SPX 7800 CALL $1.23",
-  "close_expected": "",
-  "target_lows": [],
+  "updated_at": "2026-10-28T08:00:02-07:00",
+  "subject": "SPX Outlook \u2014 Close expected below 7736",
+  "close_expected": "Close expected below 7736",
+  "target_lows": [
+    "Target low 1 7713",
+    "Target low 2 7697",
+    "Target low 3 7682"
+  ],
   "target_highs": "",
-  "worst_case": "",
-  "no_trade": false,
-  "buy_line": "BUY 1 .SPXW261027P7695",
-  "contract_line": "SPXW 2026-10-27 7695 PUT",
-  "comparison": "Recommended $18.00 \u00b7 Current unavailable",
+  "worst_case": "Worst case scenario bottom 7680",
+  "no_trade": true,
+  "buy_line": "",
+  "contract_line": "",
+  "comparison": "",
   "comparison_direction": "flat",
-  "limit_line": "Limit $1.00 \u00b7 Est. debit $100",
+  "limit_line": "",
   "debit_spread": null,
-  "trade": {
-    "occ": ".SPXW261027P7695",
-    "chain": "SPXW",
-    "expiration": "2026-10-27",
-    "strike": 7695.0,
-    "option_type": "put",
-    "quantity": 1,
-    "recommended": 18.0,
-    "current": null,
-    "limit": 1.0
-  },
+  "trade": null,
   "chart": {
     "headline": "Recommended SPX trade: 7695 PUT ($18)",
     "session_change": "+$0.00 (+0.0%)",
@@ -39,6 +33,12 @@
         "label": "SPX 7695 Put",
         "price": 18.0,
         "delta": 0.0
+      },
+      {
+        "time": "7:30am",
+        "label": "SPX 7695 Put",
+        "price": 18.0,
+        "delta": 0.0
       }
     ],
     "bars": [
@@ -48,6 +48,10 @@
       },
       {
         "time": "7:00am",
+        "price": 18.0
+      },
+      {
+        "time": "7:30am",
         "price": 18.0
       }
     ]
