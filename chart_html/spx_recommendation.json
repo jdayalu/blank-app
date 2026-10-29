@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-10-29T07:30:01-07:00",
-  "subject": "SPX below 7704 - SPX 7800 CALL $19 SPX 7735 PUT $55.75",
+  "updated_at": "2026-10-29T08:00:01-07:00",
+  "subject": "SPX below 7704 - SPX 7800 CALL $16.35 SPX 7735 PUT $59.10",
   "close_expected": "Close expected below 7704",
   "target_lows": [
     "Target low 1 7681",
@@ -12,14 +12,14 @@
   "no_trade": false,
   "buy_line": "BUY 1 .SPXW261029P7700",
   "contract_line": "SPXW 2026-10-29 7700 PUT",
-  "comparison": "Recommended $17.50 \u00b7 Current $6.55 (\u25bc $10.95 vs recommended)",
+  "comparison": "Recommended $17.50 \u00b7 Current $6.80 (\u25bc $10.70 vs recommended)",
   "comparison_direction": "down",
   "limit_line": "Limit $1.00 \u00b7 Est. debit $100",
   "debit_spread": {
     "title": "Debit spread vs below 7704 (\u221210)",
-    "buy": "BUY 7695 CALL $30.90",
-    "sell": "SELL 7700 CALL $27.00",
-    "net": "Net debit $3.90 \u00b7 new entry"
+    "buy": "BUY 7695 CALL $26.60",
+    "sell": "SELL 7700 CALL $22.90",
+    "net": "Net debit $3.70 \u00b7 new entry"
   },
   "trade": {
     "occ": ".SPXW261029P7700",
@@ -29,13 +29,13 @@
     "option_type": "put",
     "quantity": 1,
     "recommended": 17.5,
-    "current": 6.55,
+    "current": 6.8,
     "limit": 1.0
   },
   "chart": {
-    "headline": "Recommended SPX trade: 7735 PUT ($60.40)",
-    "session_change": "$-9.25 (-13.3%)",
-    "change": -9.250000000000007,
+    "headline": "Recommended SPX trade: 7735 PUT ($55.75)",
+    "session_change": "$-13.90 (-20.0%)",
+    "change": -13.900000000000006,
     "prints": [
       {
         "time": "6:30am",
@@ -48,6 +48,12 @@
         "label": "SPX 7735 Put",
         "price": 60.4,
         "delta": -9.25
+      },
+      {
+        "time": "7:30am",
+        "label": "SPX 7735 Put",
+        "price": 55.75,
+        "delta": -4.65
       }
     ],
     "bars": [
@@ -58,6 +64,10 @@
       {
         "time": "7:00am",
         "price": 60.4
+      },
+      {
+        "time": "7:30am",
+        "price": 55.75
       }
     ]
   }
