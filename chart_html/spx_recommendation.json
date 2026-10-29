@@ -1,33 +1,33 @@
 {
-  "updated_at": "2026-10-28T13:00:01-07:00",
-  "subject": "SPX Outlook \u2014 Close expected below 7736",
-  "close_expected": "Close expected below 7736",
-  "target_lows": [
-    "Target low 1 7713",
-    "Target low 2 7697",
-    "Target low 3 7682"
-  ],
+  "updated_at": "2026-10-29T06:31:02-07:00",
+  "subject": "SPX - SPX 7800 CALL $19 SPX 7735 PUT $61.40",
+  "close_expected": "",
+  "target_lows": [],
   "target_highs": "",
-  "worst_case": "Worst case scenario bottom 7680",
-  "no_trade": true,
-  "buy_line": "",
-  "contract_line": "",
-  "comparison": "",
+  "worst_case": "",
+  "no_trade": false,
+  "buy_line": "BUY 1 .SPXW261029P7700",
+  "contract_line": "SPXW 2026-10-29 7700 PUT",
+  "comparison": "Recommended $17.50 \u00b7 Current unavailable",
   "comparison_direction": "flat",
-  "limit_line": "",
+  "limit_line": "Limit $1.00 \u00b7 Est. debit $100",
   "debit_spread": null,
-  "trade": null,
+  "trade": {
+    "occ": ".SPXW261029P7700",
+    "chain": "SPXW",
+    "expiration": "2026-10-29",
+    "strike": 7700.0,
+    "option_type": "put",
+    "quantity": 1,
+    "recommended": 17.5,
+    "current": null,
+    "limit": 1.0
+  },
   "chart": {
-    "headline": "Recommended SPX trade: 7735 PUT ($0.47)",
-    "session_change": "$-21.03 (-97.8%)",
-    "change": -21.03,
+    "headline": "Recommended SPX trade: 7735 PUT ($0)",
+    "session_change": "$-21.47 (-99.9%)",
+    "change": -21.47,
     "prints": [
-      {
-        "time": "10:30am",
-        "label": "SPX 7735 Put",
-        "price": 17.25,
-        "delta": 3.15
-      },
       {
         "time": "11:00am",
         "label": "SPX 7735 Put",
@@ -51,6 +51,12 @@
         "label": "SPX 7735 Put",
         "price": 0.47,
         "delta": -9.18
+      },
+      {
+        "time": "1:00pm",
+        "label": "SPX 7735 Put",
+        "price": 0.03,
+        "delta": -0.44
       }
     ],
     "bars": [
@@ -105,6 +111,10 @@
       {
         "time": "12:30pm",
         "price": 0.47
+      },
+      {
+        "time": "1:00pm",
+        "price": 0.03
       }
     ]
   }
