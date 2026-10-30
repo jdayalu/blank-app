@@ -1,26 +1,17 @@
 {
-  "updated_at": "2026-10-29T13:00:01-07:00",
-  "subject": "SPX below 7704 - SPX 7800 CALL $15.45 SPX 7735 PUT $51.30",
-  "close_expected": "Close expected below 7704",
-  "target_lows": [
-    "Target low 1 7681",
-    "Target low 2 7666",
-    "Target low 3 7651"
-  ],
+  "updated_at": "2026-10-30T06:31:02-07:00",
+  "subject": "SPX - SPX 7800 CALL $3.10 SPX 7735 PUT $114.25",
+  "close_expected": "",
+  "target_lows": [],
   "target_highs": "",
-  "worst_case": "Worst case scenario bottom 7650",
+  "worst_case": "",
   "no_trade": false,
   "buy_line": "BUY 1 .SPXW261029P7700",
   "contract_line": "SPXW 2026-10-29 7700 PUT",
-  "comparison": "Recommended $2.00 \u00b7 Current $0.18 (\u25bc $1.82 vs recommended)",
-  "comparison_direction": "down",
+  "comparison": "Recommended $17.50 \u00b7 Current unavailable",
+  "comparison_direction": "flat",
   "limit_line": "Limit $1.00 \u00b7 Est. debit $100",
-  "debit_spread": {
-    "title": "Debit spread vs below 7704 (\u221210)",
-    "buy": "BUY 7695 CALL $23.63",
-    "sell": "SELL 7700 CALL $18.63",
-    "net": "Net debit $5.00 \u00b7 new entry"
-  },
+  "debit_spread": null,
   "trade": {
     "occ": ".SPXW261029P7700",
     "chain": "SPXW",
@@ -28,21 +19,15 @@
     "strike": 7700.0,
     "option_type": "put",
     "quantity": 1,
-    "recommended": 2.0,
-    "current": 0.18,
+    "recommended": 17.5,
+    "current": null,
     "limit": 1.0
   },
   "chart": {
-    "headline": "Recommended SPX trade: 7735 PUT ($54.90)",
-    "session_change": "$-14.75 (-21.2%)",
-    "change": -14.750000000000007,
+    "headline": "Recommended SPX trade: 7735 PUT ($51.30)",
+    "session_change": "$-18.35 (-26.3%)",
+    "change": -18.35000000000001,
     "prints": [
-      {
-        "time": "10:30am",
-        "label": "SPX 7735 Put",
-        "price": 57.8,
-        "delta": 4.65
-      },
       {
         "time": "11:00am",
         "label": "SPX 7735 Put",
@@ -66,6 +51,12 @@
         "label": "SPX 7735 Put",
         "price": 54.9,
         "delta": -9.7
+      },
+      {
+        "time": "1:00pm",
+        "label": "SPX 7735 Put",
+        "price": 51.3,
+        "delta": -3.6
       }
     ],
     "bars": [
@@ -120,6 +111,10 @@
       {
         "time": "12:30pm",
         "price": 54.9
+      },
+      {
+        "time": "1:00pm",
+        "price": 51.3
       }
     ]
   }
