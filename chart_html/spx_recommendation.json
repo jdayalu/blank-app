@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-11-02T11:45:02-08:00",
-  "subject": "SPX above 7615 - SPX 7800 CALL $0.40 SPX 7735 PUT $167.45",
+  "updated_at": "2026-11-02T12:00:01-08:00",
+  "subject": "SPX above 7615 - SPX 7800 CALL $0.35 SPX 7735 PUT $164.70",
   "close_expected": "Close expected above 7615",
   "target_lows": [],
   "target_highs": "Target highs 7634, 7653, 7668",
@@ -8,7 +8,7 @@
   "no_trade": false,
   "buy_line": "BUY 1 .SPXW261102C7620",
   "contract_line": "SPXW 2026-11-02 7620 CALL",
-  "comparison": "Recommended $1.27 \u00b7 Current $0.23 (\u25bc $1.04 vs recommended)",
+  "comparison": "Recommended $2.20 \u00b7 Current $0.28 (\u25bc $1.92 vs recommended)",
   "comparison_direction": "down",
   "limit_line": "Limit $1.00 \u00b7 Est. debit $100",
   "debit_spread": null,
@@ -19,14 +19,14 @@
     "strike": 7620.0,
     "option_type": "call",
     "quantity": 1,
-    "recommended": 1.27,
-    "current": 0.23,
+    "recommended": 2.2,
+    "current": 0.28,
     "limit": 1.0
   },
   "chart": {
-    "headline": "Recommended SPX trade: 7735 PUT ($157.05)",
-    "session_change": "+$37.30 (+31.1%)",
-    "change": 37.30000000000001,
+    "headline": "Recommended SPX trade: 7735 PUT ($167.45)",
+    "session_change": "+$47.70 (+39.8%)",
+    "change": 47.69999999999999,
     "prints": [
       {
         "time": "9:30am",
@@ -55,8 +55,8 @@
       {
         "time": "11:30am",
         "label": "SPX 7735 Put",
-        "price": 157.05,
-        "delta": 11.35
+        "price": 167.45,
+        "delta": 21.75
       }
     ],
     "bars": [
@@ -102,7 +102,7 @@
       },
       {
         "time": "11:30am",
-        "price": 157.05
+        "price": 167.45
       }
     ]
   }
