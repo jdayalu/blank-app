@@ -1,33 +1,33 @@
 {
-  "updated_at": "2026-10-30T13:00:00-07:00",
-  "subject": "SPX Outlook \u2014 Close expected below 7627",
-  "close_expected": "Close expected below 7627",
-  "target_lows": [
-    "Target low 1 7605",
-    "Target low 2 7589",
-    "Target low 3 7574"
-  ],
+  "updated_at": "2026-11-02T06:31:02-08:00",
+  "subject": "SPX - SPX 7800 CALL $1.45 SPX 7735 PUT $121.85",
+  "close_expected": "",
+  "target_lows": [],
   "target_highs": "",
-  "worst_case": "Worst case scenario bottom 7570",
-  "no_trade": true,
-  "buy_line": "",
-  "contract_line": "",
-  "comparison": "",
+  "worst_case": "",
+  "no_trade": false,
+  "buy_line": "BUY 1 .SPXW261102C7620",
+  "contract_line": "SPXW 2026-11-02 7620 CALL",
+  "comparison": "Recommended $24.30 \u00b7 Current unavailable",
   "comparison_direction": "flat",
-  "limit_line": "",
+  "limit_line": "Limit $1.00 \u00b7 Est. debit $100",
   "debit_spread": null,
-  "trade": null,
+  "trade": {
+    "occ": ".SPXW261102C7620",
+    "chain": "SPXW",
+    "expiration": "2026-11-02",
+    "strike": 7620.0,
+    "option_type": "call",
+    "quantity": 1,
+    "recommended": 24.3,
+    "current": null,
+    "limit": 1.0
+  },
   "chart": {
-    "headline": "Recommended SPX trade: 7735 PUT ($166.85)",
-    "session_change": "+$46.50 (+38.6%)",
-    "change": 46.5,
+    "headline": "Recommended SPX trade: 7735 PUT ($155.95)",
+    "session_change": "+$35.60 (+29.6%)",
+    "change": 35.599999999999994,
     "prints": [
-      {
-        "time": "10:30am",
-        "label": "SPX 7735 Put",
-        "price": 158.2,
-        "delta": 2.35
-      },
       {
         "time": "11:00am",
         "label": "SPX 7735 Put",
@@ -51,6 +51,12 @@
         "label": "SPX 7735 Put",
         "price": 166.85,
         "delta": -17.2
+      },
+      {
+        "time": "1:00pm",
+        "label": "SPX 7735 Put",
+        "price": 155.95,
+        "delta": -10.9
       }
     ],
     "bars": [
@@ -105,6 +111,10 @@
       {
         "time": "12:30pm",
         "price": 166.85
+      },
+      {
+        "time": "1:00pm",
+        "price": 155.95
       }
     ]
   }
