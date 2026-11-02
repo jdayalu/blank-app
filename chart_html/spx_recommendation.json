@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-11-02T12:50:01-08:00",
-  "subject": "SPX above 7615 - SPX 7800 CALL $0.35 SPX 7735 PUT $180.45",
+  "updated_at": "2026-11-02T13:00:01-08:00",
+  "subject": "SPX above 7615 - SPX 7800 CALL $0.35 SPX 7735 PUT $188.30",
   "close_expected": "Close expected above 7615",
   "target_lows": [],
   "target_highs": "Target highs 7634, 7653, 7668",
@@ -24,9 +24,9 @@
     "limit": 1.0
   },
   "chart": {
-    "headline": "Recommended SPX trade: 7735 PUT ($182.65)",
-    "session_change": "+$62.90 (+52.5%)",
-    "change": 62.900000000000006,
+    "headline": "Recommended SPX trade: 7735 PUT ($180.45)",
+    "session_change": "+$60.70 (+50.7%)",
+    "change": 60.69999999999999,
     "prints": [
       {
         "time": "10:30am",
@@ -55,8 +55,8 @@
       {
         "time": "12:30pm",
         "label": "SPX 7735 Put",
-        "price": 182.65,
-        "delta": 16.15
+        "price": 180.45,
+        "delta": 13.95
       }
     ],
     "bars": [
@@ -110,7 +110,7 @@
       },
       {
         "time": "12:30pm",
-        "price": 182.65
+        "price": 180.45
       }
     ]
   }
