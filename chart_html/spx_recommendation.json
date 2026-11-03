@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-03T08:30:01-08:00",
+  "updated_at": "2026-11-03T09:00:00-08:00",
   "subject": "SPX Outlook \u2014 Close expected above 7547",
   "close_expected": "Close expected above 7547",
   "target_lows": [],
@@ -14,9 +14,9 @@
   "debit_spread": null,
   "trade": null,
   "chart": {
-    "headline": "Recommended SPX trade: 7735 PUT ($151.20)",
-    "session_change": "$-22.85 (-13.1%)",
-    "change": -22.850000000000023,
+    "headline": "Recommended SPX trade: 7735 PUT ($158.50)",
+    "session_change": "$-15.55 (-8.9%)",
+    "change": -15.550000000000011,
     "prints": [
       {
         "time": "6:30am",
@@ -41,6 +41,12 @@
         "label": "SPX 7735 Put",
         "price": 151.2,
         "delta": -9.55
+      },
+      {
+        "time": "8:30am",
+        "label": "SPX 7735 Put",
+        "price": 158.5,
+        "delta": 7.3
       }
     ],
     "bars": [
@@ -59,6 +65,10 @@
       {
         "time": "8:00am",
         "price": 151.2
+      },
+      {
+        "time": "8:30am",
+        "price": 158.5
       }
     ]
   }
