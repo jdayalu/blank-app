@@ -423,6 +423,11 @@ def render_ft_ohlc_png(
     bar_minutes: float | None = None,
     x_window: tuple[time, time] | None = None,
     figsize: tuple[float, float] = (11.2, 7.0),
+    x_range: tuple[datetime, datetime] | None = None,
+    extreme_label: str = "",
+    x_tickformat: str = "%H:%M",
+    kicker: str | None = None,
+    subtitle: str | None = None,
 ) -> Path:
     import matplotlib
 
@@ -430,6 +435,9 @@ def render_ft_ohlc_png(
     import matplotlib.pyplot as plt
     from matplotlib.dates import AutoDateLocator, DateFormatter, date2num
     from matplotlib.patches import Rectangle
+
+    # x_range: naive Pacific datetimes; lets the axis span midnight (overnight).
+    # extreme_label: prefix for the high/low callouts, e.g. "OVERNIGHT ".
 
     dest = dest.expanduser().resolve()
     dest.parent.mkdir(parents=True, exist_ok=True)
@@ -459,7 +467,7 @@ def render_ft_ohlc_png(
     fig.text(
         0.09,
         0.955,
-        f"INTRADAY OPTIONS EXECUTION  ·  {interval_label}",
+        kicker or f"INTRADAY OPTIONS EXECUTION  ·  {interval_label}",
         fontfamily=sans,
         fontsize=8.5,
         fontweight="bold",
@@ -479,7 +487,7 @@ def render_ft_ohlc_png(
     fig.text(
         0.09,
         0.855,
-        sub,
+        subtitle or sub,
         fontfamily=serif,
         fontsize=9.5,
         fontstyle="italic",
@@ -506,7 +514,9 @@ def render_ft_ohlc_png(
     session_day = plot_x[0].date()
     x_left = datetime.combine(session_day, datetime.min.time()).replace(hour=6, minute=25)
     x_right = datetime.combine(session_day, datetime.min.time()).replace(hour=13, minute=5)
-    if x_window:
+    if x_range:
+        x_left, x_right = x_range
+    elif x_window:
         x_left = datetime.combine(session_day, x_window[0])
         x_right = datetime.combine(session_day, x_window[1])
     elif bar_minutes:
@@ -518,6 +528,9 @@ def render_ft_ohlc_png(
     span = max(date2num(x_right) - date2num(x_left), 1.0 / 1440.0)
     if bar_minutes:
         body_w = bar_minutes * 0.72 / 1440.0
+        if x_range:
+            # Long windows (overnight): keep 1-minute candles visible.
+            body_w = max(body_w, span * 0.0035)
     else:
         # Size bars from the session span so sparse option prints stay readable.
         body_w = max(span / max(len(xs) * 1.55, 1), span * 0.008, 3.0 / 1440.0)
@@ -575,7 +588,7 @@ def render_ft_ohlc_png(
     ax.scatter([lo_x], [session_lo], s=78, color=FT_TEAL, zorder=5, edgecolors=FT_BG, linewidths=1.1)
 
     ax.annotate(
-        f"HIGH  {_clock(hi_row['time'])}  (${session_hi:.2f})",
+        f"{extreme_label}HIGH  {_clock(hi_row['time'])}  (${session_hi:.2f})",
         xy=(hi_x, session_hi),
         xytext=(0, 20),
         textcoords="offset points",
@@ -594,7 +607,7 @@ def render_ft_ohlc_png(
         zorder=6,
     )
     ax.annotate(
-        f"LOW  {_clock(lo_row['time'])}  (${session_lo:.2f})",
+        f"{extreme_label}LOW  {_clock(lo_row['time'])}  (${session_lo:.2f})",
         xy=(lo_x, session_lo),
         xytext=(0, -26),
         textcoords="offset points",
@@ -626,7 +639,7 @@ def render_ft_ohlc_png(
     ax.text(
         1.01,
         session_hi,
-        f"HIGH  ${session_hi:.2f}",
+        f"{extreme_label}HIGH  ${session_hi:.2f}",
         transform=ax.get_yaxis_transform(),
         fontfamily=sans,
         fontsize=8,
@@ -638,7 +651,7 @@ def render_ft_ohlc_png(
     ax.text(
         1.01,
         session_lo,
-        f"LOW  ${session_lo:.2f}",
+        f"{extreme_label}LOW  ${session_lo:.2f}",
         transform=ax.get_yaxis_transform(),
         fontfamily=sans,
         fontsize=8,
@@ -661,7 +674,7 @@ def render_ft_ohlc_png(
     ax.yaxis.label.set_fontfamily(serif)
     for label in ax.get_xticklabels() + ax.get_yticklabels():
         label.set_fontfamily(sans)
-    ax.xaxis.set_major_formatter(DateFormatter("%H:%M"))
+    ax.xaxis.set_major_formatter(DateFormatter(x_tickformat))
     if len(frame) > 12:
         ax.xaxis.set_major_locator(AutoDateLocator(maxticks=10))
     fig.savefig(
