@@ -675,7 +675,15 @@ def render_ft_ohlc_png(
     for label in ax.get_xticklabels() + ax.get_yticklabels():
         label.set_fontfamily(sans)
     ax.xaxis.set_major_formatter(DateFormatter(x_tickformat))
-    if len(frame) > 12:
+    if x_range:
+        from matplotlib.dates import HourLocator, MinuteLocator
+
+        hours = span * 24.0
+        if hours <= 6:
+            ax.xaxis.set_major_locator(MinuteLocator(byminute=(0, 30)))
+        else:
+            ax.xaxis.set_major_locator(HourLocator(interval=2 if hours > 9 else 1))
+    elif len(frame) > 12:
         ax.xaxis.set_major_locator(AutoDateLocator(maxticks=10))
     fig.savefig(
         dest,
